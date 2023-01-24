@@ -1,0 +1,9 @@
+{
+  "subjectArea" : {
+    "name" : "OR",
+    "sourceBusinessModel" : "businessModel:OR",
+    "tableOrder" : [ {
+      "name" : "presentationTable:OR.Fact Finance"
+    } ]
+  }
+}
