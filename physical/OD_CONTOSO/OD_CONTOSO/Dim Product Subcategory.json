@@ -1,0 +1,23 @@
+{
+  "physicalTable": {
+    "name": "Dim Product Subcategory",
+    "sourceTable": "physicalTable:OD_CONTOSO.OD_CONTOSO.W_PRODUCT_SUBCATEGORY_D",
+    "caching": {
+      "enable": true
+    },
+    "joins": [      {
+        "rightTable": "physicalTable:OD_CONTOSO.OD_CONTOSO.Dim Product Category",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Product Subcategory.PRODUCT_CATEGORY_KEY_ID",
+            "rightColumn": "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Product Category.PRODUCT_CATEGORY_KEY_ID"
+          }
+        ]
+      }
+    ],
+    "additionalKeys": [
+      [
+        "PRODUCT_SUBCATEGORY_KEY_ID"
+      ]
+    ]
+  }
+}

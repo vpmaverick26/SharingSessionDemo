@@ -1,0 +1,18 @@
+{
+  "presentationTable" : {
+    "name" : "Dim_Performance_Rating",
+    "presentationColumns" : [ {
+      "name" : "Benchmark (% of Employees)",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Performance_Rating.Benchmark (% of Employees)"
+    }, {
+      "name" : "Performance Rating",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Performance_Rating.Performance Rating"
+    }, {
+      "name" : "Performance Score",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Performance_Rating.Performance Score"
+    }, {
+      "name" : "Row Wid",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Performance_Rating.Row Wid"
+    } ]
+  }
+}

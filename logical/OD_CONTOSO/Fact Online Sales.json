@@ -1,0 +1,850 @@
+{
+  "logicalTable" : {
+    "name" : "Fact Online Sales",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "CURRENCY_KEY_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.CURRENCY_KEY_ID" ]
+          }
+        }, {
+          "logicalTableSource" : "Dim Promotion & Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.CURRENCY_KEY_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CUSTOMER_KEY_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.CUSTOMER_KEY_ID" ]
+          }
+        }, {
+          "logicalTableSource" : "Dim Promotion & Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.CUSTOMER_KEY_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DATE_KEY_ID",
+      "dataType" : "TIMESTAMP",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.DATE_KEY_ID" ]
+          }
+        }, {
+          "logicalTableSource" : "Dim Promotion & Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.DATE_KEY_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DISCOUNT_AMOUNT_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.DISCOUNT_AMOUNT_NR" ]
+          }
+        }, {
+          "logicalTableSource" : "Dim Promotion & Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.DISCOUNT_AMOUNT_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DISCOUNT_QUANTITY_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.DISCOUNT_QUANTITY_NR" ]
+          }
+        }, {
+          "logicalTableSource" : "Dim Promotion & Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.DISCOUNT_QUANTITY_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "ONLINE_SALES_KEY_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.ONLINE_SALES_KEY_ID" ]
+          }
+        }, {
+          "logicalTableSource" : "Dim Promotion & Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.ONLINE_SALES_KEY_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "PRODUCT_KEY_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.PRODUCT_KEY_ID" ]
+          }
+        }, {
+          "logicalTableSource" : "Dim Promotion & Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.PRODUCT_KEY_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "RETURN_AMOUNT_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.RETURN_AMOUNT_NR" ]
+          }
+        }, {
+          "logicalTableSource" : "Dim Promotion & Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.RETURN_AMOUNT_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "RETURN_QUANTITY_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.RETURN_QUANTITY_NR" ]
+          }
+        }, {
+          "logicalTableSource" : "Dim Promotion & Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.RETURN_QUANTITY_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "SALES_AMOUNT_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.SALES_AMOUNT_NR" ]
+          }
+        }, {
+          "logicalTableSource" : "Dim Promotion & Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.SALES_AMOUNT_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "SALES_ORDER_LINE_NUMBER_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.SALES_ORDER_LINE_NUMBER_NR" ]
+          }
+        }, {
+          "logicalTableSource" : "Dim Promotion & Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.SALES_ORDER_LINE_NUMBER_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "SALES_ORDER_NUMBER_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.SALES_ORDER_NUMBER_TX" ]
+          }
+        }, {
+          "logicalTableSource" : "Dim Promotion & Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.SALES_ORDER_NUMBER_TX" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "SALES_QUANTITY_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.SALES_QUANTITY_NR" ]
+          }
+        }, {
+          "logicalTableSource" : "Dim Promotion & Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.SALES_QUANTITY_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "STORE_KEY_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.STORE_KEY_ID" ]
+          }
+        }, {
+          "logicalTableSource" : "Dim Promotion & Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.STORE_KEY_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "TOTAL_COST_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.TOTAL_COST_NR" ]
+          }
+        }, {
+          "logicalTableSource" : "Dim Promotion & Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.TOTAL_COST_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "UNIT_COST_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.UNIT_COST_NR" ]
+          }
+        }, {
+          "logicalTableSource" : "Dim Promotion & Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.UNIT_COST_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "UNIT_PRICE_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.UNIT_PRICE_NR" ]
+          }
+        }, {
+          "logicalTableSource" : "Dim Promotion & Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.UNIT_PRICE_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "# Customers",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.CUSTOMER_KEY_ID" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT_DISTINCT",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "# Total Sales Quantity",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.SALES_QUANTITY_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "# Total Sales Return Quantity",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.RETURN_QUANTITY_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "# Net Quantity",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 - %2",
+          "expressionObjects" : [ "logicalColumn:OD_CONTOSO.Fact Online Sales.# Total Sales Quantity", "logicalColumn:OD_CONTOSO.Fact Online Sales.# Total Sales Return Quantity" ]
+        }
+      }
+    }, {
+      "name" : "# Products Sold",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.PRODUCT_KEY_ID" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT_DISTINCT",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "# Stores",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.STORE_KEY_ID" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT_DISTINCT",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "€Basic:Total Sales Amount EUR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.SALES_AMOUNT_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "€Basic:Total Sales Cost",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.TOTAL_COST_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "€Basic:Total Sales Return Amount EUR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.RETURN_AMOUNT_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "€Basic:Sales by Customer EUR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:OD_CONTOSO.Fact Online Sales.€Basic:Total Sales Amount EUR", "logicalColumn:OD_CONTOSO.Fact Online Sales.# Customers" ]
+        }
+      }
+    }, {
+      "name" : "€Basic: Net Profits",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 - (%2 + %3)",
+          "expressionObjects" : [ "logicalColumn:OD_CONTOSO.Fact Online Sales.€Basic:Total Sales Amount EUR", "logicalColumn:OD_CONTOSO.Fact Online Sales.€Basic:Total Sales Cost", "logicalColumn:OD_CONTOSO.Fact Online Sales.€Basic:Total Sales Return Amount EUR" ]
+        }
+      }
+    }, {
+      "name" : "€Basic: Net Profits by Customer EUR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:OD_CONTOSO.Fact Online Sales.€Basic: Net Profits", "logicalColumn:OD_CONTOSO.Fact Online Sales.# Customers" ]
+        }
+      }
+    }, {
+      "name" : "% Net Profits Margin",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:OD_CONTOSO.Fact Online Sales.€Basic: Net Profits", "logicalColumn:OD_CONTOSO.Fact Online Sales.€Basic:Total Sales Amount EUR" ]
+        }
+      }
+    }, {
+      "name" : "PROMOTION_KEY_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Promotion & Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Promotion.PROMOTION_KEY_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "# Sales Quantity w/Promotion",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Promotion & Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : " CASE  WHEN %1 <> 1 THEN %2 ELSE 0 END ",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.PROMOTION_KEY_ID", "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.SALES_AMOUNT_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "# Sales Quantity wo/Promotion",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Promotion & Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : " CASE  WHEN %1 = 1 THEN %2 ELSE 0 END ",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.PROMOTION_KEY_ID", "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.SALES_AMOUNT_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "€Basic: Net Profits wo/Promotion EUR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Promotion & Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : " CASE  WHEN %1 = 1 THEN %2 - (%3 + %4) ELSE 0 END ",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.PROMOTION_KEY_ID", "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.SALES_AMOUNT_NR", "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.TOTAL_COST_NR", "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.RETURN_AMOUNT_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "€Basic: Net Profits w/Promotion EUR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Promotion & Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : " CASE  WHEN %1 <> 1 THEN %2 - (%3 + %4) ELSE 0 END ",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.PROMOTION_KEY_ID", "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.SALES_AMOUNT_NR", "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.TOTAL_COST_NR", "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.RETURN_AMOUNT_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Promotions: Total Length of Promotions",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Promotion",
+          "physicalExpression" : {
+            "expressionTemplate" : "1 * (%1 - %2)",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Promotion.END_DATE_DT", "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Promotion.START_DATE_DT" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:OD_CONTOSO.Dim Promotion.Dim Promotion Detail" ]
+      }
+    }, {
+      "name" : "% Net Profits No Promo Margin",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Promotion & Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : " CASE  WHEN %1 = 1 THEN %2 - (%3 + %4) ELSE 0 END  /  CASE  WHEN %1 = 1 THEN %2 ELSE 0 END ",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.PROMOTION_KEY_ID", "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.SALES_AMOUNT_NR", "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.TOTAL_COST_NR", "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.RETURN_AMOUNT_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "% Net Profits Promo Margin",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Promotion & Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : " CASE  WHEN %1 <> 1 THEN %2 - (%3 + %4) ELSE 0 END  /  CASE  WHEN %1 <> 1 THEN %2 ELSE 0 END ",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.PROMOTION_KEY_ID", "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.SALES_AMOUNT_NR", "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.TOTAL_COST_NR", "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.RETURN_AMOUNT_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Promotions: Averiage Sales Qty per Day",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.SALES_QUANTITY_NR" ]
+          }
+        }, {
+          "logicalTableSource" : "Dim Promotion & Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1 / (%2 - %3)",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.SALES_AMOUNT_NR", "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Promotion.END_DATE_DT", "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Promotion.START_DATE_DT" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "% Sales Return Ratio",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : " IFNULL( SUM(%1) /  SUM(%2), 0)",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.RETURN_QUANTITY_NR", "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.SALES_QUANTITY_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "€Basic:Sales by Store EUR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:OD_CONTOSO.Fact Online Sales.€Basic:Total Sales Amount EUR", "logicalColumn:OD_CONTOSO.Fact Online Sales.# Stores" ]
+        }
+      }
+    }, {
+      "name" : "€Basic: Net Profits by Store EUR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:OD_CONTOSO.Fact Online Sales.€Basic: Net Profits", "logicalColumn:OD_CONTOSO.Fact Online Sales.# Stores" ]
+        }
+      }
+    }, {
+      "name" : "% Sales Return Ratio No Promo",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Promotion & Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : " CASE  WHEN %1 = 1 THEN  IFNULL( SUM(%2) /  SUM(%3), 0) ELSE  NULL  END ",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.PROMOTION_KEY_ID", "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.RETURN_QUANTITY_NR", "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.SALES_QUANTITY_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "% Sales Return Ratio Promo",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Promotion & Fact Online Sales",
+          "physicalExpression" : {
+            "expressionTemplate" : " CASE  WHEN %1 <> 1 THEN  IFNULL( SUM(%2) /  SUM(%3), 0) ELSE  NULL  END ",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.PROMOTION_KEY_ID", "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.RETURN_QUANTITY_NR", "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.SALES_QUANTITY_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Fact Online Sales",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OD_CONTOSO.OD_CONTOSO.Fact Online Sales" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "dataFilter" : {
+        "expressionTemplate" : "%1 <  CURRENT_TIMESTAMP(0)",
+        "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.DATE_KEY_ID" ]
+      },
+      "distinctValues" : false
+    }, {
+      "name" : "Dim Promotion & Fact Online Sales",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OD_CONTOSO.OD_CONTOSO.Dim Promotion", "physicalTable:OD_CONTOSO.OD_CONTOSO.Fact Online Sales" ],
+        "logicalTableSourceJoins" : [ {
+          "leftTable" : "physicalTable:OD_CONTOSO.OD_CONTOSO.Dim Promotion",
+          "rightTable" : "physicalTable:OD_CONTOSO.OD_CONTOSO.Fact Online Sales",
+          "joinType" : "INNER",
+          "disable" : false
+        } ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "dataFilter" : {
+        "expressionTemplate" : "%1 <  CURRENT_TIMESTAMP(0)",
+        "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.DATE_KEY_ID" ]
+      },
+      "distinctValues" : false
+    }, {
+      "name" : "Dim Promotion",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OD_CONTOSO.OD_CONTOSO.Dim Promotion" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:OD_CONTOSO.Dim Customer",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:OD_CONTOSO.Dim Date",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:OD_CONTOSO.Dim Product",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:OD_CONTOSO.Dim Promotion",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:OD_CONTOSO.Dim Store",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

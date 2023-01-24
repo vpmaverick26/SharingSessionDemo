@@ -1,0 +1,45 @@
+{
+  "presentationTable" : {
+    "name" : "Fact Inventory",
+    "presentationColumns" : [ {
+      "name" : "AGING_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Inventory.AGING_NR"
+    }, {
+      "name" : "CURRENCY_KEY_ID",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Inventory.CURRENCY_KEY_ID"
+    }, {
+      "name" : "DATE_KEY_ID",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Inventory.DATE_KEY_ID"
+    }, {
+      "name" : "DAYS_IN_STOCK_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Inventory.DAYS_IN_STOCK_NR"
+    }, {
+      "name" : "INVENTORY_KEY_ID",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Inventory.INVENTORY_KEY_ID"
+    }, {
+      "name" : "MAX_DAY_IN_STOCK_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Inventory.MAX_DAY_IN_STOCK_NR"
+    }, {
+      "name" : "MIN_DAY_IN_STOCK_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Inventory.MIN_DAY_IN_STOCK_NR"
+    }, {
+      "name" : "ON_HAND_QUANTITY_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Inventory.ON_HAND_QUANTITY_NR"
+    }, {
+      "name" : "ON_ORDER_QUANTITY_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Inventory.ON_ORDER_QUANTITY_NR"
+    }, {
+      "name" : "PRODUCT_KEY_ID",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Inventory.PRODUCT_KEY_ID"
+    }, {
+      "name" : "SAFETY_STOCK_QUANTITY_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Inventory.SAFETY_STOCK_QUANTITY_NR"
+    }, {
+      "name" : "STORE_KEY_ID",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Inventory.STORE_KEY_ID"
+    }, {
+      "name" : "UNIT_COST_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Inventory.UNIT_COST_NR"
+    } ]
+  }
+}

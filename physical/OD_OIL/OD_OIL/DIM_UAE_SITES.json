@@ -1,0 +1,9 @@
+{
+  "physicalTable": {
+    "name": "DIM_UAE_SITES",
+    "sourceTable": "physicalTable:OD_OIL.OD_OIL.W_UAE_SITES_D",
+    "caching": {
+      "enable": true
+    }
+  }
+}

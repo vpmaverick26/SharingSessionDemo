@@ -1,0 +1,110 @@
+{
+  "presentationTable" : {
+    "name" : "Fact Historical Data",
+    "presentationColumns" : [ {
+      "name" : "Date",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Date"
+    }, {
+      "name" : "Department",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Department"
+    }, {
+      "name" : "Salary",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Salary"
+    }, {
+      "name" : "Absence Cost",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Absence Cost"
+    }, {
+      "name" : "Absence Rate",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Absence Rate"
+    }, {
+      "name" : "Hourly Rate",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Hourly Rate"
+    }, {
+      "name" : "Monthly Salary",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Monthly Salary"
+    }, {
+      "name" : "Nps",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Nps"
+    }, {
+      "name" : "Overtime",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Overtime"
+    }, {
+      "name" : "Productivity",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Productivity"
+    }, {
+      "name" : "Satisfaction Index",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Satisfaction Index"
+    }, {
+      "name" : "Sick Leave Hours",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Sick Leave Hours"
+    }, {
+      "name" : "Training Efectiveness",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Training Efectiveness"
+    }, {
+      "name" : "Training Investment",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Training Investment"
+    }, {
+      "name" : "Vacation Days",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Vacation Days"
+    }, {
+      "name" : "Vacation Hours",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Vacation Hours"
+    }, {
+      "name" : "Headcount",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Headcount"
+    }, {
+      "name" : "Absence Cost Avg",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Absence Cost Avg"
+    }, {
+      "name" : "Sick Leave Hours Avg",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Sick Leave Hours Avg"
+    }, {
+      "name" : "Headcount/Year",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Headcount/Year"
+    }, {
+      "name" : "Absence Rate Target",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Absence Rate Target"
+    }, {
+      "name" : "Monthly Salary Target",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Monthly Salary Target"
+    }, {
+      "name" : "Productivity Target",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Productivity Target"
+    }, {
+      "name" : "Satisfaction Index Target",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Satisfaction Index Target"
+    }, {
+      "name" : "Cost Workforce",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Cost Workforce"
+    }, {
+      "name" : "% Vacation Days Used",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.% Vacation Days Used"
+    }, {
+      "name" : "Turn Over Rate",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Turn Over Rate",
+      "alternateNames" : [ "Employee Turn Over Rate" ]
+    }, {
+      "name" : "Active Headcount",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Active Headcount"
+    }, {
+      "name" : "Vacation Days/Employee",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Vacation Days/Employee"
+    }, {
+      "name" : "NPS Target",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.NPS Target"
+    }, {
+      "name" : "Overtime Target",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Overtime Target"
+    }, {
+      "name" : "Training Effectiveness Target",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Training Effectiveness Target",
+      "alternateNames" : [ "Training Efectiveness Target" ]
+    }, {
+      "name" : "Average Trainings Per Employee",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Average Trainings Per Employee"
+    }, {
+      "name" : "Training Effectiveness Target#1",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR.Fact Historical Data.Training Effectiveness Target"
+    } ]
+  }
+}

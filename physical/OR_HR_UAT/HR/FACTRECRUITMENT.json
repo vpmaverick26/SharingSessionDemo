@@ -1,0 +1,106 @@
+{
+  "physicalTable" : {
+    "name" : "FACTRECRUITMENT",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "APPLICATION",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "APPLICDATE",
+      "dataType" : "DATETIME",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DAYS_TO_HIRE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DECISION",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "DECLINEREASON",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "DEPARTMENT",
+      "dataType" : "VARCHAR",
+      "length" : 40,
+      "nullable" : true
+    }, {
+      "name" : "EMPLOYEEID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "HIRINGDATE",
+      "dataType" : "DATETIME",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "INTERVIEWDATE",
+      "dataType" : "DATETIME",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "OFFERDATE",
+      "dataType" : "DATETIME",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PHONEDATE",
+      "dataType" : "DATETIME",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "SOURCE",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "APPLICDATEKEY",
+      "dataType" : "DOUBLE",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "COST_TO_HIRE",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "POSITION_ID",
+      "dataType" : "DOUBLE",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "HIRINGDATE_KEY",
+      "dataType" : "DOUBLE",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "ENDDATE_KEY",
+      "dataType" : "DOUBLE",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "ENDDATE",
+      "dataType" : "DATETIME",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "COST_TO_HIRE_TARGET",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

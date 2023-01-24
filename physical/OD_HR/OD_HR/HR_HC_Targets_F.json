@@ -1,0 +1,47 @@
+{
+  "physicalTable": {
+    "name": "HR_HC_Targets_F",
+    "sourceTable": "physicalTable:OD_HR.OD_HR.W_HR_HC_TARGETS_F",
+    "caching": {
+      "enable": true
+    },
+    "joins": [      {
+        "useJoinExpression": true,
+        "rightTable": "physicalTable:OD_HR.OD_HR.DIMDATE",
+        "joinExpression": {
+          "expressionTemplate": "%1 = %2 * 100 + 1",
+          "expressionObjects": [
+            "physicalColumn:OD_HR.OD_HR.DIMDATE.DATENUM",
+            "physicalColumn:OD_HR.OD_HR.HR_HC_Targets_F.YEARMONTH"
+          ]
+        },
+        "cardinality": "MANY_TO_ONE",
+        "joinType": "INNER"
+      },
+      {
+        "rightTable": "physicalTable:OD_HR.OD_HR.W_GRADE_D",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OD_HR.OD_HR.HR_HC_Targets_F.GRADE",
+            "rightColumn": "physicalColumn:OD_HR.OD_HR.W_GRADE_D.GRADE"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:OD_HR.OD_HR.W_JOB_INFO_D",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OD_HR.OD_HR.HR_HC_Targets_F.JOB FAMILY",
+            "rightColumn": "physicalColumn:OD_HR.OD_HR.W_JOB_INFO_D.JOB_FAMILY_TX"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:OD_HR.OD_HR.W_LOCATION_D",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OD_HR.OD_HR.HR_HC_Targets_F.SITE_NAME",
+            "rightColumn": "physicalColumn:OD_HR.OD_HR.W_LOCATION_D.SITE_NAME"
+          }
+        ]
+      }
+    ]
+  }
+}

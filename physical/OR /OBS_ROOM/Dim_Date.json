@@ -1,0 +1,14 @@
+{
+  "physicalTable": {
+    "name": "Dim_Date",
+    "sourceTable": "physicalTable:OR .OBS_ROOM.OR_DIM_DATE",
+    "caching": {
+      "enable": true
+    },
+    "additionalKeys": [
+      [
+        "YEARQUARTER"
+      ]
+    ]
+  }
+}

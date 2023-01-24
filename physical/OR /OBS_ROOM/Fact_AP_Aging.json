@@ -1,0 +1,9 @@
+{
+  "physicalTable": {
+    "name": "Fact_AP_Aging",
+    "sourceTable": "physicalTable:OR .OBS_ROOM.AP_AGING",
+    "caching": {
+      "enable": true
+    }
+  }
+}

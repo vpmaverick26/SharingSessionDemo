@@ -1,0 +1,11 @@
+{
+  "subjectArea" : {
+    "name" : "OAC Usage - Cost by Time and Service",
+    "sourceBusinessModel" : "businessModel:OAC Cost And Usage",
+    "tableOrder" : [ {
+      "name" : "presentationTable:OAC Usage - Cost by Time and Service.Cost Date"
+    }, {
+      "name" : "presentationTable:OAC Usage - Cost by Time and Service.Cost by Time and Service"
+    } ]
+  }
+}

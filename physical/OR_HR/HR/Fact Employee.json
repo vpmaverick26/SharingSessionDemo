@@ -1,0 +1,18 @@
+{
+  "physicalTable": {
+    "name": "Fact Employee",
+    "sourceTable": "physicalTable:OR_HR.HR.WC_HR_EMPLOYEE_F",
+    "caching": {
+      "enable": true
+    },
+    "joins": [      {
+        "rightTable": "physicalTable:OR_HR.HR.Dim_Employee",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OR_HR.HR.Fact Employee.EMP_ID",
+            "rightColumn": "physicalColumn:OR_HR.HR.Dim_Employee.EMPLOYEEID"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "logicalTable" : {
+    "name" : "Dim Positions",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "PositionID" ],
+    "logicalColumns" : [ {
+      "name" : "Department",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Positions",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Positions.DEPARTMENT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "PositionID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Positions",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Positions.POSITION_ID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Positions Detail"
+    }, {
+      "name" : "Country",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Positions",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Positions.COUNTRY" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim_Positions",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OR_HR.HR.Dim_Positions" ]
+      },
+      "dataGranularity" : [ "logicalLevel:OR_HR.Dim Positions.Dim Positions Detail" ],
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Dim Positions Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Dim Positions Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Dim Positions Detail",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "PositionID" ],
+        "displayKey" : "PositionID"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Dim PositionsDim",
+        "levels" : [ "Dim Positions Total", "Dim Positions Detail" ]
+      } ]
+    }
+  }
+}

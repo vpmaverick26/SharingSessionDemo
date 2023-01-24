@@ -1,0 +1,85 @@
+{
+  "presentationTable" : {
+    "name" : "Dim Date",
+    "presentationColumns" : [ {
+      "name" : "CALENDAR_QUARTER",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Date.CALENDAR_QUARTER"
+    }, {
+      "name" : "DATE_",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Date.DATE_"
+    }, {
+      "name" : "DATENUM",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Date.DATENUM"
+    }, {
+      "name" : "DAYNAME",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Date.DAYNAME"
+    }, {
+      "name" : "DAYNUMOFMONTH",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Date.DAYNUMOFMONTH"
+    }, {
+      "name" : "DAYNUMOFQUARTER",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Date.DAYNUMOFQUARTER"
+    }, {
+      "name" : "DAYNUMOFWEEK",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Date.DAYNUMOFWEEK"
+    }, {
+      "name" : "DAYNUMOFYEAR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Date.DAYNUMOFYEAR"
+    }, {
+      "name" : "DAYSHORTNAME",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Date.DAYSHORTNAME"
+    }, {
+      "name" : "MONTHNAME",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Date.MONTHNAME"
+    }, {
+      "name" : "MONTHNUM",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Date.MONTHNUM"
+    }, {
+      "name" : "MONTHSHORTNAME",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Date.MONTHSHORTNAME"
+    }, {
+      "name" : "QUARTER",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Date.QUARTER"
+    }, {
+      "name" : "WEEKNUM",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Date.WEEKNUM"
+    }, {
+      "name" : "YEAR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Date.YEAR"
+    }, {
+      "name" : "YEARMONTHNUM",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Date.YEARMONTHNUM"
+    }, {
+      "name" : "YEARQUARTERNUM",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Date.YEARQUARTERNUM"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Dim DateDim",
+      "sourceLogicalTable" : "logicalTable:OD_CONTOSO.Dim Date",
+      "levels" : [ {
+        "name" : "Dim Date Total",
+        "sourceLogicalLevel" : "logicalLevel:OD_CONTOSO.Dim Date.Dim Date Total"
+      }, {
+        "name" : "Year",
+        "sourceLogicalLevel" : "logicalLevel:OD_CONTOSO.Dim Date.Year",
+        "displayColumn" : "presentationColumn:OD CONTOSO.Dim Date.YEAR"
+      }, {
+        "name" : "Quarter",
+        "sourceLogicalLevel" : "logicalLevel:OD_CONTOSO.Dim Date.Quarter",
+        "displayColumn" : "presentationColumn:OD CONTOSO.Dim Date.YEARQUARTERNUM"
+      }, {
+        "name" : "Month",
+        "sourceLogicalLevel" : "logicalLevel:OD_CONTOSO.Dim Date.Month",
+        "displayColumn" : "presentationColumn:OD CONTOSO.Dim Date.YEARMONTHNUM"
+      }, {
+        "name" : "Week",
+        "sourceLogicalLevel" : "logicalLevel:OD_CONTOSO.Dim Date.Week",
+        "displayColumn" : "presentationColumn:OD CONTOSO.Dim Date.WEEKNUM"
+      }, {
+        "name" : "Day",
+        "sourceLogicalLevel" : "logicalLevel:OD_CONTOSO.Dim Date.Day",
+        "displayColumn" : "presentationColumn:OD CONTOSO.Dim Date.DATE_"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "presentationTable" : {
+    "name" : "DIM_UAE_SITES",
+    "presentationColumns" : [ {
+      "name" : "COUNTRY_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_OIL.DIM_UAE_SITES.COUNTRY_TX"
+    }, {
+      "name" : "LATITUDE_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_OIL.DIM_UAE_SITES.LATITUDE_NR"
+    }, {
+      "name" : "LONGITUDE_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_OIL.DIM_UAE_SITES.LONGITUDE_NR"
+    }, {
+      "name" : "ROW_WID",
+      "sourceLogicalColumn" : "logicalColumn:OD_OIL.DIM_UAE_SITES.ROW_WID"
+    }, {
+      "name" : "SITE_NAME_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_OIL.DIM_UAE_SITES.SITE_NAME_TX"
+    } ]
+  }
+}

@@ -1,0 +1,418 @@
+{
+  "logicalTable" : {
+    "name" : "Dim Employee",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "EMPLOYEE_KEY_ID" ],
+    "logicalColumns" : [ {
+      "name" : "BASE_RATE_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Employee.BASE_RATE_NR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee"
+    }, {
+      "name" : "BIRTH_DATE_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Employee.BIRTH_DATE_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee"
+    }, {
+      "name" : "CURRENT_FLAG_BL",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Employee.CURRENT_FLAG_BL" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee"
+    }, {
+      "name" : "DEPARTMENT_NAME_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Employee.DEPARTMENT_NAME_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee"
+    }, {
+      "name" : "EMAIL_ADDRESS_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Employee.EMAIL_ADDRESS_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee"
+    }, {
+      "name" : "EMERGENCY_CONTACT_NAME_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Employee.EMERGENCY_CONTACT_NAME_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee"
+    }, {
+      "name" : "EMERGENCY_CONTACT_PHONE_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Employee.EMERGENCY_CONTACT_PHONE_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee"
+    }, {
+      "name" : "EMPLOYEE_KEY_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Employee.EMPLOYEE_KEY_ID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee"
+    }, {
+      "name" : "END_DATE_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Employee.END_DATE_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee"
+    }, {
+      "name" : "FIRST_NAME_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Employee.FIRST_NAME_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee"
+    }, {
+      "name" : "GENDER_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Employee.GENDER_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee"
+    }, {
+      "name" : "HIRE_DATE_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Employee.HIRE_DATE_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee"
+    }, {
+      "name" : "LAST_NAME_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Employee.LAST_NAME_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee"
+    }, {
+      "name" : "MARITAL_STATUS_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Employee.MARITAL_STATUS_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee"
+    }, {
+      "name" : "MIDDLE_NAME_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Employee.MIDDLE_NAME_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee"
+    }, {
+      "name" : "PARENT_EMPLOYEE_KEY_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Employee.PARENT_EMPLOYEE_KEY_ID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee"
+    }, {
+      "name" : "PAY_FREQUENCY_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Employee.PAY_FREQUENCY_NR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee"
+    }, {
+      "name" : "PHONE_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Employee.PHONE_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee"
+    }, {
+      "name" : "SALARIED_FLAG_BL",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Employee.SALARIED_FLAG_BL" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee"
+    }, {
+      "name" : "SALES_PERSON_FLAG_BL",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Employee.SALES_PERSON_FLAG_BL" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee"
+    }, {
+      "name" : "START_DATE_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Employee.START_DATE_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee"
+    }, {
+      "name" : "STATUS_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Employee.STATUS_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee"
+    }, {
+      "name" : "TITLE_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Employee.TITLE_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee"
+    }, {
+      "name" : "VACATION_HOURS_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Employee.VACATION_HOURS_NR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim Employee",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OD_CONTOSO.OD_CONTOSO.Dim Employee" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Dim Store Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Dim Store Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Dim Geography",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "GEOGRAPHY_KEY_ID" ],
+        "displayKey" : "GEOGRAPHY_KEY_ID"
+      }, {
+        "name" : "Dim Store Detail",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "STORE_KEY_ID" ],
+        "displayKey" : "STORE_KEY_ID"
+      }, {
+        "name" : "Dim Employee",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "EMPLOYEE_KEY_ID" ],
+        "displayKey" : "EMPLOYEE_KEY_ID"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Dim StoreDim",
+        "levels" : [ "Dim Store Total", "Dim Geography", "Dim Store Detail" ]
+      }, {
+        "name" : "Dim StoreDim",
+        "levels" : [ "Dim Store Total", "Dim Employee", "Dim Store Detail" ]
+      } ]
+    }
+  }
+}

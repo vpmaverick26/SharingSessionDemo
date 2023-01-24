@@ -1,0 +1,216 @@
+{
+  "logicalTable" : {
+    "name" : "Fact Inventory",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "AGING_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Inventory",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Inventory.AGING_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CURRENCY_KEY_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Inventory",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Inventory.CURRENCY_KEY_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DATE_KEY_ID",
+      "dataType" : "TIMESTAMP",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Inventory",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Inventory.DATE_KEY_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "DAYS_IN_STOCK_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Inventory",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Inventory.DAYS_IN_STOCK_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "INVENTORY_KEY_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Inventory",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Inventory.INVENTORY_KEY_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "MAX_DAY_IN_STOCK_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Inventory",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Inventory.MAX_DAY_IN_STOCK_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "MIN_DAY_IN_STOCK_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Inventory",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Inventory.MIN_DAY_IN_STOCK_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "ON_HAND_QUANTITY_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Inventory",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Inventory.ON_HAND_QUANTITY_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "ON_ORDER_QUANTITY_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Inventory",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Inventory.ON_ORDER_QUANTITY_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "PRODUCT_KEY_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Inventory",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Inventory.PRODUCT_KEY_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "SAFETY_STOCK_QUANTITY_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Inventory",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Inventory.SAFETY_STOCK_QUANTITY_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "STORE_KEY_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Inventory",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Inventory.STORE_KEY_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "UNIT_COST_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Inventory",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Inventory.UNIT_COST_NR" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Fact Inventory",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OD_CONTOSO.OD_CONTOSO.Fact Inventory" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "dataFilter" : {
+        "expressionTemplate" : "%1 <  CURRENT_TIMESTAMP(0)",
+        "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Inventory.DATE_KEY_ID" ]
+      },
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:OD_CONTOSO.Dim Date",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:OD_CONTOSO.Dim Product",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:OD_CONTOSO.Dim Store",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

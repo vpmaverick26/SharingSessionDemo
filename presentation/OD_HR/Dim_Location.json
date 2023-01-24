@@ -1,0 +1,42 @@
+{
+  "presentationTable" : {
+    "name" : "Dim_Location",
+    "presentationColumns" : [ {
+      "name" : "Address",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Location.Address"
+    }, {
+      "name" : "Annual Cost",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Location.Annual Cost"
+    }, {
+      "name" : "Capacity",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Location.Capacity"
+    }, {
+      "name" : "Country Code",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Location.Country Code"
+    }, {
+      "name" : "Country Name",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Location.Country Name"
+    }, {
+      "name" : "Latitude",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Location.Latitude"
+    }, {
+      "name" : "Longitude",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Location.Longitude"
+    }, {
+      "name" : "ROW_WID",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Location.ROW_WID"
+    }, {
+      "name" : "Salary Modifier",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Location.Salary Modifier"
+    }, {
+      "name" : "Site Name",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Location.Site Name"
+    }, {
+      "name" : "Site Picture",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Location.Site Picture"
+    }, {
+      "name" : "Site Type",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Location.Site Type"
+    } ]
+  }
+}

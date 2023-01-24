@@ -1,0 +1,19 @@
+{
+  "subjectArea" : {
+    "name" : "OR_HR",
+    "sourceBusinessModel" : "businessModel:OR_HR",
+    "tableOrder" : [ {
+      "name" : "presentationTable:OR_HR.Dim Date"
+    }, {
+      "name" : "presentationTable:OR_HR.Dim Employee"
+    }, {
+      "name" : "presentationTable:OR_HR.Fact Historical Data"
+    }, {
+      "name" : "presentationTable:OR_HR.Fact Recruitment"
+    }, {
+      "name" : "presentationTable:OR_HR.Dim Positions"
+    }, {
+      "name" : "presentationTable:OR_HR.Last Modification"
+    } ]
+  }
+}

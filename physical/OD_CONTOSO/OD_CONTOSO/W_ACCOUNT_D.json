@@ -1,0 +1,61 @@
+{
+  "physicalTable" : {
+    "name" : "W_ACCOUNT_D",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ACCOUNT_DESCRIPTION_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "ACCOUNT_KEY_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ACCOUNT_LABEL_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "ACCOUNT_NAME_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "ACCOUNT_TYPE_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "CUSTOM_MEMBERS_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "CUSTOM_MEMBER_OPTIONS_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "OPERATOR_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "PARENT_ACCOUNT_KEY_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "VALUE_TYPE_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

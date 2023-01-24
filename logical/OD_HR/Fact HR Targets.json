@@ -1,0 +1,61 @@
+{
+  "logicalTable" : {
+    "name" : "Fact HR Targets",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "Headcount Target",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HR_HC_Targets_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.HR_HC_Targets_F.HEADCOUNT_TARGET_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "BASED_ON_DIMENSION",
+        "dimensionBasedRules" : [ {
+          "dimension" : "OTHER",
+          "rule" : "SUM"
+        }, {
+          "dimension" : "logicalTable:OD_HR.Dim_Date",
+          "rule" : "LAST"
+        } ],
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:OD_HR.Dim_Date.Quarter" ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "HR_HC_Targets_F",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OD_HR.OD_HR.HR_HC_Targets_F" ]
+      },
+      "dataGranularity" : [ "logicalLevel:OD_HR.Dim_Generation.Dim_Generation Detail", "logicalLevel:OD_HR.Dim_Grade.Dim_Grade Detail", "logicalLevel:OD_HR.Dim_Job_Info.Dim_Job_Info Detail", "logicalLevel:OD_HR.Dim_Location.Dim_Location Detail", "logicalLevel:OD_HR.Dim_Org_Unit.Dim_Org_Unit Detail", "logicalLevel:OD_HR.Dim_Performance_Rating.Dim_Performance_Rating Detail", "logicalLevel:OD_HR.Dim_Date.Quarter" ],
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:OD_HR.Dim_Date",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:OD_HR.Dim_Grade",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:OD_HR.Dim_Job_Info",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:OD_HR.Dim_Location",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "logicalTable" : {
+    "name" : "Last Modification",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "Table Modified",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LAST_MODIFICATION_HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.LAST_MODIFICATION_HR.TABLE_MODIFIED" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Last Modification HR",
+      "dataType" : "TIMESTAMP",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LAST_MODIFICATION_HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.LAST_MODIFICATION_HR.LAST_MODIFICATION" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "MAX",
+        "dataIsDense" : false
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "LAST_MODIFICATION_HR",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OR_HR_UAT.HR.LAST_MODIFICATION_HR" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:OR_HR_UAT.Last Modification Date#1",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

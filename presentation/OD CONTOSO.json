@@ -1,0 +1,29 @@
+{
+  "subjectArea" : {
+    "name" : "OD CONTOSO",
+    "sourceBusinessModel" : "businessModel:OD_CONTOSO",
+    "tableOrder" : [ {
+      "name" : "presentationTable:OD CONTOSO.Dim Customer"
+    }, {
+      "name" : "presentationTable:OD CONTOSO.Dim Date"
+    }, {
+      "name" : "presentationTable:OD CONTOSO.Dim Employee"
+    }, {
+      "name" : "presentationTable:OD CONTOSO.Dim Geography"
+    }, {
+      "name" : "presentationTable:OD CONTOSO.Dim Product"
+    }, {
+      "name" : "presentationTable:OD CONTOSO.Dim Product Category"
+    }, {
+      "name" : "presentationTable:OD CONTOSO.Dim Product Subcategory"
+    }, {
+      "name" : "presentationTable:OD CONTOSO.Dim Promotion"
+    }, {
+      "name" : "presentationTable:OD CONTOSO.Dim Store"
+    }, {
+      "name" : "presentationTable:OD CONTOSO.Fact Inventory"
+    }, {
+      "name" : "presentationTable:OD CONTOSO.Fact Online Sales"
+    } ]
+  }
+}

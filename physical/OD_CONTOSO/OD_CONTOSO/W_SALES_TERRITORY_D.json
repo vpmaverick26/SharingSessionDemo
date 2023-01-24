@@ -1,0 +1,71 @@
+{
+  "physicalTable" : {
+    "name" : "W_SALES_TERRITORY_D",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "END_DATE_DT",
+      "dataType" : "TIMESTAMP",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "GEOGRAPHY_KEY_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "SALES_TERRITORY_COUNTRY_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "SALES_TERRITORY_GROUP_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "SALES_TERRITORY_KEY_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "SALES_TERRITORY_LABEL_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "SALES_TERRITORY_LEVEL_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "SALES_TERRITORY_MANAGER_NR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "SALES_TERRITORY_NAME_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "SALES_TERRITORY_REGION_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "START_DATE_DT",
+      "dataType" : "TIMESTAMP",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "STATUS_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

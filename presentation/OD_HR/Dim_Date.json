@@ -1,0 +1,77 @@
+{
+  "presentationTable" : {
+    "name" : "Dim_Date",
+    "presentationColumns" : [ {
+      "name" : "Calendar Quarter",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Date.Calendar Quarter"
+    }, {
+      "name" : "Date",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Date.Date"
+    }, {
+      "name" : "Date Num",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Date.Date Num"
+    }, {
+      "name" : "Day Name",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Date.Day Name"
+    }, {
+      "name" : "Day Num of Month",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Date.Day Num of Month"
+    }, {
+      "name" : "Day Num of Quarter",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Date.Day Num of Quarter"
+    }, {
+      "name" : "Day Num of Week",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Date.Day Num of Week"
+    }, {
+      "name" : "Day Num of Year",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Date.Day Num of Year"
+    }, {
+      "name" : "Day Short Name",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Date.Day Short Name"
+    }, {
+      "name" : "Month Name",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Date.Month Name"
+    }, {
+      "name" : "Month Num",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Date.Month Num"
+    }, {
+      "name" : "Month Short Name",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Date.Month Short Name"
+    }, {
+      "name" : "Quarter",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Date.Quarter"
+    }, {
+      "name" : "Week Num",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Date.Week Num"
+    }, {
+      "name" : "Year",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Date.Year"
+    }, {
+      "name" : "Year Month Num",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Date.Year Month Num"
+    }, {
+      "name" : "Year Quarter Num",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Date.Year Quarter Num"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Dim Time",
+      "sourceLogicalTable" : "logicalTable:OD_HR.Dim_Date",
+      "levels" : [ {
+        "name" : "Dim Date Total",
+        "sourceLogicalLevel" : "logicalLevel:OD_HR.Dim_Date.Dim Date Total"
+      }, {
+        "name" : "Year",
+        "sourceLogicalLevel" : "logicalLevel:OD_HR.Dim_Date.Year",
+        "displayColumn" : "presentationColumn:OD_HR.Dim_Date.Year"
+      }, {
+        "name" : "Quarter",
+        "sourceLogicalLevel" : "logicalLevel:OD_HR.Dim_Date.Quarter",
+        "displayColumn" : "presentationColumn:OD_HR.Dim_Date.Quarter"
+      }, {
+        "name" : "Month",
+        "sourceLogicalLevel" : "logicalLevel:OD_HR.Dim_Date.Month",
+        "displayColumn" : "presentationColumn:OD_HR.Dim_Date.Month Num"
+      } ]
+    } ]
+  }
+}

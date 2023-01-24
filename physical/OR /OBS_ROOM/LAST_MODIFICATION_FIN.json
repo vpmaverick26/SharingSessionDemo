@@ -1,0 +1,21 @@
+{
+  "physicalTable" : {
+    "name" : "LAST_MODIFICATION_FIN",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "LAST_MODIFICATION",
+      "dataType" : "TIMESTAMP",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "TABLE_MODIFIED",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

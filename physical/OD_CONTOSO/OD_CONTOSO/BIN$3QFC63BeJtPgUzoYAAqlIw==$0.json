@@ -1,0 +1,10 @@
+{
+  "physicalTable" : {
+    "name" : "BIN$3QFC63BeJtPgUzoYAAqlIw==$0",
+    "sourceType" : "TABLE",
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

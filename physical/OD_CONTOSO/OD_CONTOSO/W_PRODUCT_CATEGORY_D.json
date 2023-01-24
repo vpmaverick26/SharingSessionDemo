@@ -1,0 +1,31 @@
+{
+  "physicalTable" : {
+    "name" : "W_PRODUCT_CATEGORY_D",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "PRODUCT_CATEGORY_DESCRIPTION_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "PRODUCT_CATEGORY_KEY_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PRODUCT_CATEGORY_LABEL_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "PRODUCT_CATEGORY_NAME_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

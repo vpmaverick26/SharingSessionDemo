@@ -1,0 +1,66 @@
+{
+  "presentationTable" : {
+    "name" : "Dim Store",
+    "presentationColumns" : [ {
+      "name" : "ADDRESS_LINE_1TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Store.ADDRESS_LINE_1TX"
+    }, {
+      "name" : "ADDRESS_LINE_2TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Store.ADDRESS_LINE_2TX"
+    }, {
+      "name" : "CLOSE_DATE_DT",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Store.CLOSE_DATE_DT"
+    }, {
+      "name" : "CLOSE_REASON_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Store.CLOSE_REASON_TX"
+    }, {
+      "name" : "EMPLOYEE_COUNT_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Store.EMPLOYEE_COUNT_NR"
+    }, {
+      "name" : "ENTITY_KEY_ID",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Store.ENTITY_KEY_ID"
+    }, {
+      "name" : "GEOGRAPHY_KEY_ID",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Store.GEOGRAPHY_KEY_ID"
+    }, {
+      "name" : "LAST_REMODEL_DATE_DT",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Store.LAST_REMODEL_DATE_DT"
+    }, {
+      "name" : "OPEN_DATE_DT",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Store.OPEN_DATE_DT"
+    }, {
+      "name" : "SELLING_AREA_SIZE_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Store.SELLING_AREA_SIZE_NR"
+    }, {
+      "name" : "STATUS_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Store.STATUS_TX"
+    }, {
+      "name" : "STORE_DESCRIPTION_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Store.STORE_DESCRIPTION_TX"
+    }, {
+      "name" : "STORE_FAX_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Store.STORE_FAX_TX"
+    }, {
+      "name" : "STORE_KEY_ID",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Store.STORE_KEY_ID"
+    }, {
+      "name" : "STORE_MANAGER_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Store.STORE_MANAGER_NR"
+    }, {
+      "name" : "STORE_NAME_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Store.STORE_NAME_TX"
+    }, {
+      "name" : "STORE_PHONE_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Store.STORE_PHONE_TX"
+    }, {
+      "name" : "STORE_TYPE_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Store.STORE_TYPE_TX"
+    }, {
+      "name" : "ZIP_CODE_EXTENSION_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Store.ZIP_CODE_EXTENSION_TX"
+    }, {
+      "name" : "ZIP_CODE_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Store.ZIP_CODE_TX"
+    } ]
+  }
+}

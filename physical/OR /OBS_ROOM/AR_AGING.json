@@ -1,0 +1,36 @@
+{
+  "physicalTable" : {
+    "name" : "AR_AGING",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "AGING_AMOUNT_INVOICE_DATE_BASIS",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "AGING_BUCKET_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "CUSTOMER_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 128,
+      "nullable" : true
+    }, {
+      "name" : "FISCAL_QUARTER",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "LEGAL_ENTITY_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

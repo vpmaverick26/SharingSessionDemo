@@ -1,0 +1,218 @@
+{
+  "logicalTable" : {
+    "name" : "Dim Promotion",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "PROMOTION_KEY_ID" ],
+    "logicalColumns" : [ {
+      "name" : "DISCOUNT_PERCENT_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Promotion",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Promotion.DISCOUNT_PERCENT_NR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Promotion Detail"
+    }, {
+      "name" : "END_DATE_DT",
+      "dataType" : "TIMESTAMP",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Promotion",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Promotion.END_DATE_DT" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Promotion Detail"
+    }, {
+      "name" : "MAX_QUANTITY_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Promotion",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Promotion.MAX_QUANTITY_NR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Promotion Detail"
+    }, {
+      "name" : "MIN_QUANTITY_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Promotion",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Promotion.MIN_QUANTITY_NR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Promotion Detail"
+    }, {
+      "name" : "PROMOTION_CATEGORY_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Promotion",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Promotion.PROMOTION_CATEGORY_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Promotion Detail"
+    }, {
+      "name" : "PROMOTION_DESCRIPTION_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Promotion",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Promotion.PROMOTION_DESCRIPTION_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Promotion Detail"
+    }, {
+      "name" : "PROMOTION_KEY_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Promotion",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Promotion.PROMOTION_KEY_ID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Promotion Detail"
+    }, {
+      "name" : "PROMOTION_LABEL_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Promotion",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Promotion.PROMOTION_LABEL_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Promotion Detail"
+    }, {
+      "name" : "PROMOTION_NAME_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Promotion",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Promotion.PROMOTION_NAME_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Promotion Detail"
+    }, {
+      "name" : "PROMOTION_TYPE_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Promotion",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Promotion.PROMOTION_TYPE_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Promotion Detail"
+    }, {
+      "name" : "START_DATE_DT",
+      "dataType" : "TIMESTAMP",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Promotion",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Promotion.START_DATE_DT" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Promotion Detail"
+    }, {
+      "name" : "Promotion Lenght",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "1 * (%1 - %2)",
+          "expressionObjects" : [ "logicalColumn:OD_CONTOSO.Dim Promotion.END_DATE_DT", "logicalColumn:OD_CONTOSO.Dim Promotion.START_DATE_DT" ]
+        }
+      },
+      "logicalLevel" : "Dim Promotion Detail"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim Promotion",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OD_CONTOSO.OD_CONTOSO.Dim Promotion" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Dim Promotion Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Dim Promotion Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Dim Promotion Detail",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "PROMOTION_KEY_ID" ],
+        "displayKey" : "PROMOTION_KEY_ID"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Dim PromotionDim",
+        "levels" : [ "Dim Promotion Total", "Dim Promotion Detail" ]
+      } ]
+    }
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "physicalTable" : {
+    "name" : "FACTHISTORICALDATA",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ABSENCECOST",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "ABSENCERATE",
+      "dataType" : "DOUBLE",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "DATEKEY",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "DATE_",
+      "dataType" : "DATETIME",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "DEPARTMENT",
+      "dataType" : "VARCHAR",
+      "length" : 40,
+      "nullable" : true
+    }, {
+      "name" : "EMPLOYEEID",
+      "dataType" : "DOUBLE",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "HOURLYRATE",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "MONTHLYSALARY",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "NPS",
+      "dataType" : "DOUBLE",
+      "length" : 2,
+      "nullable" : true
+    }, {
+      "name" : "OVERTIME",
+      "dataType" : "INT",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "PRODUCTIVITY",
+      "dataType" : "DOUBLE",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "SATISFACTIONINDEX",
+      "dataType" : "DOUBLE",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "SICKLEAVEHOURS",
+      "dataType" : "INT",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "TRAININGEFECTIVENESS",
+      "dataType" : "DOUBLE",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "TRAININGINVESTMENT",
+      "dataType" : "INT",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "VACATIONDAYS",
+      "dataType" : "DOUBLE",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "VACATIONHOURS",
+      "dataType" : "DOUBLE",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "ABSENCE_RATE_TARGET",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "MONTHLY_SALARY_TARGET",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "PRODUCTIVITY_TARGET",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "SATISFACTION_INDEX_TARGET",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "NPS_TARGET",
+      "dataType" : "DOUBLE",
+      "length" : 2,
+      "nullable" : true
+    }, {
+      "name" : "OVERTIME_TARGET",
+      "dataType" : "INT",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "TRAINING_EFFECTIVENESS_TARGET",
+      "dataType" : "DOUBLE",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "TRAININGS_PER_EMPLOYEE",
+      "dataType" : "DOUBLE",
+      "length" : 3,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

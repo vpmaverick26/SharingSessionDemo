@@ -1,0 +1,72 @@
+{
+  "physicalTable" : {
+    "name" : "W_LOCATION_D",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "LONGITUDE",
+      "dataType" : "DOUBLE",
+      "length" : 126,
+      "nullable" : true
+    }, {
+      "name" : "ROW_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "SALARY_MODIFIER_NR",
+      "dataType" : "DOUBLE",
+      "length" : 126,
+      "nullable" : true
+    }, {
+      "name" : "SITE_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "SITE_PICTURE",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "SITE_TYPE_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "ADDRESS_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "ANNUAL_COST_NR",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "CAPACITY_NR",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "COUNTRY_ISO_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "COUNTRY_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "LATITUDE",
+      "dataType" : "DOUBLE",
+      "length" : 126,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "SITE_NAME" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

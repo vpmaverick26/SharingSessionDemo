@@ -1,0 +1,26 @@
+{
+  "physicalTable" : {
+    "name" : "OR_DIM_DATE",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "QUARTER",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "YEAR",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "YEARQUARTER",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

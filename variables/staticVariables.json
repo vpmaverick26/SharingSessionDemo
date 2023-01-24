@@ -1,0 +1,26 @@
+{
+  "initBlock" : {
+    "name" : "staticVariables",
+    "description" : "rpd repository static variables",
+    "type" : "STATIC",
+    "variables" : [ {
+      "name" : "People in Shops Static",
+      "value" : "3400"
+    }, {
+      "name" : "DAYS_TO_MONTHS_FACTOR",
+      "value" : "0.0328549112d"
+    }, {
+      "name" : "Last_Expense_Month",
+      "value" : "2012 / 1"
+    }, {
+      "name" : "DAYS_TO_YEARS_FACTOR",
+      "value" : "0.002737909d"
+    }, {
+      "name" : "COUNTRY",
+      "value" : "'Spain'"
+    }, {
+      "name" : "People in Shops",
+      "value" : "3400"
+    } ]
+  }
+}

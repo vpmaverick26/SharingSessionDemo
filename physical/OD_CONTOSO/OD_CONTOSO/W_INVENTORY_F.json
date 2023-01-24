@@ -1,0 +1,76 @@
+{
+  "physicalTable" : {
+    "name" : "W_INVENTORY_F",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "AGING_NR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CURRENCY_KEY_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DATE_KEY_ID",
+      "dataType" : "TIMESTAMP",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DAYS_IN_STOCK_NR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "INVENTORY_KEY_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "MAX_DAY_IN_STOCK_NR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "MIN_DAY_IN_STOCK_NR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ON_HAND_QUANTITY_NR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ON_ORDER_QUANTITY_NR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PRODUCT_KEY_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "SAFETY_STOCK_QUANTITY_NR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "STORE_KEY_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "UNIT_COST_NR",
+      "dataType" : "DOUBLE",
+      "length" : 126,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

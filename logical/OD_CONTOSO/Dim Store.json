@@ -1,0 +1,367 @@
+{
+  "logicalTable" : {
+    "name" : "Dim Store",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "STORE_KEY_ID" ],
+    "logicalColumns" : [ {
+      "name" : "ADDRESS_LINE_1TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Store",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Store.ADDRESS_LINE_1TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Store Detail"
+    }, {
+      "name" : "ADDRESS_LINE_2TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Store",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Store.ADDRESS_LINE_2TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Store Detail"
+    }, {
+      "name" : "CLOSE_DATE_DT",
+      "dataType" : "TIMESTAMP",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Store",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Store.CLOSE_DATE_DT" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Store Detail"
+    }, {
+      "name" : "CLOSE_REASON_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Store",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Store.CLOSE_REASON_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Store Detail"
+    }, {
+      "name" : "EMPLOYEE_COUNT_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Store",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Store.EMPLOYEE_COUNT_NR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Store Detail"
+    }, {
+      "name" : "ENTITY_KEY_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Store",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Store.ENTITY_KEY_ID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Store Detail"
+    }, {
+      "name" : "GEOGRAPHY_KEY_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Store",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Store.GEOGRAPHY_KEY_ID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Store Detail"
+    }, {
+      "name" : "LAST_REMODEL_DATE_DT",
+      "dataType" : "TIMESTAMP",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Store",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Store.LAST_REMODEL_DATE_DT" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Store Detail"
+    }, {
+      "name" : "OPEN_DATE_DT",
+      "dataType" : "TIMESTAMP",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Store",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Store.OPEN_DATE_DT" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Store Detail"
+    }, {
+      "name" : "SELLING_AREA_SIZE_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Store",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Store.SELLING_AREA_SIZE_NR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Store Detail"
+    }, {
+      "name" : "STATUS_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Store",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Store.STATUS_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Store Detail"
+    }, {
+      "name" : "STORE_DESCRIPTION_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Store",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Store.STORE_DESCRIPTION_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Store Detail"
+    }, {
+      "name" : "STORE_FAX_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Store",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Store.STORE_FAX_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Store Detail"
+    }, {
+      "name" : "STORE_KEY_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Store",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Store.STORE_KEY_ID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Store Detail"
+    }, {
+      "name" : "STORE_MANAGER_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Store",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Store.STORE_MANAGER_NR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Store Detail"
+    }, {
+      "name" : "STORE_NAME_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Store",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Store.STORE_NAME_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Store Detail"
+    }, {
+      "name" : "STORE_PHONE_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Store",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Store.STORE_PHONE_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Store Detail"
+    }, {
+      "name" : "STORE_TYPE_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Store",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Store.STORE_TYPE_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Store Detail"
+    }, {
+      "name" : "ZIP_CODE_EXTENSION_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Store",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Store.ZIP_CODE_EXTENSION_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Store Detail"
+    }, {
+      "name" : "ZIP_CODE_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Store",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Store.ZIP_CODE_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Store Detail"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim Store",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OD_CONTOSO.OD_CONTOSO.Dim Store" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Dim Store Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Dim Store Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Dim Geography",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "GEOGRAPHY_KEY_ID" ],
+        "displayKey" : "GEOGRAPHY_KEY_ID"
+      }, {
+        "name" : "Dim Store Detail",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "STORE_KEY_ID" ],
+        "displayKey" : "STORE_KEY_ID"
+      }, {
+        "name" : "Dim Employee",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "EMPLOYEE_KEY_ID" ],
+        "displayKey" : "EMPLOYEE_KEY_ID"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Dim StoreDim",
+        "levels" : [ "Dim Store Total", "Dim Geography", "Dim Store Detail" ]
+      }, {
+        "name" : "Dim StoreDim",
+        "levels" : [ "Dim Store Total", "Dim Employee", "Dim Store Detail" ]
+      } ]
+    },
+    "joins" : [ {
+      "rightTable" : "logicalTable:OD_CONTOSO.Dim Employee",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:OD_CONTOSO.Dim Geography",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

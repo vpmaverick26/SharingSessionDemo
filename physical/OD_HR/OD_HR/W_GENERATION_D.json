@@ -1,0 +1,42 @@
+{
+  "physicalTable" : {
+    "name" : "W_GENERATION_D",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "GENERATION_DESC_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "ORDER_NR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ROW_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "YEAR_END_NR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "YEAR_START_NR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "GENERATION_YEARS_DESC_TX",
+      "dataType" : "VARCHAR",
+      "length" : 30,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "GENERATION_DESC_TX" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

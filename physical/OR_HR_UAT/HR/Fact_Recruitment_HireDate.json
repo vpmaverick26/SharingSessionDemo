@@ -1,0 +1,34 @@
+{
+  "physicalTable": {
+    "name": "Fact_Recruitment_HireDate",
+    "sourceTable": "physicalTable:OR_HR_UAT.HR.FACTRECRUITMENT",
+    "caching": {
+      "enable": true
+    },
+    "joins": [      {
+        "rightTable": "physicalTable:OR_HR_UAT.HR.Dim_Date",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OR_HR_UAT.HR.Fact_Recruitment_HireDate.HIRINGDATE_KEY",
+            "rightColumn": "physicalColumn:OR_HR_UAT.HR.Dim_Date.DATENUM"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:OR_HR_UAT.HR.Dim_Employee",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OR_HR_UAT.HR.Fact_Recruitment_HireDate.EMPLOYEEID",
+            "rightColumn": "physicalColumn:OR_HR_UAT.HR.Dim_Employee.EMPLOYEEID"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:OR_HR_UAT.HR.Dim_Positions",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OR_HR_UAT.HR.Fact_Recruitment_HireDate.POSITION_ID",
+            "rightColumn": "physicalColumn:OR_HR_UAT.HR.Dim_Positions.POSITION_ID"
+          }
+        ]
+      }
+    ]
+  }
+}

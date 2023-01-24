@@ -1,0 +1,326 @@
+{
+  "logicalTable" : {
+    "name" : "W_OIL_BRAZIL_F",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "ASSOCIATED_PETROLEUM_GAS_MM3_NR)",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "W_OIL_BRAZIL_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_OIL.OD_OIL.W_OIL_BRAZIL_F.ASSOCIATED_PETROLEUM_GAS_MM3_NR)" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "BASIN_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "W_OIL_BRAZIL_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_OIL.OD_OIL.W_OIL_BRAZIL_F.BASIN_TX" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CO2_INJECTION_MM3_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "W_OIL_BRAZIL_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_OIL.OD_OIL.W_OIL_BRAZIL_F.CO2_INJECTION_MM3_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CONDENSATE_OIL_M3_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "W_OIL_BRAZIL_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_OIL.OD_OIL.W_OIL_BRAZIL_F.CONDENSATE_OIL_M3_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "ENVIRONMENT_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "W_OIL_BRAZIL_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_OIL.OD_OIL.W_OIL_BRAZIL_F.ENVIRONMENT_TX" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "FIELD_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "W_OIL_BRAZIL_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_OIL.OD_OIL.W_OIL_BRAZIL_F.FIELD_TX" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "GAS_INJECTION_MM3_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "W_OIL_BRAZIL_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_OIL.OD_OIL.W_OIL_BRAZIL_F.GAS_INJECTION_MM3_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "INSTALLATION_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "W_OIL_BRAZIL_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_OIL.OD_OIL.W_OIL_BRAZIL_F.INSTALLATION_TX" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "MONTH_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "W_OIL_BRAZIL_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_OIL.OD_OIL.W_OIL_BRAZIL_F.MONTH_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "NITROGEN_INJECTION_MM3_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "W_OIL_BRAZIL_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_OIL.OD_OIL.W_OIL_BRAZIL_F.NITROGEN_INJECTION_MM3_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "NON_ASSOCIATED_PETROLEUM_GAS_MM3_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "W_OIL_BRAZIL_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_OIL.OD_OIL.W_OIL_BRAZIL_F.NON_ASSOCIATED_PETROLEUM_GAS_MM3_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "OIL_M3_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "W_OIL_BRAZIL_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_OIL.OD_OIL.W_OIL_BRAZIL_F.OIL_M3_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "OTHER_FLUIDS_INJECTION_M3_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "W_OIL_BRAZIL_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_OIL.OD_OIL.W_OIL_BRAZIL_F.OTHER_FLUIDS_INJECTION_M3_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "POLYMER_INJECTION_M3_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "W_OIL_BRAZIL_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_OIL.OD_OIL.W_OIL_BRAZIL_F.POLYMER_INJECTION_M3_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "SECONDARY_RECOVERY_WATER_INJECTION_M3",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "W_OIL_BRAZIL_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_OIL.OD_OIL.W_OIL_BRAZIL_F.SECONDARY_RECOVERY_WATER_INJECTION_M3" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "STATE_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "W_OIL_BRAZIL_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_OIL.OD_OIL.W_OIL_BRAZIL_F.STATE_TX" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "STEAM_INJECTION_T_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "W_OIL_BRAZIL_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_OIL.OD_OIL.W_OIL_BRAZIL_F.STEAM_INJECTION_T_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "WASTEWATER_INJECTION_M3_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "W_OIL_BRAZIL_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_OIL.OD_OIL.W_OIL_BRAZIL_F.WASTEWATER_INJECTION_M3_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "WATER_M3_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "W_OIL_BRAZIL_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_OIL.OD_OIL.W_OIL_BRAZIL_F.WATER_M3_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "WELL_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "W_OIL_BRAZIL_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_OIL.OD_OIL.W_OIL_BRAZIL_F.WELL_TX" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "WELL_WID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "W_OIL_BRAZIL_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_OIL.OD_OIL.W_OIL_BRAZIL_F.WELL_WID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "YEAR_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "W_OIL_BRAZIL_F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_OIL.OD_OIL.W_OIL_BRAZIL_F.YEAR_NR" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "W_OIL_BRAZIL_F",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OD_OIL.OD_OIL.W_OIL_BRAZIL_F" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "primaryKey" : [ "WELL_WID" ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "physicalTable": {
+    "name": "Dim Promotion",
+    "sourceTable": "physicalTable:OD_CONTOSO.OD_CONTOSO.W_PROMOTION_D",
+    "caching": {
+      "enable": true
+    },
+    "additionalKeys": [
+      [
+        "PROMOTION_KEY_ID"
+      ]
+    ]
+  }
+}

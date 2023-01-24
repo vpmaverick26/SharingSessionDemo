@@ -1,0 +1,91 @@
+{
+  "physicalTable" : {
+    "name" : "WC_HR_EMPLOYEE_F",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "AGE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "AGE_GROUP",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "BAD_HIRE",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "DATE_KEY",
+      "dataType" : "DATETIME",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "EMP_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ETHNIC_GROUP",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "GENDER",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "HIRE_DATE",
+      "dataType" : "DATETIME",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "IS_NEW_HIRE",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "PAY_TYPE",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "REGION",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "TENURE_DAYS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TENURE_MONTHS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TERM_DATE",
+      "dataType" : "DATETIME",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TERM_REASON",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "WORK_TYPE",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

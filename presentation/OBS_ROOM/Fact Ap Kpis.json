@@ -1,0 +1,42 @@
+{
+  "presentationTable" : {
+    "name" : "Fact Ap Kpis",
+    "presentationColumns" : [ {
+      "name" : "Ap Turnover",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Ap Kpis.Ap Turnover",
+      "alternateNames" : [ "AP_TURNOVER" ]
+    }, {
+      "name" : "Avg Invoices Amount",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Ap Kpis.Avg Invoices Amount",
+      "alternateNames" : [ "AVG_INVOICES_AMOUNT" ]
+    }, {
+      "name" : "Days Payables Outstanding",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Ap Kpis.Days Payables Outstanding",
+      "alternateNames" : [ "DAYS_PAYABLES_OUTSTANDING" ]
+    }, {
+      "name" : "Fiscal Quarter",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Ap Kpis.Fiscal Quarter",
+      "alternateNames" : [ "FISCAL_QUARTER" ]
+    }, {
+      "name" : "Invoices Count",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Ap Kpis.Invoices Count",
+      "alternateNames" : [ "INVOICES_COUNT" ]
+    }, {
+      "name" : "Legal Entity Name",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Ap Kpis.Legal Entity Name",
+      "alternateNames" : [ "LEGAL_ENTITY_NAME" ]
+    }, {
+      "name" : "Overdue Amount",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Ap Kpis.Overdue Amount",
+      "alternateNames" : [ "OVERDUE_AMOUNT" ]
+    }, {
+      "name" : "Supplier Name",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Ap Kpis.Supplier Name",
+      "alternateNames" : [ "SUPPLIER_NAME" ]
+    }, {
+      "name" : "Total Amount",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Ap Kpis.Total Amount",
+      "alternateNames" : [ "TOTAL_AMOUNT" ]
+    } ]
+  }
+}

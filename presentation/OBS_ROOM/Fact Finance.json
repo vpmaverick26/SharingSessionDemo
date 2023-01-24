@@ -1,0 +1,81 @@
+{
+  "presentationTable" : {
+    "name" : "Fact Finance",
+    "presentationColumns" : [ {
+      "name" : "CAPEX",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.CAPEX"
+    }, {
+      "name" : "Cash",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Cash"
+    }, {
+      "name" : "EBITDA",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.EBITDA"
+    }, {
+      "name" : "Gross Profit",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Gross Profit"
+    }, {
+      "name" : "Net Income",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Net Income"
+    }, {
+      "name" : "Net Working Capital",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Net Working Capital"
+    }, {
+      "name" : "Payroll Cost",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Payroll Cost"
+    }, {
+      "name" : "Revenue",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Revenue"
+    }, {
+      "name" : "Total Assets",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Total Assets"
+    }, {
+      "name" : "Total Liabilities",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Total Liabilities"
+    }, {
+      "name" : "COGS",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.COGS"
+    }, {
+      "name" : "ROE",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.ROE"
+    }, {
+      "name" : "OPEX",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.OPEX"
+    }, {
+      "name" : "ROA",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.ROA"
+    }, {
+      "name" : "Net Income Margin",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Net Income Margin"
+    }, {
+      "name" : "Debt To Equity Ratio",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Debt To Equity Ratio"
+    }, {
+      "name" : "Current Ratio",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Current Ratio"
+    }, {
+      "name" : "Gross Profit Margin",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Gross Profit Margin"
+    }, {
+      "name" : "Quick Ratio",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Quick Ratio"
+    }, {
+      "name" : "Balancing Segment Description",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Balancing Segment Description"
+    }, {
+      "name" : "Cost Center Description",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Cost Center Description"
+    }, {
+      "name" : "Fiscal Quarter",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Fiscal Quarter"
+    }, {
+      "name" : "Fiscal Year",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Fiscal Year"
+    }, {
+      "name" : "Legal Entity Name",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Legal Entity Name"
+    }, {
+      "name" : "Net Income Margin YAGO",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Net Income Margin YAGO"
+    } ]
+  }
+}

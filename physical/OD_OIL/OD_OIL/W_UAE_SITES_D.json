@@ -1,0 +1,44 @@
+{
+  "physicalTable" : {
+    "name" : "W_UAE_SITES_D",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "COUNTRY_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "LATITUDE_NR",
+      "dataType" : "DOUBLE",
+      "length" : 126,
+      "nullable" : true
+    }, {
+      "name" : "LONGITUDE_NR",
+      "dataType" : "DOUBLE",
+      "length" : 126,
+      "nullable" : true
+    }, {
+      "name" : "ROW_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "SITE_NAME_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:OD_OIL.OD_OIL.W_OIL_BRAZIL_F",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:OD_OIL.OD_OIL.W_UAE_SITES_D.ROW_WID",
+        "rightColumn" : "physicalColumn:OD_OIL.OD_OIL.W_OIL_BRAZIL_F.WELL_WID"
+      } ]
+    } ]
+  }
+}

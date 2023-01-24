@@ -1,0 +1,11 @@
+{
+  "subjectArea" : {
+    "name" : "OD_OIL",
+    "sourceBusinessModel" : "businessModel:OD_OIL",
+    "tableOrder" : [ {
+      "name" : "presentationTable:OD_OIL.FACT_OIL_BRAZIL"
+    }, {
+      "name" : "presentationTable:OD_OIL.DIM_UAE_SITES"
+    } ]
+  }
+}

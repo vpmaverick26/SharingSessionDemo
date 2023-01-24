@@ -1,0 +1,9 @@
+{
+  "physicalTable": {
+    "name": "Fact_AP_KPIs",
+    "sourceTable": "physicalTable:OR .OBS_ROOM.AP_KPIS",
+    "caching": {
+      "enable": true
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "presentationTable" : {
+    "name" : "Fact Ar Kpis",
+    "presentationColumns" : [ {
+      "name" : "Ar Turnover",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Ar Kpis.Ar Turnover",
+      "alternateNames" : [ "AR_TURNOVER" ]
+    }, {
+      "name" : "Avg Recipet Amount",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Ar Kpis.Avg Recipet Amount",
+      "alternateNames" : [ "AVG_RECIPET_AMOUNT" ]
+    }, {
+      "name" : "Customer Name",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Ar Kpis.Customer Name",
+      "alternateNames" : [ "CUSTOMER_NAME" ]
+    }, {
+      "name" : "Days Sales Outstanding",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Ar Kpis.Days Sales Outstanding",
+      "alternateNames" : [ "DAYS_SALES_OUTSTANDING" ]
+    }, {
+      "name" : "Fiscal Quarter",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Ar Kpis.Fiscal Quarter",
+      "alternateNames" : [ "FISCAL_QUARTER" ]
+    }, {
+      "name" : "Legal Entity Name",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Ar Kpis.Legal Entity Name",
+      "alternateNames" : [ "LEGAL_ENTITY_NAME" ]
+    }, {
+      "name" : "Overdue Amount",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Ar Kpis.Overdue Amount",
+      "alternateNames" : [ "OVERDUE_AMOUNT" ]
+    }, {
+      "name" : "Reciepts Count",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Ar Kpis.Reciepts Count",
+      "alternateNames" : [ "RECIEPTS_COUNT" ]
+    }, {
+      "name" : "Total Amount",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Ar Kpis.Total Amount",
+      "alternateNames" : [ "TOTAL_AMOUNT" ]
+    } ]
+  }
+}

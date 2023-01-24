@@ -1,0 +1,9 @@
+{
+  "physicalTable": {
+    "name": "FACT_OIL_BRAZIL",
+    "sourceTable": "physicalTable:OD_OIL.OD_OIL.W_OIL_BRAZIL_F",
+    "caching": {
+      "enable": true
+    }
+  }
+}

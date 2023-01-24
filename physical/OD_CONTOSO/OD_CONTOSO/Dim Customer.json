@@ -1,0 +1,14 @@
+{
+  "physicalTable": {
+    "name": "Dim Customer",
+    "sourceTable": "physicalTable:OD_CONTOSO.OD_CONTOSO.W_CUSTOMER_D",
+    "caching": {
+      "enable": true
+    },
+    "additionalKeys": [
+      [
+        "CUSTOMER_KEY_ID"
+      ]
+    ]
+  }
+}

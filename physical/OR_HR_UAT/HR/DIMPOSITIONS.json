@@ -1,0 +1,27 @@
+{
+  "physicalTable" : {
+    "name" : "DIMPOSITIONS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "DEPARTMENT",
+      "dataType" : "VARCHAR",
+      "length" : 128,
+      "nullable" : true
+    }, {
+      "name" : "POSITION_ID",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "COUNTRY",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "POSITION_ID" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

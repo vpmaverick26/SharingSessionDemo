@@ -1,0 +1,22 @@
+{
+  "initBlock" : {
+    "name" : "HCM - CURRENT_MONTH_WID",
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:ANALYTICS_SERVER",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "select ROW_WID from \"DWH\".\"CPAPPS_DWH\".\"dbo\".\"Dim_W_MONTH_D\" where MONTH_OF_YEAR = MONTH(CURRENT_DATE) AND YEAR_WID = YEAR(CURRENT_DATE)"
+    } ],
+    "variables" : [ {
+      "name" : "CURRENT_MONTH_WID",
+      "description" : "Month WID of current date",
+      "value" : "201901",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    } ],
+    "disable" : true,
+    "queryReturnsVariableNamesAndValues" : false,
+    "allowDeferredExecution" : false,
+    "cacheQueryResult" : true
+  }
+}

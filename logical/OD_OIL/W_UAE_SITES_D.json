@@ -1,0 +1,92 @@
+{
+  "logicalTable" : {
+    "name" : "W_UAE_SITES_D",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "COUNTRY_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "W_UAE_SITES_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_OIL.OD_OIL.W_UAE_SITES_D.COUNTRY_TX" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "LATITUDE_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "W_UAE_SITES_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_OIL.OD_OIL.W_UAE_SITES_D.LATITUDE_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "LONGITUDE_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "W_UAE_SITES_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_OIL.OD_OIL.W_UAE_SITES_D.LONGITUDE_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "ROW_WID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "W_UAE_SITES_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_OIL.OD_OIL.W_UAE_SITES_D.ROW_WID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "SITE_NAME_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "W_UAE_SITES_D",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_OIL.OD_OIL.W_UAE_SITES_D.SITE_NAME_TX" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "W_UAE_SITES_D",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OD_OIL.OD_OIL.W_UAE_SITES_D" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:OD_OIL.W_OIL_BRAZIL_F",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

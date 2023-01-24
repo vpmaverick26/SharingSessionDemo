@@ -1,0 +1,12 @@
+{
+  "physicalTable" : {
+    "name" : "LastModification",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "lm",
+      "dataType" : "TIMESTAMP",
+      "length" : 0,
+      "nullable" : false
+    } ]
+  }
+}

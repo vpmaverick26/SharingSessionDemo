@@ -1,0 +1,54 @@
+{
+  "logicalTable" : {
+    "name" : "Last Modification",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "Table Modified",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LAST_MODIFICATION_FIN",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.LAST_MODIFICATION_FIN.TABLE_MODIFIED" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Last Modification Finance",
+      "dataType" : "TIMESTAMP",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LAST_MODIFICATION_FIN",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.LAST_MODIFICATION_FIN.LAST_MODIFICATION" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "MAX",
+        "dataIsDense" : false
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "LAST_MODIFICATION_FIN",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OR .OBS_ROOM.LAST_MODIFICATION_FIN" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:OR.LastModification",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

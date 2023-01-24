@@ -1,0 +1,66 @@
+{
+  "physicalTable" : {
+    "name" : "W_PROMOTION_D",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "DISCOUNT_PERCENT_NR",
+      "dataType" : "DOUBLE",
+      "length" : 126,
+      "nullable" : true
+    }, {
+      "name" : "END_DATE_DT",
+      "dataType" : "TIMESTAMP",
+      "length" : 126,
+      "nullable" : true
+    }, {
+      "name" : "MAX_QUANTITY_NR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "MIN_QUANTITY_NR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PROMOTION_CATEGORY_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "PROMOTION_DESCRIPTION_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "PROMOTION_KEY_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PROMOTION_LABEL_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "PROMOTION_NAME_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "PROMOTION_TYPE_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "START_DATE_DT",
+      "dataType" : "TIMESTAMP",
+      "length" : 255,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

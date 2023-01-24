@@ -1,0 +1,186 @@
+{
+  "presentationTable" : {
+    "name" : "Fact HR",
+    "presentationColumns" : [ {
+      "name" : "Active Req Jobs",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Active Req Jobs"
+    }, {
+      "name" : "Applications Closed",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Applications Closed"
+    }, {
+      "name" : "Applications Open",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Applications Open"
+    }, {
+      "name" : "Base Salary",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Base Salary"
+    }, {
+      "name" : "Bonus Payment",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Bonus Payment"
+    }, {
+      "name" : "Engagement",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Engagement"
+    }, {
+      "name" : "Generation Description",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Generation Description"
+    }, {
+      "name" : "Grade",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Grade"
+    }, {
+      "name" : "Headcount",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Headcount"
+    }, {
+      "name" : "Job Code",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Job Code"
+    }, {
+      "name" : "Job Family",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Job Family"
+    }, {
+      "name" : "Job Req Closed",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Job Req Closed"
+    }, {
+      "name" : "Job Req Open",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Job Req Open"
+    }, {
+      "name" : "Job Title",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Job Title"
+    }, {
+      "name" : "Joiners",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Joiners"
+    }, {
+      "name" : "Leavers",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Leavers"
+    }, {
+      "name" : "Org Units Desc",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Org Units Desc"
+    }, {
+      "name" : "Performance Rating",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Performance Rating"
+    }, {
+      "name" : "Respondents",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Respondents"
+    }, {
+      "name" : "Site Name",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Site Name"
+    }, {
+      "name" : "WPS Score",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.WPS Score"
+    }, {
+      "name" : "YearMonth",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.YearMonth"
+    }, {
+      "name" : "Total Headcount",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Total Headcount"
+    }, {
+      "name" : "Base Salary Eur",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Base Salary Eur"
+    }, {
+      "name" : "Bonus Salary Eur",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Bonus Salary Eur"
+    }, {
+      "name" : "Total Employee Cost Eur",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Total Employee Cost Eur"
+    }, {
+      "name" : "Employee Cost Per Unit Eur",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Employee Cost Per Unit Eur"
+    }, {
+      "name" : "Quartile 25",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Quartile 25"
+    }, {
+      "name" : "Quartile 75",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Quartile 75"
+    }, {
+      "name" : "Salary Cost per Unit EUR",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Salary Cost per Unit EUR"
+    }, {
+      "name" : "Total Employee Cost Avg",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Total Employee Cost Avg"
+    }, {
+      "name" : "Total Employee Cost Max EUR",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Total Employee Cost Max EUR"
+    }, {
+      "name" : "Total Employee Cost Median EUR",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Total Employee Cost Median EUR"
+    }, {
+      "name" : "Total Employee Cost Min EUR",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Total Employee Cost Min EUR"
+    }, {
+      "name" : "No of Respondents",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.No of Respondents"
+    }, {
+      "name" : "% of Respondents",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.% of Respondents"
+    }, {
+      "name" : "Average Score",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Average Score"
+    }, {
+      "name" : "Maximum Score",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Maximum Score"
+    }, {
+      "name" : "Median Score",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Median Score"
+    }, {
+      "name" : "Minimum Score",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Minimum Score"
+    }, {
+      "name" : "EOM Date",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.EOM Date"
+    }, {
+      "name" : "Active Job Postings",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Active Job Postings"
+    }, {
+      "name" : "No of Applicants",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.No of Applicants"
+    }, {
+      "name" : "No of Closed Job Postings",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.No of Closed Job Postings"
+    }, {
+      "name" : "No of Hires",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.No of Hires"
+    }, {
+      "name" : "No of Job Postings",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.No of Job Postings"
+    }, {
+      "name" : "No of Leavers",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.No of Leavers"
+    }, {
+      "name" : "Applicants by Job Req",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Applicants by Job Req"
+    }, {
+      "name" : "Last Year Total Employee Cost",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Last Year Total Employee Cost"
+    }, {
+      "name" : "Last Year Base Salary",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Last Year Base Salary"
+    }, {
+      "name" : "Last Year Bonus Salary",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Last Year Bonus Salary"
+    }, {
+      "name" : "Last Year Hires",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Last Year Hires"
+    }, {
+      "name" : "Last Year Job Postings",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Last Year Job Postings"
+    }, {
+      "name" : "Last Year Applicants",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Last Year Applicants"
+    }, {
+      "name" : "Last Year Respondents",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Last Year Respondents"
+    }, {
+      "name" : "Last Year % Respondents",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Last Year % Respondents"
+    }, {
+      "name" : "Last Year Median",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Last Year Median"
+    }, {
+      "name" : "Year Month Max",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Year Month Max"
+    }, {
+      "name" : "Last Year Month",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Last Year Month"
+    }, {
+      "name" : "Active Headcount",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR.Active Headcount"
+    } ]
+  }
+}

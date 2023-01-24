@@ -1,0 +1,93 @@
+{
+  "presentationTable" : {
+    "name" : "Dim Product",
+    "presentationColumns" : [ {
+      "name" : "AVAILABLE_FOR_SALE_DATE_DT",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.AVAILABLE_FOR_SALE_DATE_DT"
+    }, {
+      "name" : "BRAND_NAME_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.BRAND_NAME_TX"
+    }, {
+      "name" : "CLASS_IDTX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.CLASS_IDTX"
+    }, {
+      "name" : "CLASS_NAME_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.CLASS_NAME_TX"
+    }, {
+      "name" : "COLOR_IDTX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.COLOR_IDTX"
+    }, {
+      "name" : "COLOR_NAME_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.COLOR_NAME_TX"
+    }, {
+      "name" : "IMAGE_URLTX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.IMAGE_URLTX"
+    }, {
+      "name" : "MANUFACTURER_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.MANUFACTURER_TX"
+    }, {
+      "name" : "PRODUCT_DESCRIPTION_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.PRODUCT_DESCRIPTION_TX"
+    }, {
+      "name" : "PRODUCT_KEY_ID",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.PRODUCT_KEY_ID"
+    }, {
+      "name" : "PRODUCT_LABEL_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.PRODUCT_LABEL_TX"
+    }, {
+      "name" : "PRODUCT_NAME_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.PRODUCT_NAME_TX"
+    }, {
+      "name" : "PRODUCT_SUBCATEGORY_KEY_ID",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.PRODUCT_SUBCATEGORY_KEY_ID"
+    }, {
+      "name" : "PRODUCT_URLTX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.PRODUCT_URLTX"
+    }, {
+      "name" : "SIZE_RANGE_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.SIZE_RANGE_TX"
+    }, {
+      "name" : "SIZE_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.SIZE_TX"
+    }, {
+      "name" : "SIZE_UNIT_MEASURE_IDTX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.SIZE_UNIT_MEASURE_IDTX"
+    }, {
+      "name" : "STATUS_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.STATUS_TX"
+    }, {
+      "name" : "STOCK_TYPE_IDTX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.STOCK_TYPE_IDTX"
+    }, {
+      "name" : "STOCK_TYPE_NAME_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.STOCK_TYPE_NAME_TX"
+    }, {
+      "name" : "STOP_SALE_DATE_DT",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.STOP_SALE_DATE_DT"
+    }, {
+      "name" : "STYLE_IDTX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.STYLE_IDTX"
+    }, {
+      "name" : "STYLE_NAME_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.STYLE_NAME_TX"
+    }, {
+      "name" : "UNIT_COST_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.UNIT_COST_NR"
+    }, {
+      "name" : "UNIT_OF_MEASURE_IDTX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.UNIT_OF_MEASURE_IDTX"
+    }, {
+      "name" : "UNIT_OF_MEASURE_NAME_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.UNIT_OF_MEASURE_NAME_TX"
+    }, {
+      "name" : "UNIT_PRICE_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.UNIT_PRICE_NR"
+    }, {
+      "name" : "WEIGHT_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.WEIGHT_NR"
+    }, {
+      "name" : "WEIGHT_UNIT_MEASURE_IDTX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product.WEIGHT_UNIT_MEASURE_IDTX"
+    } ]
+  }
+}

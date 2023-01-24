@@ -1,0 +1,96 @@
+{
+  "physicalTable" : {
+    "name" : "DIMEMPLOYEE",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "BIRTHDATE",
+      "dataType" : "DATETIME",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "DEPARTMENTNAME",
+      "dataType" : "VARCHAR",
+      "length" : 60,
+      "nullable" : true
+    }, {
+      "name" : "EMPLOYEEID",
+      "dataType" : "DOUBLE",
+      "length" : 20,
+      "nullable" : false
+    }, {
+      "name" : "EMPLOYEEID2",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ENDDATE",
+      "dataType" : "DATE",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "GENDER",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "HIREDATE",
+      "dataType" : "DATE",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "JOB",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "NATIONALITY",
+      "dataType" : "VARCHAR",
+      "length" : 40,
+      "nullable" : true
+    }, {
+      "name" : "PARENTID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "STATUS",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "TITLE",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "CITY",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "REGION",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "WFH_FLAG",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "WFH_LAT",
+      "dataType" : "DOUBLE",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "WFH_LONG",
+      "dataType" : "DOUBLE",
+      "length" : 20,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

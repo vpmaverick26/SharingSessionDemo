@@ -1,0 +1,52 @@
+{
+  "physicalTable" : {
+    "name" : "W_JOB_INFO_D1",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "JOB_CODE",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "JOB_FAMILY_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "JOB_GRADE_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "JOB_TITLE_TX",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "MAX_SALARY_NR",
+      "dataType" : "DOUBLE",
+      "length" : 126,
+      "nullable" : true
+    }, {
+      "name" : "MIN_SALARY_NR",
+      "dataType" : "DOUBLE",
+      "length" : 126,
+      "nullable" : true
+    }, {
+      "name" : "ROW_WID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TARGET_SALARY_NR",
+      "dataType" : "DOUBLE",
+      "length" : 126,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "JOB_FAMILY_TX" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

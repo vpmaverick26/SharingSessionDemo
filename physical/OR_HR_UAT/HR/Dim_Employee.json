@@ -1,0 +1,23 @@
+{
+  "physicalTable": {
+    "name": "Dim_Employee",
+    "sourceTable": "physicalTable:OR_HR_UAT.HR.DIMEMPLOYEE",
+    "caching": {
+      "enable": true
+    },
+    "joins": [      {
+        "rightTable": "physicalTable:OR_HR_UAT.HR.Dim_Employee_Parent",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OR_HR_UAT.HR.Dim_Employee.PARENTID",
+            "rightColumn": "physicalColumn:OR_HR_UAT.HR.Dim_Employee_Parent.EMPLOYEEID"
+          }
+        ]
+      }
+    ],
+    "additionalKeys": [
+      [
+        "EMPLOYEEID"
+      ]
+    ]
+  }
+}

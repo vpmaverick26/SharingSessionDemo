@@ -1,0 +1,93 @@
+{
+  "logicalTable" : {
+    "name" : "Dim Date",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Year Quarter" ],
+    "logicalColumns" : [ {
+      "name" : "Quarter",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Dim_Date.QUARTER" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Quarter"
+    }, {
+      "name" : "Year",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Dim_Date.YEAR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Year"
+    }, {
+      "name" : "Year Quarter",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Dim_Date.YEARQUARTER" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Quarter"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim_Date",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OR .OBS_ROOM.Dim_Date" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "TIME",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Dim Date Total",
+      "logicalLevels" : [ {
+        "name" : "Dim Date Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Year",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Year" ],
+        "displayKey" : "Year",
+        "chronologicalKey" : [ "Year" ]
+      }, {
+        "name" : "Quarter",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Year Quarter" ],
+        "displayKey" : "Quarter",
+        "chronologicalKey" : [ "Quarter" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Dim DateDim",
+        "levels" : [ "Dim Date Total", "Year", "Quarter" ]
+      } ]
+    }
+  }
+}

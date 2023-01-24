@@ -1,0 +1,390 @@
+{
+  "logicalTable" : {
+    "name" : "Fact Employee",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "Age",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact Employee.AGE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Age Group",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact Employee.AGE_GROUP" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Bad Hire",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact Employee.BAD_HIRE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Date Key",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact Employee.DATE_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Month",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : " EXTRACT( MONTH  FROM %1)",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact Employee.DATE_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Quarter",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : " EXTRACT( QUARTER_OF_YEAR  FROM %1)",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact Employee.DATE_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Year",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : " EXTRACT( YEAR  FROM %1)",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact Employee.DATE_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Emp Id",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact Employee.EMP_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Ethnic Group",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact Employee.ETHNIC_GROUP" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Gender",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact Employee.GENDER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Hire Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact Employee.HIRE_DATE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Is New Hire",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact Employee.IS_NEW_HIRE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Pay Type",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact Employee.PAY_TYPE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Region",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact Employee.REGION" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Tenure Days",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact Employee.TENURE_DAYS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Tenure Months",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact Employee.TENURE_MONTHS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Term Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact Employee.TERM_DATE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Term Reason",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact Employee.TERM_REASON" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Work Type",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact Employee.WORK_TYPE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Total Headcount",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact Employee.EMP_ID" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT_DISTINCT",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Active Headcount",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : " CASE  WHEN %1 IS NULL  THEN %2 ELSE  NULL  END ",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact Employee.TERM_DATE", "physicalColumn:OR_HR.HR.Fact Employee.EMP_ID" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT_DISTINCT",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "New Hires",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : " CASE  WHEN %1 = 'Yes' THEN %2 ELSE  NULL  END ",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact Employee.IS_NEW_HIRE", "physicalColumn:OR_HR.HR.Fact Employee.EMP_ID" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT_DISTINCT",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Avg Tenure (In Months)",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact Employee.TENURE_MONTHS" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Separations",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : " CASE  WHEN  NOT %1 IS NULL  THEN %2 ELSE  NULL  END ",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact Employee.TERM_DATE", "physicalColumn:OR_HR.HR.Fact Employee.EMP_ID" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT_DISTINCT",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Turn Over (%)",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2 * 100.00",
+          "expressionObjects" : [ "logicalColumn:OR_HR.Fact Employee.Separations", "logicalColumn:OR_HR.Fact Historical Data.Headcount" ]
+        }
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Fact Employee",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OR_HR.HR.Fact Employee" ]
+      },
+      "dataGranularity" : [ "logicalLevel:OR_HR.Dim Date.Dim Date Detail", "logicalLevel:OR_HR.Dim Employee.Dim Employee Detail" ],
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:OR_HR.Dim Employee",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

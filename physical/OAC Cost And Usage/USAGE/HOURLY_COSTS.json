@@ -1,0 +1,51 @@
+{
+  "physicalTable" : {
+    "name" : "HOURLY_COSTS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "DATEKEY",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "COST",
+      "dataType" : "DOUBLE",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "QUANTITY",
+      "dataType" : "DOUBLE",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "SERVICE",
+      "dataType" : "VARCHAR",
+      "length" : 40,
+      "nullable" : true
+    }, {
+      "name" : "SKU_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 80,
+      "nullable" : true
+    }, {
+      "name" : "TIME_USAGE_ENDED",
+      "dataType" : "TIMESTAMP",
+      "length" : 80,
+      "nullable" : true
+    }, {
+      "name" : "TIME_USAGE_STARTED",
+      "dataType" : "TIMESTAMP",
+      "length" : 80,
+      "nullable" : true
+    }, {
+      "name" : "UNIT",
+      "dataType" : "VARCHAR",
+      "length" : 40,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

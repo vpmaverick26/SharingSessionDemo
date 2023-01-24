@@ -1,0 +1,139 @@
+{
+  "presentationTable" : {
+    "name" : "Fact Online Sales",
+    "presentationColumns" : [ {
+      "name" : "CURRENCY_KEY_ID",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.CURRENCY_KEY_ID"
+    }, {
+      "name" : "CUSTOMER_KEY_ID",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.CUSTOMER_KEY_ID"
+    }, {
+      "name" : "DATE_KEY_ID",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.DATE_KEY_ID"
+    }, {
+      "name" : "DISCOUNT_AMOUNT_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.DISCOUNT_AMOUNT_NR"
+    }, {
+      "name" : "DISCOUNT_QUANTITY_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.DISCOUNT_QUANTITY_NR"
+    }, {
+      "name" : "ONLINE_SALES_KEY_ID",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.ONLINE_SALES_KEY_ID"
+    }, {
+      "name" : "PRODUCT_KEY_ID",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.PRODUCT_KEY_ID"
+    }, {
+      "name" : "RETURN_AMOUNT_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.RETURN_AMOUNT_NR"
+    }, {
+      "name" : "RETURN_QUANTITY_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.RETURN_QUANTITY_NR"
+    }, {
+      "name" : "SALES_AMOUNT_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.SALES_AMOUNT_NR"
+    }, {
+      "name" : "SALES_ORDER_LINE_NUMBER_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.SALES_ORDER_LINE_NUMBER_NR"
+    }, {
+      "name" : "SALES_ORDER_NUMBER_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.SALES_ORDER_NUMBER_TX"
+    }, {
+      "name" : "SALES_QUANTITY_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.SALES_QUANTITY_NR"
+    }, {
+      "name" : "STORE_KEY_ID",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.STORE_KEY_ID"
+    }, {
+      "name" : "TOTAL_COST_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.TOTAL_COST_NR"
+    }, {
+      "name" : "UNIT_COST_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.UNIT_COST_NR"
+    }, {
+      "name" : "UNIT_PRICE_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.UNIT_PRICE_NR"
+    }, {
+      "name" : "# Customers",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.# Customers"
+    }, {
+      "name" : "# Total Sales Quantity",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.# Total Sales Quantity"
+    }, {
+      "name" : "# Total Sales Return Quantity",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.# Total Sales Return Quantity"
+    }, {
+      "name" : "# Net Quantity",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.# Net Quantity"
+    }, {
+      "name" : "# Products Sold",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.# Products Sold"
+    }, {
+      "name" : "# Stores",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.# Stores"
+    }, {
+      "name" : "€Basic:Total Sales Amount EUR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.€Basic:Total Sales Amount EUR"
+    }, {
+      "name" : "€Basic:Total Sales Cost",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.€Basic:Total Sales Cost"
+    }, {
+      "name" : "€Basic:Total Sales Return Amount EUR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.€Basic:Total Sales Return Amount EUR"
+    }, {
+      "name" : "€Basic:Sales by Customer EUR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.€Basic:Sales by Customer EUR"
+    }, {
+      "name" : "€Basic: Net Profits",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.€Basic: Net Profits"
+    }, {
+      "name" : "€Basic: Net Profits by Customer EUR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.€Basic: Net Profits by Customer EUR"
+    }, {
+      "name" : "% Net Profits Margin",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.% Net Profits Margin"
+    }, {
+      "name" : "PROMOTION_KEY_ID",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.PROMOTION_KEY_ID"
+    }, {
+      "name" : "# Sales Quantity w/Promotion",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.# Sales Quantity w/Promotion",
+      "alternateNames" : [ "PROMOTION_KEY_ID#1" ]
+    }, {
+      "name" : "# Sales Quantity wo/Promotion",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.# Sales Quantity wo/Promotion"
+    }, {
+      "name" : "€Basic: Net Profits wo/Promotion EUR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.€Basic: Net Profits wo/Promotion EUR"
+    }, {
+      "name" : "€Basic: Net Profits w/Promotion EUR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.€Basic: Net Profits w/Promotion EUR"
+    }, {
+      "name" : "Promotions: Total Length of Promotions",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.Promotions: Total Length of Promotions"
+    }, {
+      "name" : "% Net Profits No Promo Margin",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.% Net Profits No Promo Margin"
+    }, {
+      "name" : "% Net Profits Promo Margin",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.% Net Profits Promo Margin"
+    }, {
+      "name" : "Promotions: Averiage Sales Qty per Day",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.Promotions: Averiage Sales Qty per Day"
+    }, {
+      "name" : "% Sales Return Ratio",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.% Sales Return Ratio"
+    }, {
+      "name" : "€Basic:Sales by Store EUR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.€Basic:Sales by Store EUR"
+    }, {
+      "name" : "€Basic: Net Profits by Store EUR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.€Basic: Net Profits by Store EUR"
+    }, {
+      "name" : "% Sales Return Ratio No Promo",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.% Sales Return Ratio No Promo"
+    }, {
+      "name" : "% Sales Return Ratio Promo",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Fact Online Sales.% Sales Return Ratio Promo"
+    } ]
+  }
+}

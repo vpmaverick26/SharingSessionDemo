@@ -1,0 +1,14 @@
+{
+  "physicalTable": {
+    "name": "Dim Geography",
+    "sourceTable": "physicalTable:OD_CONTOSO.OD_CONTOSO.W_GEOGRAPHY_D",
+    "caching": {
+      "enable": true
+    },
+    "additionalKeys": [
+      [
+        "GEOGRAPHY_KEY_ID"
+      ]
+    ]
+  }
+}

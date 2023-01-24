@@ -1,0 +1,1574 @@
+{
+  "logicalTable" : {
+    "name" : "Fact Finance",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "Accounts Payable",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.ACCOUNTS_PAYABLE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Accounts Payable Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.ACCOUNTS_PAYABLE_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Accounts Receivable",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.ACCOUNTS_RECEIVABLE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Accounts Receivable Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.ACCOUNTS_RECEIVABLE_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Balancing Segment Description",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.BALANCING_SEGMENT_DESCRIPTION" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "CAPEX",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.CAPEX" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "CAPEX Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.CAPEX_TARGET_BUDGET" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Cash",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.CASH" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Cash Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.CASH_TARGET_BUDGET" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Cost Center Description",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.COST_CENTER_DESCRIPTION" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "COGS",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.COST_OF_REVENUE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "COGS Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.COST_OF_REVENUE_TARGET_BUDGET" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Current Assets",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.CURRENT_ASSETS" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Current Assets Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.CURRENT_ASSETS_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Current Liabilities",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.CURRENT_LIABILITIES" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Current Liabilities Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.CURRENT_LIABILITIES_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Debt To Equity Ratio",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.DEBT_TO_EQUITY" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Debt To Equity Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.DEBT_TO_EQUITY_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Deferred Revenue",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.DEFERRED_REVENUE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Deferred Revenue Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.DEFERRED_REVENUE_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Depreciation Expenses",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.DEPRECIATION_EXPENSES" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Depreciation Expenses Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.DEPRECIATION_EXPENSES_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Ebit",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.EBIT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Ebit Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.EBIT_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "EBITDA",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.EBITDA" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Ebitda Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.EBITDA_TARGET_BUDGET" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Ebt",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.EBT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Ebt Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.EBT_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Finished Goods Inventory",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.FINISHED_GOODS_INVENTORY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Finished Goods Inventory Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.FINISHED_GOODS_INVENTORY_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Fiscal Quarter",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.FISCAL_QUARTER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Fiscal Year",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.FISCAL_YEAR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Gross Margin",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.GROSS_MARGIN" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Gross Profit",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.GROSS_PROFIT" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Gross Profit Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.GROSS_PROFIT_TARGET_BUDGET" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Income Tax Expense",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.INCOME_TAX_EXPENSE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Income Tax Expense Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.INCOME_TAX_EXPENSE_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Interest Expense",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.INTEREST_EXPENSE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Interest Expense Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.INTEREST_EXPENSE_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Inventories",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.INVENTORIES" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Inventories Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.INVENTORIES_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Legal Entity Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.LEGAL_ENTITY_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Long Term Assets",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.LONG_TERM_ASSETS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Long Term Assets Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.LONG_TERM_ASSETS_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Long Term Debt",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.LONG_TERM_DEBT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Long Term Debt Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.LONG_TERM_DEBT_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Long Term Liabilities",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.LONG_TERM_LIABILITIES" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Long Term Liabilities Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.LONG_TERM_LIABILITIES_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Net Income",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.NET_INCOME" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Net Income Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.NET_INCOME_TARGET_BUDGET" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Net Ppe",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.NET_PPE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Net Ppe Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.NET_PPE_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Net Working Capital",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.NET_WORKING_CAPITAL" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Net Working Capital Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.NET_WORKING_CAPITAL_TARGET_BUDGET" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Operating Margin",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.OPERATING_MARGIN" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Operating Margin Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.OPERATING_MARGIN_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Operating Profit",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.OPERATING_PROFIT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Operating Profit Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.OPERATING_PROFIT_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Other Assets",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.OTHER_ASSETS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Other Assets Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.OTHER_ASSETS_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Other Current Assets",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.OTHER_CURRENT_ASSETS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Other Current Assets Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.OTHER_CURRENT_ASSETS_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Other Income",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.OTHER_INCOME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Other Income Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.OTHER_INCOME_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Other Liabilities",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.OTHER_LIABILITIES" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Other Liabilities Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.OTHER_LIABILITIES_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Other Operating Expenses",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.OTHER_OPERATING_EXPENSES" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Other Operating Expenses Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.OTHER_OPERATING_EXPENSES_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Payroll Cost",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.PAYROLL_COST" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Payroll Cost Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.PAYROLL_COST_TARGET_BUDGET" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Ppe",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.PPE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Ppe Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.PPE_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Prepaid Expenses",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.PREPAID_EXPENSES" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Prepaid Expenses Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.PREPAID_EXPENSES_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Raw Material Inventory",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.RAW_MATERIAL_INVENTORY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Raw Material Inventory Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.RAW_MATERIAL_INVENTORY_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Rd Expenses",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.RD_EXPENSES" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Rd Expenses Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.RD_EXPENSES_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Revenue",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.REVENUE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Revenue Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.REVENUE_TARGET_BUDGET" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Roa Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.ROA_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "ROE",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.ROE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Roe Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.ROE_TARGET_BUDGET" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Sales Marketing Expenses",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.SALES_MARKETING_EXPENSES" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Sales Marketing Expenses Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.SALES_MARKETING_EXPENSES_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Short Term Borrowing",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.SHORT_TERM_BORROWING" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Short Term Borrowing Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.SHORT_TERM_BORROWING_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Tax Liabilities",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.TAX_LIABILITIES" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Tax Liabilities Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.TAX_LIABILITIES_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Total Assets",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.TOTAL_ASSETS" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Total Assets Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.TOTAL_ASSETS_TARGET_BUDGET" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Total Liabilities",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.TOTAL_LIABILITIES" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Total Liabilities Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.TOTAL_LIABILITIES_TARGET_BUDGET" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "OPEX",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.TOTAL_OPERATING_EXPENSES" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "OPEX Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.TOTAL_OPERATING_EXPENSES_TARGET_BUDGET" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Work In Process Inventory",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.WORK_IN_PROCESS_INVENTORY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Work In Process Inventory Target Budget",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.WORK_IN_PROCESS_INVENTORY_TARGET_BUDGET" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "ROA",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:OR.Fact Finance.Net Income", "logicalColumn:OR.Fact Finance.Total Assets" ]
+        }
+      }
+    }, {
+      "name" : "Net Income Margin",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:OR.Fact Finance.Net Income", "logicalColumn:OR.Fact Finance.Revenue" ]
+        }
+      }
+    }, {
+      "name" : "Current Ratio",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:OR.Fact Finance.Current Assets", "logicalColumn:OR.Fact Finance.Current Liabilities" ]
+        }
+      }
+    }, {
+      "name" : "Gross Profit Margin",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "(%1 - %2) / %1",
+          "expressionObjects" : [ "logicalColumn:OR.Fact Finance.Revenue", "logicalColumn:OR.Fact Finance.COGS" ]
+        }
+      }
+    }, {
+      "name" : "Quick Ratio",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "(%1 - %2) / %3",
+          "expressionObjects" : [ "logicalColumn:OR.Fact Finance.Current Assets", "logicalColumn:OR.Fact Finance.Inventories", "logicalColumn:OR.Fact Finance.Current Liabilities" ]
+        }
+      }
+    }, {
+      "name" : "Net Income Margin YAGO",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " AGO(%1, %2, 1)",
+          "expressionObjects" : [ "logicalColumn:OR.Fact Finance.Net Income Margin", "logicalLevel:OR.Dim Date.Year" ]
+        }
+      }
+    }, {
+      "name" : "ROA Target",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:OR.Fact Finance.Net Income Target Budget", "logicalColumn:OR.Fact Finance.Total Assets Target Budget" ]
+        }
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Fact_Finance",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OR .OBS_ROOM.Fact_Finance" ]
+      },
+      "dataGranularity" : [ "logicalLevel:OR.Dim Date.Quarter" ],
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:OR.Dim Date",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

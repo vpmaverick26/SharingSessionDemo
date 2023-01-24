@@ -1,0 +1,96 @@
+{
+  "presentationTable" : {
+    "name" : "Dim Customer",
+    "presentationColumns" : [ {
+      "name" : "ADDRESS_LINE_1TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Customer.ADDRESS_LINE_1TX"
+    }, {
+      "name" : "ADDRESS_LINE_2TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Customer.ADDRESS_LINE_2TX"
+    }, {
+      "name" : "BIRTH_DATE_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Customer.BIRTH_DATE_TX"
+    }, {
+      "name" : "COMPANY_NAME_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Customer.COMPANY_NAME_TX"
+    }, {
+      "name" : "CUSTOMER_KEY_ID",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Customer.CUSTOMER_KEY_ID"
+    }, {
+      "name" : "CUSTOMER_LABEL_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Customer.CUSTOMER_LABEL_TX"
+    }, {
+      "name" : "CUSTOMER_TYPE_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Customer.CUSTOMER_TYPE_TX"
+    }, {
+      "name" : "DATE_FIRST_PURCHASE_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Customer.DATE_FIRST_PURCHASE_TX"
+    }, {
+      "name" : "EDUCATION_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Customer.EDUCATION_TX"
+    }, {
+      "name" : "EMAIL_ADDRESS_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Customer.EMAIL_ADDRESS_TX"
+    }, {
+      "name" : "FIRST_NAME_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Customer.FIRST_NAME_TX"
+    }, {
+      "name" : "GENDER_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Customer.GENDER_TX"
+    }, {
+      "name" : "GEOGRAPHY_KEY_ID",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Customer.GEOGRAPHY_KEY_ID"
+    }, {
+      "name" : "HOUSE_OWNER_FLAG_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Customer.HOUSE_OWNER_FLAG_TX"
+    }, {
+      "name" : "LAST_NAME_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Customer.LAST_NAME_TX"
+    }, {
+      "name" : "MARITAL_STATUS_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Customer.MARITAL_STATUS_TX"
+    }, {
+      "name" : "MIDDLE_NAME_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Customer.MIDDLE_NAME_TX"
+    }, {
+      "name" : "NAME_STYLE_BL",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Customer.NAME_STYLE_BL"
+    }, {
+      "name" : "NUMBER_CARS_OWNED_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Customer.NUMBER_CARS_OWNED_NR"
+    }, {
+      "name" : "NUMBER_CHILDREN_AT_HOME_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Customer.NUMBER_CHILDREN_AT_HOME_NR"
+    }, {
+      "name" : "OCCUPATION_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Customer.OCCUPATION_TX"
+    }, {
+      "name" : "PHONE_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Customer.PHONE_TX"
+    }, {
+      "name" : "SUFFIX_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Customer.SUFFIX_TX"
+    }, {
+      "name" : "TITLE_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Customer.TITLE_TX"
+    }, {
+      "name" : "TOTAL_CHILDREN_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Customer.TOTAL_CHILDREN_NR"
+    }, {
+      "name" : "YEARLY_INCOME_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Customer.YEARLY_INCOME_NR"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Dim CustomerDim",
+      "sourceLogicalTable" : "logicalTable:OD_CONTOSO.Dim Customer",
+      "levels" : [ {
+        "name" : "Dim Customer Total",
+        "sourceLogicalLevel" : "logicalLevel:OD_CONTOSO.Dim Customer.Dim Customer Total"
+      }, {
+        "name" : "Dim Customer Detail",
+        "sourceLogicalLevel" : "logicalLevel:OD_CONTOSO.Dim Customer.Dim Customer Detail",
+        "displayColumn" : "presentationColumn:OD CONTOSO.Dim Customer.CUSTOMER_KEY_ID"
+      } ]
+    } ]
+  }
+}

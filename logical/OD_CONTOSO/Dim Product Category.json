@@ -1,0 +1,115 @@
+{
+  "logicalTable" : {
+    "name" : "Dim Product Category",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "PRODUCT_CATEGORY_KEY_ID" ],
+    "logicalColumns" : [ {
+      "name" : "PRODUCT_CATEGORY_DESCRIPTION_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Product Category",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Product Category.PRODUCT_CATEGORY_DESCRIPTION_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Product Category"
+    }, {
+      "name" : "PRODUCT_CATEGORY_KEY_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Product Category",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Product Category.PRODUCT_CATEGORY_KEY_ID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Product Category"
+    }, {
+      "name" : "PRODUCT_CATEGORY_LABEL_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Product Category",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Product Category.PRODUCT_CATEGORY_LABEL_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Product Category"
+    }, {
+      "name" : "PRODUCT_CATEGORY_NAME_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Product Category",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Product Category.PRODUCT_CATEGORY_NAME_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Product Category"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim Product Category",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OD_CONTOSO.OD_CONTOSO.Dim Product Category" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Dim Product Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Dim Product Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Dim Product Category",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "PRODUCT_CATEGORY_KEY_ID" ],
+        "displayKey" : "PRODUCT_CATEGORY_KEY_ID"
+      }, {
+        "name" : "Dim Product Subcategory",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "PRODUCT_SUBCATEGORY_KEY_ID" ],
+        "displayKey" : "PRODUCT_SUBCATEGORY_KEY_ID"
+      }, {
+        "name" : "Dim Product Detail",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "PRODUCT_KEY_ID" ],
+        "displayKey" : "PRODUCT_KEY_ID"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Dim ProductDim",
+        "levels" : [ "Dim Product Total", "Dim Product Category", "Dim Product Subcategory", "Dim Product Detail" ]
+      } ]
+    }
+  }
+}

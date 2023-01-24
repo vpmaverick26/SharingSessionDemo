@@ -1,0 +1,566 @@
+{
+  "logicalTable" : {
+    "name" : "Fact Recruitment",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "Application ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment.APPLICATION" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Application Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment.APPLICDATE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Days to Hire",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment.DAYS_TO_HIRE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Decision",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment.DECISION" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Decline Reason",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment.DECLINEREASON" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Department",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment.DEPARTMENT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Employee Id",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment.EMPLOYEEID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Hiring Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment.HIRINGDATE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Interview Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment.INTERVIEWDATE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Offer Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment.OFFERDATE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Phone Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment.PHONEDATE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Source",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment.SOURCE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Avg. Days To Hire",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment.DAYS_TO_HIRE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "# of Offers Released",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment.OFFERDATE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Total # of Hires",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment.HIRINGDATE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Offer Acceptance Rate",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " CASE  WHEN  IFNULL(%1, 0) <> 0 THEN %2 / %1 END ",
+          "expressionObjects" : [ "logicalColumn:OR_HR.Fact Recruitment.# of Offers Released", "logicalColumn:OR_HR.Fact Recruitment.Total # of Hires" ]
+        }
+      }
+    }, {
+      "name" : "----------------------------------",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "'---'"
+        }
+      }
+    }, {
+      "name" : "# of Applicants Applied",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment.APPLICATION" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT_DISTINCT",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "# of Applicants Filtered",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment",
+          "physicalExpression" : {
+            "expressionTemplate" : " CASE  WHEN %1 IS NULL  THEN 1 ELSE 0 END ",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment.PHONEDATE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "# of Applicants Contacted",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment",
+          "physicalExpression" : {
+            "expressionTemplate" : " CASE  WHEN  NOT %1 IS NULL  THEN 1 ELSE 0 END ",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment.PHONEDATE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "# of Applicants Not Interviewed",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment",
+          "physicalExpression" : {
+            "expressionTemplate" : " CASE  WHEN  NOT %1 IS NULL  AND %2 IS NULL  THEN 1 ELSE 0 END ",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment.PHONEDATE", "physicalColumn:OR_HR.HR.Fact_Recruitment.INTERVIEWDATE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "# of Applicants Interviewed",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment",
+          "physicalExpression" : {
+            "expressionTemplate" : " CASE  WHEN  NOT %1 IS NULL  AND  NOT %2 IS NULL  THEN 1 ELSE 0 END ",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment.PHONEDATE", "physicalColumn:OR_HR.HR.Fact_Recruitment.INTERVIEWDATE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "# of Applicants Rejected",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment",
+          "physicalExpression" : {
+            "expressionTemplate" : " CASE  WHEN  NOT %1 IS NULL  AND %2 IS NULL  THEN 1 ELSE 0 END ",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment.INTERVIEWDATE", "physicalColumn:OR_HR.HR.Fact_Recruitment.OFFERDATE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "# of Applicants Selected",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment",
+          "physicalExpression" : {
+            "expressionTemplate" : " CASE  WHEN  NOT %1 IS NULL  AND  NOT %2 IS NULL  THEN 1 ELSE 0 END ",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment.INTERVIEWDATE", "physicalColumn:OR_HR.HR.Fact_Recruitment.OFFERDATE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "# of Offer Declined",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment",
+          "physicalExpression" : {
+            "expressionTemplate" : " CASE  WHEN  NOT %1 IS NULL  AND %2 IS NULL  THEN 1 ELSE 0 END ",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment.OFFERDATE", "physicalColumn:OR_HR.HR.Fact_Recruitment.HIRINGDATE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "# of Offer Accepted",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment",
+          "physicalExpression" : {
+            "expressionTemplate" : " CASE  WHEN  NOT %1 IS NULL  THEN 1 ELSE 0 END ",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment.EMPLOYEEID" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "1-Year Quit Rate",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " CASE  WHEN  NULLIF(%1, 0) <> 0 THEN %2 / %1 END ",
+          "expressionObjects" : [ "logicalColumn:OR_HR.Fact Recruitment.# of Hires", "logicalColumn:OR_HR.Fact Recruitment.# of Leavers" ]
+        }
+      }
+    }, {
+      "name" : "Cost To Hire",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment.COST_TO_HIRE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Open Positions",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment.POSITION_ID" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT_DISTINCT",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "# of Hires",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment_HireDate",
+          "physicalExpression" : {
+            "expressionTemplate" : " CASE  WHEN  NOT %1 IS NULL  THEN %2 END ",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment_HireDate.HIRINGDATE", "physicalColumn:OR_HR.HR.Fact_Recruitment_HireDate.APPLICATION" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "# of Leavers",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Recruitment_EndDate",
+          "physicalExpression" : {
+            "expressionTemplate" : " CASE  WHEN  NOT %1 IS NULL  THEN %2 END ",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Fact_Recruitment_EndDate.ENDDATE", "physicalColumn:OR_HR.HR.Fact_Recruitment_EndDate.APPLICATION" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Cost To Hire Target",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "FACTRECRUITMENT",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.FACTRECRUITMENT.COST_TO_HIRE_TARGET" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Fact_Recruitment",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OR_HR.HR.Fact_Recruitment" ]
+      },
+      "dataGranularity" : [ "logicalLevel:OR_HR.Dim Date.Dim Date Detail", "logicalLevel:OR_HR.Dim Employee.Dim Employee Detail", "logicalLevel:OR_HR.Dim Positions.Dim Positions Detail" ],
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    }, {
+      "name" : "Fact_Recruitment_HireDate",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OR_HR.HR.Fact_Recruitment_HireDate" ]
+      },
+      "dataGranularity" : [ "logicalLevel:OR_HR.Dim Date.Dim Date Detail", "logicalLevel:OR_HR.Dim Employee.Dim Employee Detail", "logicalLevel:OR_HR.Dim Positions.Dim Positions Detail" ],
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    }, {
+      "name" : "Fact_Recruitment_EndDate",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OR_HR.HR.Fact_Recruitment_EndDate" ]
+      },
+      "dataGranularity" : [ "logicalLevel:OR_HR.Dim Date.Dim Date Detail", "logicalLevel:OR_HR.Dim Employee.Dim Employee Detail", "logicalLevel:OR_HR.Dim Positions.Dim Positions Detail" ],
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    }, {
+      "name" : "FACTRECRUITMENT",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OR_HR.HR.FACTRECRUITMENT" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:OR_HR.Dim Date",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:OR_HR.Dim Employee",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:OR_HR.Dim Positions",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

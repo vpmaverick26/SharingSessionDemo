@@ -1,0 +1,72 @@
+{
+  "presentationTable" : {
+    "name" : "FACT_OIL_BRAZIL",
+    "presentationColumns" : [ {
+      "name" : "ASSOCIATED_PETROLEUM_GAS_MM3_NR)",
+      "sourceLogicalColumn" : "logicalColumn:OD_OIL.FACT_OIL_BRAZIL.ASSOCIATED_PETROLEUM_GAS_MM3_NR)"
+    }, {
+      "name" : "BASIN_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_OIL.FACT_OIL_BRAZIL.BASIN_TX"
+    }, {
+      "name" : "CO2_INJECTION_MM3_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_OIL.FACT_OIL_BRAZIL.CO2_INJECTION_MM3_NR"
+    }, {
+      "name" : "CONDENSATE_OIL_M3_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_OIL.FACT_OIL_BRAZIL.CONDENSATE_OIL_M3_NR"
+    }, {
+      "name" : "ENVIRONMENT_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_OIL.FACT_OIL_BRAZIL.ENVIRONMENT_TX"
+    }, {
+      "name" : "FIELD_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_OIL.FACT_OIL_BRAZIL.FIELD_TX"
+    }, {
+      "name" : "GAS_INJECTION_MM3_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_OIL.FACT_OIL_BRAZIL.GAS_INJECTION_MM3_NR"
+    }, {
+      "name" : "INSTALLATION_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_OIL.FACT_OIL_BRAZIL.INSTALLATION_TX"
+    }, {
+      "name" : "MONTH_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_OIL.FACT_OIL_BRAZIL.MONTH_NR"
+    }, {
+      "name" : "NITROGEN_INJECTION_MM3_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_OIL.FACT_OIL_BRAZIL.NITROGEN_INJECTION_MM3_NR"
+    }, {
+      "name" : "NON_ASSOCIATED_PETROLEUM_GAS_MM3_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_OIL.FACT_OIL_BRAZIL.NON_ASSOCIATED_PETROLEUM_GAS_MM3_NR"
+    }, {
+      "name" : "OIL_M3_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_OIL.FACT_OIL_BRAZIL.OIL_M3_NR"
+    }, {
+      "name" : "OTHER_FLUIDS_INJECTION_M3_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_OIL.FACT_OIL_BRAZIL.OTHER_FLUIDS_INJECTION_M3_NR"
+    }, {
+      "name" : "POLYMER_INJECTION_M3_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_OIL.FACT_OIL_BRAZIL.POLYMER_INJECTION_M3_NR"
+    }, {
+      "name" : "SECONDARY_RECOVERY_WATER_INJECTION_M3",
+      "sourceLogicalColumn" : "logicalColumn:OD_OIL.FACT_OIL_BRAZIL.SECONDARY_RECOVERY_WATER_INJECTION_M3"
+    }, {
+      "name" : "STATE_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_OIL.FACT_OIL_BRAZIL.STATE_TX"
+    }, {
+      "name" : "STEAM_INJECTION_T_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_OIL.FACT_OIL_BRAZIL.STEAM_INJECTION_T_NR"
+    }, {
+      "name" : "WASTEWATER_INJECTION_M3_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_OIL.FACT_OIL_BRAZIL.WASTEWATER_INJECTION_M3_NR"
+    }, {
+      "name" : "WATER_M3_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_OIL.FACT_OIL_BRAZIL.WATER_M3_NR"
+    }, {
+      "name" : "WELL_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_OIL.FACT_OIL_BRAZIL.WELL_TX"
+    }, {
+      "name" : "WELL_WID",
+      "sourceLogicalColumn" : "logicalColumn:OD_OIL.FACT_OIL_BRAZIL.WELL_WID"
+    }, {
+      "name" : "YEAR_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_OIL.FACT_OIL_BRAZIL.YEAR_NR"
+    } ]
+  }
+}

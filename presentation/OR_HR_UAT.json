@@ -1,0 +1,19 @@
+{
+  "subjectArea" : {
+    "name" : "OR_HR_UAT",
+    "sourceBusinessModel" : "businessModel:OR_HR_UAT",
+    "tableOrder" : [ {
+      "name" : "presentationTable:OR_HR_UAT.Dim Date"
+    }, {
+      "name" : "presentationTable:OR_HR_UAT.Dim Employee"
+    }, {
+      "name" : "presentationTable:OR_HR_UAT.Fact Historical Data"
+    }, {
+      "name" : "presentationTable:OR_HR_UAT.Fact Recruitment"
+    }, {
+      "name" : "presentationTable:OR_HR_UAT.Dim Positions"
+    }, {
+      "name" : "presentationTable:OR_HR_UAT.Last Modification"
+    } ]
+  }
+}

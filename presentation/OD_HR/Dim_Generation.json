@@ -1,0 +1,24 @@
+{
+  "presentationTable" : {
+    "name" : "Dim_Generation",
+    "presentationColumns" : [ {
+      "name" : "Generation Desc Key",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Generation.Generation Desc Key"
+    }, {
+      "name" : "Order",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Generation.Order"
+    }, {
+      "name" : "Row Wid",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Generation.Row Wid"
+    }, {
+      "name" : "End Year",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Generation.End Year"
+    }, {
+      "name" : "Start Year",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Generation.Start Year"
+    }, {
+      "name" : "Generation Years Desc",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Generation.Generation Years Desc"
+    } ]
+  }
+}

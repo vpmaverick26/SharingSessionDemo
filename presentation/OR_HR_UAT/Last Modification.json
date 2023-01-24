@@ -1,0 +1,10 @@
+{
+  "presentationTable" : {
+    "name" : "Last Modification",
+    "presentationColumns" : [ {
+      "name" : "Last Modification HR",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Last Modification.Last Modification HR",
+      "alternateNames" : [ "Last Modification" ]
+    } ]
+  }
+}

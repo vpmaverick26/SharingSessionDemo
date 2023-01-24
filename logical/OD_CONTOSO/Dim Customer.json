@@ -1,0 +1,431 @@
+{
+  "logicalTable" : {
+    "name" : "Dim Customer",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "CUSTOMER_KEY_ID" ],
+    "logicalColumns" : [ {
+      "name" : "ADDRESS_LINE_1TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Customer",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Customer.ADDRESS_LINE_1TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Customer Detail"
+    }, {
+      "name" : "ADDRESS_LINE_2TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Customer",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Customer.ADDRESS_LINE_2TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Customer Detail"
+    }, {
+      "name" : "BIRTH_DATE_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Customer",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Customer.BIRTH_DATE_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Customer Detail"
+    }, {
+      "name" : "COMPANY_NAME_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Customer",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Customer.COMPANY_NAME_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Customer Detail"
+    }, {
+      "name" : "CUSTOMER_KEY_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Customer",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Customer.CUSTOMER_KEY_ID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Customer Detail"
+    }, {
+      "name" : "CUSTOMER_LABEL_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Customer",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Customer.CUSTOMER_LABEL_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Customer Detail"
+    }, {
+      "name" : "CUSTOMER_TYPE_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Customer",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Customer.CUSTOMER_TYPE_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Customer Detail"
+    }, {
+      "name" : "DATE_FIRST_PURCHASE_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Customer",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Customer.DATE_FIRST_PURCHASE_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Customer Detail"
+    }, {
+      "name" : "EDUCATION_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Customer",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Customer.EDUCATION_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Customer Detail"
+    }, {
+      "name" : "EMAIL_ADDRESS_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Customer",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Customer.EMAIL_ADDRESS_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Customer Detail"
+    }, {
+      "name" : "FIRST_NAME_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Customer",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Customer.FIRST_NAME_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Customer Detail"
+    }, {
+      "name" : "GENDER_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Customer",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Customer.GENDER_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Customer Detail"
+    }, {
+      "name" : "GEOGRAPHY_KEY_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Customer",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Customer.GEOGRAPHY_KEY_ID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Customer Detail"
+    }, {
+      "name" : "HOUSE_OWNER_FLAG_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Customer",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Customer.HOUSE_OWNER_FLAG_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Customer Detail"
+    }, {
+      "name" : "LAST_NAME_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Customer",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Customer.LAST_NAME_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Customer Detail"
+    }, {
+      "name" : "MARITAL_STATUS_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Customer",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Customer.MARITAL_STATUS_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Customer Detail"
+    }, {
+      "name" : "MIDDLE_NAME_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Customer",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Customer.MIDDLE_NAME_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Customer Detail"
+    }, {
+      "name" : "NAME_STYLE_BL",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Customer",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Customer.NAME_STYLE_BL" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Customer Detail"
+    }, {
+      "name" : "NUMBER_CARS_OWNED_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Customer",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Customer.NUMBER_CARS_OWNED_NR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Customer Detail"
+    }, {
+      "name" : "NUMBER_CHILDREN_AT_HOME_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Customer",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Customer.NUMBER_CHILDREN_AT_HOME_NR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Customer Detail"
+    }, {
+      "name" : "OCCUPATION_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Customer",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Customer.OCCUPATION_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Customer Detail"
+    }, {
+      "name" : "PHONE_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Customer",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Customer.PHONE_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Customer Detail"
+    }, {
+      "name" : "SUFFIX_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Customer",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Customer.SUFFIX_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Customer Detail"
+    }, {
+      "name" : "TITLE_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Customer",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Customer.TITLE_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Customer Detail"
+    }, {
+      "name" : "TOTAL_CHILDREN_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Customer",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Customer.TOTAL_CHILDREN_NR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Customer Detail"
+    }, {
+      "name" : "YEARLY_INCOME_NR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Customer",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Customer.YEARLY_INCOME_NR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Customer Detail"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim Customer",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OD_CONTOSO.OD_CONTOSO.Dim Customer" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Dim Customer Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Dim Customer Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Dim Customer Detail",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "CUSTOMER_KEY_ID" ],
+        "displayKey" : "CUSTOMER_KEY_ID"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Dim CustomerDim",
+        "levels" : [ "Dim Customer Total", "Dim Customer Detail" ]
+      } ]
+    }
+  }
+}

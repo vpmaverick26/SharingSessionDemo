@@ -1,0 +1,14 @@
+{
+  "physicalTable": {
+    "name": "Dim_Date",
+    "sourceTable": "physicalTable:OR_HR_UAT.HR.DIMDATE",
+    "caching": {
+      "enable": true
+    },
+    "additionalKeys": [
+      [
+        "DATENUM"
+      ]
+    ]
+  }
+}

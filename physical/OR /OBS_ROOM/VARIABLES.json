@@ -1,0 +1,26 @@
+{
+  "physicalTable" : {
+    "name" : "VARIABLES",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "PEOPLEINSHOPS",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "STOCKVALUE",
+      "dataType" : "DOUBLE",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "STOCKVALUEPCT",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

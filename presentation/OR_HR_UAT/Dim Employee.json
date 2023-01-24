@@ -1,0 +1,69 @@
+{
+  "presentationTable" : {
+    "name" : "Dim Employee",
+    "presentationColumns" : [ {
+      "name" : "Birth Date",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Dim Employee.Birth Date"
+    }, {
+      "name" : "Department Name",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Dim Employee.Department Name"
+    }, {
+      "name" : "Employee Id",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Dim Employee.Employee Id"
+    }, {
+      "name" : "Employee Id2",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Dim Employee.Employee Id2"
+    }, {
+      "name" : "End Date",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Dim Employee.End Date"
+    }, {
+      "name" : "Gender",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Dim Employee.Gender"
+    }, {
+      "name" : "Hire Date",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Dim Employee.Hire Date"
+    }, {
+      "name" : "Job",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Dim Employee.Job"
+    }, {
+      "name" : "Nationality",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Dim Employee.Nationality"
+    }, {
+      "name" : "Parent Id",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Dim Employee.Parent Id"
+    }, {
+      "name" : "Status",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Dim Employee.Status"
+    }, {
+      "name" : "Title",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Dim Employee.Title"
+    }, {
+      "name" : "Age",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Dim Employee.Age"
+    }, {
+      "name" : "Time In Company",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Dim Employee.Time In Company"
+    }, {
+      "name" : "Days In Company",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Dim Employee.Days In Company"
+    }, {
+      "name" : "Age Ranges",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Dim Employee.Age Ranges"
+    }, {
+      "name" : "City",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Dim Employee.City"
+    }, {
+      "name" : "Region",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Dim Employee.Region"
+    }, {
+      "name" : "WFH Flag",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Dim Employee.WFH Flag"
+    }, {
+      "name" : "WFH Lat",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Dim Employee.WFH Lat"
+    }, {
+      "name" : "WFH Long",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Dim Employee.WFH Long"
+    } ]
+  }
+}

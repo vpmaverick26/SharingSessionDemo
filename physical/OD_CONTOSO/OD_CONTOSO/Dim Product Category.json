@@ -1,0 +1,14 @@
+{
+  "physicalTable": {
+    "name": "Dim Product Category",
+    "sourceTable": "physicalTable:OD_CONTOSO.OD_CONTOSO.W_PRODUCT_CATEGORY_D",
+    "caching": {
+      "enable": true
+    },
+    "additionalKeys": [
+      [
+        "PRODUCT_CATEGORY_KEY_ID"
+      ]
+    ]
+  }
+}

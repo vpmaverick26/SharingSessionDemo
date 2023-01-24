@@ -1,0 +1,32 @@
+{
+  "physicalTable" : {
+    "name" : "W_GRADE_D",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "CODE",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "GRADE",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "MAX_SALARY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "MIN_SALARY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "GRADE" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

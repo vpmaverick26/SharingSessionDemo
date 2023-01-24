@@ -1,0 +1,15 @@
+{
+  "presentationTable" : {
+    "name" : "Dim Positions",
+    "presentationColumns" : [ {
+      "name" : "Department",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Dim Positions.Department"
+    }, {
+      "name" : "PositionID#1",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Dim Positions.PositionID"
+    }, {
+      "name" : "Country",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Dim Positions.Country"
+    } ]
+  }
+}

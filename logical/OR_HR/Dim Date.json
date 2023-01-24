@@ -1,0 +1,325 @@
+{
+  "logicalTable" : {
+    "name" : "Dim Date",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Date Key" ],
+    "logicalColumns" : [ {
+      "name" : "Calendar Quarter",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Date.CALENDAR_QUARTER" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Quarter"
+    }, {
+      "name" : "Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Date.DATE_" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Date Detail"
+    }, {
+      "name" : "Date Key",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Date.DATENUM" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Date Detail"
+    }, {
+      "name" : "Day Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Date.DAYNAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Date Detail"
+    }, {
+      "name" : "Day Num Of Month",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Date.DAYNUMOFMONTH" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Date Detail"
+    }, {
+      "name" : "Day Num Of Quarter",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Date.DAYNUMOFQUARTER" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Date Detail"
+    }, {
+      "name" : "Day Num Of Week",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Date.DAYNUMOFWEEK" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Date Detail"
+    }, {
+      "name" : "Day Num Of Year",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Date.DAYNUMOFYEAR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Date Detail"
+    }, {
+      "name" : "Day Short Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Date.DAYSHORTNAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Date Detail"
+    }, {
+      "name" : "Month Name",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Month Num",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Date.MONTHNAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Month"
+    }, {
+      "name" : "Month Num",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Date.MONTHNUM" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Month"
+    }, {
+      "name" : "Month Short Name",
+      "dataType" : "VARCHAR",
+      "sortBy" : "Month Num",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Date.MONTHSHORTNAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Month"
+    }, {
+      "name" : "Quarter",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Date.QUARTER" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Quarter"
+    }, {
+      "name" : "Week Num",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Date.WEEKNUM" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Week"
+    }, {
+      "name" : "Year Month Num",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Date.YEARMONTHNUM" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Year"
+    }, {
+      "name" : "Year Quarter Num",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Date",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Date.YEARQUARTERNUM" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Year"
+    }, {
+      "name" : "Year",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " EXTRACT( YEAR  FROM %1)",
+          "expressionObjects" : [ "logicalColumn:OR_HR.Dim Date.Date" ]
+        }
+      },
+      "logicalLevel" : "Year"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim_Date",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OR_HR.HR.Dim_Date" ]
+      },
+      "dataGranularity" : [ "logicalLevel:OR_HR.Dim Date.Dim Date Detail" ],
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Dim Date Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Dim Date Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Year",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Year" ],
+        "displayKey" : "Year"
+      }, {
+        "name" : "Quarter",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Quarter" ],
+        "displayKey" : "Quarter"
+      }, {
+        "name" : "Month",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Month Name" ],
+        "displayKey" : "Month Name"
+      }, {
+        "name" : "Week",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Week Num" ],
+        "displayKey" : "Week Num"
+      }, {
+        "name" : "Dim Date Detail",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Date Key" ],
+        "displayKey" : "Date",
+        "additionalKeys" : [ [ "Date" ] ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Dim DateDim",
+        "levels" : [ "Dim Date Total", "Year", "Quarter", "Month", "Week", "Dim Date Detail" ]
+      } ]
+    }
+  }
+}

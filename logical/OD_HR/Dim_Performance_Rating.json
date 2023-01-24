@@ -1,0 +1,101 @@
+{
+  "logicalTable" : {
+    "name" : "Dim_Performance_Rating",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Performance Rating" ],
+    "logicalColumns" : [ {
+      "name" : "Benchmark (% of Employees)",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Performance_Rating",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_PERFORMANCE_RATING_D.BENCHMARK (% EMPLOYEES)" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Performance_Rating Detail"
+    }, {
+      "name" : "Performance Rating",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Performance_Rating",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_PERFORMANCE_RATING_D.PERFORMANCE_RATING_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Performance_Rating Detail"
+    }, {
+      "name" : "Performance Score",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Performance_Rating",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_PERFORMANCE_RATING_D.PERFORMANCE_SCORE_NR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Performance_Rating Detail"
+    }, {
+      "name" : "Row Wid",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Performance_Rating",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_PERFORMANCE_RATING_D.ROW_WID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Performance_Rating Detail"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim_Performance_Rating",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OD_HR.OD_HR.W_PERFORMANCE_RATING_D" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Dim_Performance_Rating Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Dim_Performance_Rating Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Dim_Performance_Rating Detail",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Performance Rating" ],
+        "displayKey" : "Performance Rating"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Dim_Performance_RatingDim",
+        "levels" : [ "Dim_Performance_Rating Total", "Dim_Performance_Rating Detail" ]
+      } ]
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "logicalTable" : {
+    "name" : "Fact Ap Kpis D",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "Ap Turnover",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_AP_KPIs",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_AP_KPIs.AP_TURNOVER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Avg Invoices Amount",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_AP_KPIs",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_AP_KPIs.AVG_INVOICES_AMOUNT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Days Payables Outstanding",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_AP_KPIs",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_AP_KPIs.DAYS_PAYABLES_OUTSTANDING" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Fiscal Quarter",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_AP_KPIs",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_AP_KPIs.FISCAL_QUARTER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Invoices Count",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_AP_KPIs",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_AP_KPIs.INVOICES_COUNT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Legal Entity Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_AP_KPIs",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_AP_KPIs.LEGAL_ENTITY_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Overdue Amount",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_AP_KPIs",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_AP_KPIs.OVERDUE_AMOUNT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Supplier Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_AP_KPIs",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_AP_KPIs.SUPPLIER_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Total Amount",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_AP_KPIs",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_AP_KPIs.TOTAL_AMOUNT" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Fact_AP_KPIs",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OR .OBS_ROOM.Fact_AP_KPIs" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ]
+  }
+}

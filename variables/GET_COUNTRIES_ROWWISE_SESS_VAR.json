@@ -1,0 +1,15 @@
+{
+  "initBlock" : {
+    "name" : "GET_COUNTRIES_ROWWISE_SESS_VAR",
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:ANALYTICS_SERVER",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "SELECT 'COUNTRIES', COUNTRY FROM AWDW.OR_USERS_COUNTRIES WHERE USER_NAME = ':USER'"
+    } ],
+    "disable" : true,
+    "queryReturnsVariableNamesAndValues" : true,
+    "allowDeferredExecution" : false,
+    "cacheQueryResult" : false
+  }
+}

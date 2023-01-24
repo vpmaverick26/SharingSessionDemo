@@ -1,0 +1,22 @@
+{
+  "initBlock" : {
+    "name" : "HCM - CURRENT_DAY_WID",
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:ANALYTICS_SERVER",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "select DAY_WID from \"DWH\".\"CPAPPS_DWH\".\"Dim_W_DAY_D\" where DAY_ID = CURRENT_DATE"
+    } ],
+    "variables" : [ {
+      "name" : "CURRENT_DAY_WID",
+      "description" : "Day WID of the current date.",
+      "value" : "20190122",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    } ],
+    "disable" : true,
+    "queryReturnsVariableNamesAndValues" : false,
+    "allowDeferredExecution" : false,
+    "cacheQueryResult" : true
+  }
+}

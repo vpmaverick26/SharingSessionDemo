@@ -1,0 +1,120 @@
+{
+  "presentationTable" : {
+    "name" : "Fact Recruitment",
+    "presentationColumns" : [ {
+      "name" : "Application ID",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.Application ID",
+      "alternateNames" : [ "Application" ]
+    }, {
+      "name" : "Application Date",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.Application Date",
+      "alternateNames" : [ "Applic Date" ]
+    }, {
+      "name" : "Days to Hire",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.Days to Hire"
+    }, {
+      "name" : "Decision",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.Decision"
+    }, {
+      "name" : "Decline Reason",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.Decline Reason"
+    }, {
+      "name" : "Department",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.Department"
+    }, {
+      "name" : "Employee Id",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.Employee Id"
+    }, {
+      "name" : "Hiring Date",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.Hiring Date"
+    }, {
+      "name" : "Interview Date",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.Interview Date"
+    }, {
+      "name" : "Offer Date",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.Offer Date"
+    }, {
+      "name" : "Phone Date",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.Phone Date"
+    }, {
+      "name" : "Source",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.Source"
+    }, {
+      "name" : "Avg. Days To Hire",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.Avg\\. Days To Hire",
+      "alternateNames" : [ "Avg, Days To Hire" ]
+    }, {
+      "name" : "# of Offers Released",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.# of Offers Released",
+      "alternateNames" : [ "Offers count", "Total # of Offers", "Total # of Offers Released" ]
+    }, {
+      "name" : "Total # of Hires",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.Total # of Hires",
+      "alternateNames" : [ "Hiring Count" ]
+    }, {
+      "name" : "# of Applications Applied",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.# of Applicants Applied",
+      "alternateNames" : [ "Applications", "Total # of Applications" ]
+    }, {
+      "name" : "Offer Acceptance Rate",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.Offer Acceptance Rate"
+    }, {
+      "name" : "----------------------------------",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.----------------------------------"
+    }, {
+      "name" : "# of Applicants Applied",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.# of Applicants Applied"
+    }, {
+      "name" : "# of Applicants Filtered",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.# of Applicants Filtered"
+    }, {
+      "name" : "# of Applicants Contacted",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.# of Applicants Contacted"
+    }, {
+      "name" : "# of Applicants Not Interviewed",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.# of Applicants Not Interviewed"
+    }, {
+      "name" : "# of Applicants Interviewed",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.# of Applicants Interviewed"
+    }, {
+      "name" : "# of Applicants Rejected",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.# of Applicants Rejected"
+    }, {
+      "name" : "# of Applicants Selected",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.# of Applicants Selected"
+    }, {
+      "name" : "# of Offer Declined",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.# of Offer Declined",
+      "alternateNames" : [ "# of Offers Declined" ]
+    }, {
+      "name" : "# of Offer Accepted",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.# of Offer Accepted",
+      "alternateNames" : [ "# of Positions Hired" ]
+    }, {
+      "name" : "# of Applications Rejected",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.# of Applicants Rejected",
+      "alternateNames" : [ "# of ApplicationsRejected", "# of Open Positions", "# of Positions Rejected" ]
+    }, {
+      "name" : "# of Positions Closed",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.# of Offer Accepted"
+    }, {
+      "name" : "1-Year Quit Rate",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.1-Year Quit Rate"
+    }, {
+      "name" : "Cost To Hire",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.Cost To Hire"
+    }, {
+      "name" : "Open Positions",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.Open Positions"
+    }, {
+      "name" : "# of Hires",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.# of Hires"
+    }, {
+      "name" : "# of Leavers",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.# of Leavers"
+    }, {
+      "name" : "Cost To Hire Target",
+      "sourceLogicalColumn" : "logicalColumn:OR_HR_UAT.Fact Recruitment.Cost To Hire Target"
+    } ]
+  }
+}

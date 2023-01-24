@@ -1,0 +1,26 @@
+{
+  "physicalTable" : {
+    "name" : "OD_SEC_USERS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "COUNTRY",
+      "dataType" : "VARCHAR",
+      "length" : 300,
+      "nullable" : true
+    }, {
+      "name" : "USERNAME",
+      "dataType" : "VARCHAR",
+      "length" : 150,
+      "nullable" : true
+    }, {
+      "name" : "USER_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

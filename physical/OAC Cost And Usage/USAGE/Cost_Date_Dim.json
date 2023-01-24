@@ -1,0 +1,14 @@
+{
+  "physicalTable": {
+    "name": "Cost_Date_Dim",
+    "sourceTable": "physicalTable:OAC Cost And Usage.USAGE.DIM_DATE",
+    "caching": {
+      "enable": true
+    },
+    "additionalKeys": [
+      [
+        "DATENUM"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "logicalTable" : {
+    "name" : "Dim_Grade",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Grade" ],
+    "logicalColumns" : [ {
+      "name" : "Code",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Grade",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_GRADE_D.CODE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Grade Detail"
+    }, {
+      "name" : "Grade",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Grade",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_GRADE_D.GRADE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Grade Detail"
+    }, {
+      "name" : "Max Salary",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Grade",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_GRADE_D.MAX_SALARY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Grade Detail"
+    }, {
+      "name" : "Min Salary",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Grade",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_GRADE_D.MIN_SALARY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Grade Detail"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim_Grade",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OD_HR.OD_HR.W_GRADE_D" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Dim_Grade Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Dim_Grade Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Dim_Grade Detail",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Grade" ],
+        "displayKey" : "Grade"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Dim_GradeDim",
+        "levels" : [ "Dim_Grade Total", "Dim_Grade Detail" ]
+      } ]
+    }
+  }
+}

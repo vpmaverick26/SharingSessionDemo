@@ -1,0 +1,36 @@
+{
+  "physicalTable" : {
+    "name" : "OR_USERS_COUNTRIES",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "COUNTRY",
+      "dataType" : "VARCHAR",
+      "length" : 150,
+      "nullable" : true
+    }, {
+      "name" : "EMAIL",
+      "dataType" : "VARCHAR",
+      "length" : 150,
+      "nullable" : true
+    }, {
+      "name" : "LAST_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 150,
+      "nullable" : true
+    }, {
+      "name" : "USER_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "USER_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 150,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

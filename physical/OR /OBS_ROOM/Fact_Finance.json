@@ -1,0 +1,18 @@
+{
+  "physicalTable": {
+    "name": "Fact_Finance",
+    "sourceTable": "physicalTable:OR .OBS_ROOM.OR_FINANCE_FACT",
+    "caching": {
+      "enable": true
+    },
+    "joins": [      {
+        "rightTable": "physicalTable:OR .OBS_ROOM.Dim_Date",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OR .OBS_ROOM.Fact_Finance.FISCAL_QUARTER",
+            "rightColumn": "physicalColumn:OR .OBS_ROOM.Dim_Date.YEARQUARTER"
+          }
+        ]
+      }
+    ]
+  }
+}

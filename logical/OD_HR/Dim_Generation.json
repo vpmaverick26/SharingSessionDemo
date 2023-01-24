@@ -1,0 +1,131 @@
+{
+  "logicalTable" : {
+    "name" : "Dim_Generation",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Generation Desc Key" ],
+    "logicalColumns" : [ {
+      "name" : "Generation Desc Key",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Generation",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_GENERATION_D.GENERATION_DESC_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Generation Detail"
+    }, {
+      "name" : "Order",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Generation",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_GENERATION_D.ORDER_NR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Generation Detail"
+    }, {
+      "name" : "Row Wid",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Generation",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_GENERATION_D.ROW_WID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Generation Detail"
+    }, {
+      "name" : "End Year",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Generation",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_GENERATION_D.YEAR_END_NR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Generation Detail"
+    }, {
+      "name" : "Start Year",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Generation",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_GENERATION_D.YEAR_START_NR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Generation Detail"
+    }, {
+      "name" : "Generation Years Desc",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Generation",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_GENERATION_D.GENERATION_YEARS_DESC_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Generation Detail"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim_Generation",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OD_HR.OD_HR.W_GENERATION_D" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Dim_Generation Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Dim_Generation Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Dim_Generation Detail",
+        "numberOfElements" : 5,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Generation Desc Key" ],
+        "displayKey" : "Generation Desc Key"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Dim_GenerationDim",
+        "levels" : [ "Dim_Generation Total", "Dim_Generation Detail" ]
+      } ]
+    }
+  }
+}

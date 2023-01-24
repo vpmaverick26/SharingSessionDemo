@@ -1,0 +1,221 @@
+{
+  "logicalTable" : {
+    "name" : "Dim_Location",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Site Name" ],
+    "logicalColumns" : [ {
+      "name" : "Address",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Location",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_LOCATION_D.ADDRESS_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Location Detail"
+    }, {
+      "name" : "Annual Cost",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Location",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_LOCATION_D.ANNUAL_COST_NR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Location Detail"
+    }, {
+      "name" : "Capacity",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Location",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_LOCATION_D.CAPACITY_NR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Location Detail"
+    }, {
+      "name" : "Country Code",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Location",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_LOCATION_D.COUNTRY_ISO_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Location Detail"
+    }, {
+      "name" : "Country Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Location",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_LOCATION_D.COUNTRY_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Location Detail"
+    }, {
+      "name" : "Latitude",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Location",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_LOCATION_D.LATITUDE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Location Detail"
+    }, {
+      "name" : "Longitude",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Location",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_LOCATION_D.LONGITUDE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Location Detail"
+    }, {
+      "name" : "ROW_WID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Location",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_LOCATION_D.ROW_WID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Location Detail"
+    }, {
+      "name" : "Salary Modifier",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Location",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_LOCATION_D.SALARY_MODIFIER_NR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Location Detail"
+    }, {
+      "name" : "Site Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Location",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_LOCATION_D.SITE_NAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Location Detail"
+    }, {
+      "name" : "Site Picture",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Location",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_LOCATION_D.SITE_PICTURE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Location Detail"
+    }, {
+      "name" : "Site Type",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Location",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_LOCATION_D.SITE_TYPE_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Location Detail"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim_Location",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OD_HR.OD_HR.W_LOCATION_D" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Dim_Location Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Dim_Location Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Dim_Location Detail",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Site Name" ],
+        "displayKey" : "Site Name"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Dim_LocationDim",
+        "levels" : [ "Dim_Location Total", "Dim_Location Detail" ]
+      } ]
+    }
+  }
+}

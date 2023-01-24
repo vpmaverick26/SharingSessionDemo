@@ -1,0 +1,57 @@
+{
+  "presentationTable" : {
+    "name" : "Cost Date",
+    "alternateNames" : [ "Cost_Date_Dim" ],
+    "presentationColumns" : [ {
+      "name" : "Calendar Quarter",
+      "sourceLogicalColumn" : "logicalColumn:OAC Cost And Usage.Cost_Date_Dim.Calendar Quarter",
+      "alternateNames" : [ "Calendar_quarter" ]
+    }, {
+      "name" : "Date",
+      "sourceLogicalColumn" : "logicalColumn:OAC Cost And Usage.Cost_Date_Dim.Date",
+      "alternateNames" : [ "Date_" ]
+    }, {
+      "name" : "Day Name",
+      "sourceLogicalColumn" : "logicalColumn:OAC Cost And Usage.Cost_Date_Dim.Day Name",
+      "alternateNames" : [ "Dayname" ]
+    }, {
+      "name" : "Day Num of Month",
+      "sourceLogicalColumn" : "logicalColumn:OAC Cost And Usage.Cost_Date_Dim.Day Num of Month",
+      "alternateNames" : [ "Daynumofmonth" ]
+    }, {
+      "name" : "Day Short Name",
+      "sourceLogicalColumn" : "logicalColumn:OAC Cost And Usage.Cost_Date_Dim.Day Short Name",
+      "alternateNames" : [ "Dayshortname" ]
+    }, {
+      "name" : "Month Name",
+      "sourceLogicalColumn" : "logicalColumn:OAC Cost And Usage.Cost_Date_Dim.Month Name",
+      "alternateNames" : [ "Monthname" ]
+    }, {
+      "name" : "Month Num",
+      "sourceLogicalColumn" : "logicalColumn:OAC Cost And Usage.Cost_Date_Dim.Month Num",
+      "alternateNames" : [ "Monthnum" ]
+    }, {
+      "name" : "Month Short Name",
+      "sourceLogicalColumn" : "logicalColumn:OAC Cost And Usage.Cost_Date_Dim.Month Short Name",
+      "alternateNames" : [ "Monthshortname" ]
+    }, {
+      "name" : "Quarter",
+      "sourceLogicalColumn" : "logicalColumn:OAC Cost And Usage.Cost_Date_Dim.Quarter"
+    }, {
+      "name" : "Week Num",
+      "sourceLogicalColumn" : "logicalColumn:OAC Cost And Usage.Cost_Date_Dim.Week Num",
+      "alternateNames" : [ "Weeknum" ]
+    }, {
+      "name" : "Year",
+      "sourceLogicalColumn" : "logicalColumn:OAC Cost And Usage.Cost_Date_Dim.Year"
+    }, {
+      "name" : "Year Month",
+      "sourceLogicalColumn" : "logicalColumn:OAC Cost And Usage.Cost_Date_Dim.Year Month",
+      "alternateNames" : [ "Yearmonthnum" ]
+    }, {
+      "name" : "Year Quarter",
+      "sourceLogicalColumn" : "logicalColumn:OAC Cost And Usage.Cost_Date_Dim.Year Quarter",
+      "alternateNames" : [ "Yearquarternum" ]
+    } ]
+  }
+}

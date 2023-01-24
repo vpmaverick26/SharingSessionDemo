@@ -1,0 +1,27 @@
+{
+  "subjectArea" : {
+    "name" : "OBS_ROOM",
+    "sourceBusinessModel" : "businessModel:OR",
+    "tableOrder" : [ {
+      "name" : "presentationTable:OBS_ROOM.Fact Ap Aging"
+    }, {
+      "name" : "presentationTable:OBS_ROOM.Fact Ap Kpis"
+    }, {
+      "name" : "presentationTable:OBS_ROOM.Fact Ar Aging"
+    }, {
+      "name" : "presentationTable:OBS_ROOM.Fact Ar Kpis"
+    }, {
+      "name" : "presentationTable:OBS_ROOM.Fact Finance"
+    }, {
+      "name" : "presentationTable:OBS_ROOM.- Fact Finance Targets"
+    }, {
+      "name" : "presentationTable:OBS_ROOM.Dim Date"
+    }, {
+      "name" : "presentationTable:OBS_ROOM.Last Modification"
+    } ],
+    "localization" : {
+      "localizationKey" : "OBS_ROOM",
+      "nameVariable" : "Finance"
+    }
+  }
+}

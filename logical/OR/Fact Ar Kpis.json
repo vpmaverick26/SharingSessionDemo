@@ -1,0 +1,148 @@
+{
+  "logicalTable" : {
+    "name" : "Fact Ar Kpis",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "Ar Turnover",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_AR_KPIs",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_AR_KPIs.AR_TURNOVER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Avg Recipet Amount",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_AR_KPIs",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_AR_KPIs.AVG_RECIPET_AMOUNT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Customer Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_AR_KPIs",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_AR_KPIs.CUSTOMER_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Days Sales Outstanding",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_AR_KPIs",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_AR_KPIs.DAYS_SALES_OUTSTANDING" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Fiscal Quarter",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_AR_KPIs",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_AR_KPIs.FISCAL_QUARTER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Legal Entity Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_AR_KPIs",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_AR_KPIs.LEGAL_ENTITY_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Overdue Amount",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_AR_KPIs",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_AR_KPIs.OVERDUE_AMOUNT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Reciepts Count",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_AR_KPIs",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_AR_KPIs.RECIEPTS_COUNT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Total Amount",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_AR_KPIs",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_AR_KPIs.TOTAL_AMOUNT" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Fact_AR_KPIs",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OR .OBS_ROOM.Fact_AR_KPIs" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:OR.Fact Ar Kpis D",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

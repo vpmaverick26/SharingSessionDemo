@@ -1,0 +1,506 @@
+{
+  "physicalTable" : {
+    "name" : "OR_FINANCE_FACT",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ACCOUNTS_PAYABLE",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "ACCOUNTS_PAYABLE_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "ACCOUNTS_RECEIVABLE",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "ACCOUNTS_RECEIVABLE_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "BALANCING_SEGMENT_DESCRIPTION",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "CAPEX",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "CAPEX_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "CASH",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "CASH_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "COST_CENTER_DESCRIPTION",
+      "dataType" : "VARCHAR",
+      "length" : 128,
+      "nullable" : true
+    }, {
+      "name" : "COST_OF_REVENUE",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "COST_OF_REVENUE_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "CURRENT_ASSETS",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "CURRENT_ASSETS_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "CURRENT_LIABILITIES",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "CURRENT_LIABILITIES_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "DEBT_TO_EQUITY",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "DEBT_TO_EQUITY_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "DEFERRED_REVENUE",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "DEFERRED_REVENUE_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "DEPRECIATION_EXPENSES",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "DEPRECIATION_EXPENSES_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "EBIT",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "EBITDA",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "EBITDA_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "EBIT_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "EBT",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "EBT_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "FINISHED_GOODS_INVENTORY",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "FINISHED_GOODS_INVENTORY_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "FISCAL_QUARTER",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "FISCAL_YEAR",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "GROSS_MARGIN",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "GROSS_PROFIT",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "GROSS_PROFIT_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "INCOME_TAX_EXPENSE",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "INCOME_TAX_EXPENSE_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "INTEREST_EXPENSE",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "INTEREST_EXPENSE_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "INVENTORIES",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "INVENTORIES_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "LEGAL_ENTITY_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "LONG_TERM_ASSETS",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "LONG_TERM_ASSETS_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "LONG_TERM_DEBT",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "LONG_TERM_DEBT_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "LONG_TERM_LIABILITIES",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "LONG_TERM_LIABILITIES_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "NET_INCOME",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "NET_INCOME_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "NET_PPE",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "NET_PPE_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "NET_WORKING_CAPITAL",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "NET_WORKING_CAPITAL_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "OPERATING_MARGIN",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "OPERATING_MARGIN_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "OPERATING_PROFIT",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "OPERATING_PROFIT_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "OTHER_ASSETS",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "OTHER_ASSETS_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "OTHER_CURRENT_ASSETS",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "OTHER_CURRENT_ASSETS_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "OTHER_INCOME",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "OTHER_INCOME_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "OTHER_LIABILITIES",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "OTHER_LIABILITIES_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "OTHER_OPERATING_EXPENSES",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "OTHER_OPERATING_EXPENSES_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "PAYROLL_COST",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "PAYROLL_COST_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "PPE",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "PPE_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "PREPAID_EXPENSES",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "PREPAID_EXPENSES_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "RAW_MATERIAL_INVENTORY",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "RAW_MATERIAL_INVENTORY_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "RD_EXPENSES",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "RD_EXPENSES_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "REVENUE",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "REVENUE_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "ROA",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "ROA_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "ROE",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "ROE_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "SALES_MARKETING_EXPENSES",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "SALES_MARKETING_EXPENSES_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "SHORT_TERM_BORROWING",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "SHORT_TERM_BORROWING_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "TAX_LIABILITIES",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "TAX_LIABILITIES_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "TOTAL_ASSETS",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "TOTAL_ASSETS_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "TOTAL_LIABILITIES",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "TOTAL_LIABILITIES_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "TOTAL_OPERATING_EXPENSES",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "TOTAL_OPERATING_EXPENSES_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "WORK_IN_PROCESS_INVENTORY",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "WORK_IN_PROCESS_INVENTORY_TARGET_BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "QUARTER",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

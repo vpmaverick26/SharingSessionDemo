@@ -1,0 +1,33 @@
+{
+  "database" : {
+    "name" : "OAC Cost And Usage",
+    "databaseType" : "ORACLE_DATABASE",
+    "connectionPools" : [ {
+      "name" : "Connection Pool",
+      "remoteConnection" : false,
+      "maxConnections" : 10,
+      "requiresFullyQualifedTableNames" : false,
+      "connectionTimeout" : 5,
+      "connectionTimeoutUnit" : "MINUTES",
+      "multithreaded" : true,
+      "supportParams" : true,
+      "writeBackConfig" : {
+        "dbSupportsUnicode" : false,
+        "bulkInsertBufferSize" : 10240,
+        "transactionBoundary" : 1000,
+        "tempTablePrefix" : "TT"
+      }
+    } ],
+    "featureOverrides" : [ {
+      "name" : "EXTRACT_REGEX_SUPPORTED",
+      "value" : false
+    }, {
+      "name" : "REGEX_REPLACE_SUPPORTED",
+      "value" : false
+    } ],
+    "virtualPrivateDatabase" : false,
+    "crmMetadataTables" : false,
+    "allowDirectDatabaseRequests" : false,
+    "allowPopulateQueries" : false
+  }
+}

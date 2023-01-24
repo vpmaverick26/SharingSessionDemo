@@ -1,0 +1,214 @@
+{
+  "logicalTable" : {
+    "name" : "Cost_Date_Dim",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "Calendar Quarter",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Cost_Date_Dim",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OAC Cost And Usage.USAGE.Cost_Date_Dim.CALENDAR_QUARTER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Cost_Date_Dim",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OAC Cost And Usage.USAGE.Cost_Date_Dim.DATE_" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Datenum",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Cost_Date_Dim",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OAC Cost And Usage.USAGE.Cost_Date_Dim.DATENUM" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Day Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Cost_Date_Dim",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OAC Cost And Usage.USAGE.Cost_Date_Dim.DAYNAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Day Num of Month",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Cost_Date_Dim",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OAC Cost And Usage.USAGE.Cost_Date_Dim.DAYNUMOFMONTH" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Day Short Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Cost_Date_Dim",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OAC Cost And Usage.USAGE.Cost_Date_Dim.DAYSHORTNAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Month Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Cost_Date_Dim",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OAC Cost And Usage.USAGE.Cost_Date_Dim.MONTHNAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Month Num",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Cost_Date_Dim",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OAC Cost And Usage.USAGE.Cost_Date_Dim.MONTHNUM" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Month Short Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Cost_Date_Dim",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OAC Cost And Usage.USAGE.Cost_Date_Dim.MONTHSHORTNAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Quarter",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Cost_Date_Dim",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OAC Cost And Usage.USAGE.Cost_Date_Dim.QUARTER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Week Num",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Cost_Date_Dim",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OAC Cost And Usage.USAGE.Cost_Date_Dim.WEEKNUM" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Year",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Cost_Date_Dim",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OAC Cost And Usage.USAGE.Cost_Date_Dim.YEAR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Year Month",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Cost_Date_Dim",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OAC Cost And Usage.USAGE.Cost_Date_Dim.YEARMONTHNUM" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Year Quarter",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Cost_Date_Dim",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OAC Cost And Usage.USAGE.Cost_Date_Dim.YEARQUARTERNUM" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Cost_Date_Dim",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OAC Cost And Usage.USAGE.Cost_Date_Dim" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "primaryKey" : [ "Datenum" ]
+  }
+}

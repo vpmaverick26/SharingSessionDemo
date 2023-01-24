@@ -1,0 +1,614 @@
+{
+  "logicalTable" : {
+    "name" : "Fact Historical Data",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.DATE_" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Salary",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.MONTHLYSALARY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Department",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.DEPARTMENT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Range Salary",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.MONTHLYSALARY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Absence Cost",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.ABSENCECOST" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Absence Rate",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.ABSENCERATE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Hourly Rate",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.HOURLYRATE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Monthly Salary",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.MONTHLYSALARY" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Nps",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.NPS" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Overtime",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.OVERTIME" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Productivity",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.PRODUCTIVITY" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Satisfaction Index",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.SATISFACTIONINDEX" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Sick Leave Hours",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.SICKLEAVEHOURS" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Training Efectiveness",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.TRAININGEFECTIVENESS" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Training Investment",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.TRAININGINVESTMENT" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Vacation Days",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.VACATIONDAYS" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Vacation Hours",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.VACATIONHOURS" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Headcount",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.EMPLOYEEID" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT_DISTINCT",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Absence Cost Avg",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.ABSENCECOST" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Sick Leave Hours Avg",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.SICKLEAVEHOURS" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Headcount/Year",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.EMPLOYEEID" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT_DISTINCT",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:OR_HR_UAT.Dim Date.Year" ]
+      }
+    }, {
+      "name" : "Absence Rate Target",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.ABSENCE_RATE_TARGET" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Monthly Salary Target",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.MONTHLY_SALARY_TARGET" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Productivity Target",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.PRODUCTIVITY_TARGET" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Satisfaction Index Target",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.SATISFACTION_INDEX_TARGET" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Cost Workforce",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.MONTHLYSALARY" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "% Vacation Days Used",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / 23 * 100",
+          "expressionObjects" : [ "logicalColumn:OR_HR_UAT.Fact Historical Data.Avg Vacation Days" ]
+        }
+      }
+    }, {
+      "name" : "Avg Vacation Days",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : " IFNULL(%1, 0)",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.VACATIONDAYS" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Turn Over Rate",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2 * 100.00",
+          "expressionObjects" : [ "logicalColumn:OR_HR_UAT.Fact Recruitment.# of Leavers", "logicalColumn:OR_HR_UAT.Fact Historical Data.Headcount" ]
+        }
+      }
+    }, {
+      "name" : "Active Headcount",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 - %2",
+          "expressionObjects" : [ "logicalColumn:OR_HR_UAT.Fact Historical Data.Headcount", "logicalColumn:OR_HR_UAT.Fact Recruitment.# of Leavers" ]
+        }
+      }
+    }, {
+      "name" : "Vacation Days/Employee",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2 + 8",
+          "expressionObjects" : [ "logicalColumn:OR_HR_UAT.Fact Historical Data.Vacation Days", "logicalColumn:OR_HR_UAT.Fact Historical Data.Headcount" ]
+        }
+      }
+    }, {
+      "name" : "NPS Target",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.NPS_TARGET" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Overtime Target",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.OVERTIME_TARGET" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Training Effectiveness Target",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.TRAINING_EFFECTIVENESS_TARGET" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Average Trainings Per Employee",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Historical_Data",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR_UAT.HR.Fact_Historical_Data.TRAININGS_PER_EMPLOYEE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Fact_Historical_Data",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OR_HR_UAT.HR.Fact_Historical_Data" ]
+      },
+      "dataGranularity" : [ "logicalLevel:OR_HR_UAT.Dim Date.Dim Date Detail", "logicalLevel:OR_HR_UAT.Dim Employee.Dim Employee Detail" ],
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:OR_HR_UAT.Dim Date",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:OR_HR_UAT.Dim Employee",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

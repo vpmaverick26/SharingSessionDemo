@@ -1,0 +1,48 @@
+{
+  "presentationTable" : {
+    "name" : "- Fact Finance Targets",
+    "presentationColumns" : [ {
+      "name" : "Net Income Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Net Income Target Budget"
+    }, {
+      "name" : "Net Working Capital Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Net Working Capital Target Budget"
+    }, {
+      "name" : "OPEX Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.OPEX Target Budget"
+    }, {
+      "name" : "CAPEX Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.CAPEX Target Budget"
+    }, {
+      "name" : "COGS Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.COGS Target Budget"
+    }, {
+      "name" : "Cash Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Cash Target Budget"
+    }, {
+      "name" : "Ebitda Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Ebitda Target Budget"
+    }, {
+      "name" : "Gross Profit Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Gross Profit Target Budget"
+    }, {
+      "name" : "Payroll Cost Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Payroll Cost Target Budget"
+    }, {
+      "name" : "Revenue Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Revenue Target Budget"
+    }, {
+      "name" : "Total Assets Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Total Assets Target Budget"
+    }, {
+      "name" : "Total Liabilities Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Total Liabilities Target Budget"
+    }, {
+      "name" : "Roe Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Roe Target Budget"
+    }, {
+      "name" : "ROA Target",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.ROA Target"
+    } ]
+  }
+}

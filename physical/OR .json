@@ -1,0 +1,36 @@
+{
+  "database" : {
+    "name" : "OR ",
+    "databaseType" : "ORACLE_DATABASE",
+    "connectionPools" : [ {
+      "name" : "Connection Pool",
+      "remoteConnection" : false,
+      "maxConnections" : 10,
+      "requiresFullyQualifedTableNames" : false,
+      "connectionTimeout" : 5,
+      "connectionTimeoutUnit" : "MINUTES",
+      "multithreaded" : true,
+      "supportParams" : true,
+      "writeBackConfig" : {
+        "dbSupportsUnicode" : false,
+        "bulkInsertBufferSize" : 10240,
+        "transactionBoundary" : 1000,
+        "tempTablePrefix" : "TT"
+      }
+    } ],
+    "featureOverrides" : [ {
+      "name" : "RAND_SUPPORTED",
+      "value" : false
+    }, {
+      "name" : "FRACTIONAL_SECOND_PRECISION",
+      "value" : 0
+    }, {
+      "name" : "MAX_BULK_FETCH_BUFFER_SIZE",
+      "value" : 327680
+    } ],
+    "virtualPrivateDatabase" : false,
+    "crmMetadataTables" : false,
+    "allowDirectDatabaseRequests" : false,
+    "allowPopulateQueries" : false
+  }
+}

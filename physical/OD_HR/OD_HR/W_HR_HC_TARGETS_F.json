@@ -1,0 +1,36 @@
+{
+  "physicalTable" : {
+    "name" : "W_HR_HC_TARGETS_F",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "GRADE",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "HEADCOUNT_TARGET_NR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "JOB FAMILY",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "SITE_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "YEARMONTH",
+      "dataType" : "DOUBLE",
+      "length" : 0,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

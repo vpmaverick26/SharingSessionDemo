@@ -1,0 +1,31 @@
+{
+  "presentationTable" : {
+    "name" : "Cost by Time and Service",
+    "alternateNames" : [ "Hourly_Costs_Fact" ],
+    "presentationColumns" : [ {
+      "name" : "Cost",
+      "sourceLogicalColumn" : "logicalColumn:OAC Cost And Usage.Hourly_Costs_Fact.Cost"
+    }, {
+      "name" : "Quantity",
+      "sourceLogicalColumn" : "logicalColumn:OAC Cost And Usage.Hourly_Costs_Fact.Quantity"
+    }, {
+      "name" : "Service",
+      "sourceLogicalColumn" : "logicalColumn:OAC Cost And Usage.Hourly_Costs_Fact.Service"
+    }, {
+      "name" : "Sku Name",
+      "sourceLogicalColumn" : "logicalColumn:OAC Cost And Usage.Hourly_Costs_Fact.Sku Name",
+      "alternateNames" : [ "SKU_NAME" ]
+    }, {
+      "name" : "Time Usage Ended",
+      "sourceLogicalColumn" : "logicalColumn:OAC Cost And Usage.Hourly_Costs_Fact.Time Usage Ended",
+      "alternateNames" : [ "TIME_USAGE_ENDED" ]
+    }, {
+      "name" : "Time Usage Started",
+      "sourceLogicalColumn" : "logicalColumn:OAC Cost And Usage.Hourly_Costs_Fact.Time Usage Started",
+      "alternateNames" : [ "TIME_USAGE_STARTED" ]
+    }, {
+      "name" : "Unit",
+      "sourceLogicalColumn" : "logicalColumn:OAC Cost And Usage.Hourly_Costs_Fact.Unit"
+    } ]
+  }
+}

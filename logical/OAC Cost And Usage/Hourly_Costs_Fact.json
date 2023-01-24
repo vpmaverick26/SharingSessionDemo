@@ -1,0 +1,124 @@
+{
+  "logicalTable" : {
+    "name" : "Hourly_Costs_Fact",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "Quantity",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Hourly_Costs_Fact",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OAC Cost And Usage.USAGE.Hourly_Costs_Fact.QUANTITY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Service",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Hourly_Costs_Fact",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OAC Cost And Usage.USAGE.Hourly_Costs_Fact.SERVICE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Sku Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Hourly_Costs_Fact",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OAC Cost And Usage.USAGE.Hourly_Costs_Fact.SKU_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Time Usage Ended",
+      "dataType" : "TIMESTAMP",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Hourly_Costs_Fact",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OAC Cost And Usage.USAGE.Hourly_Costs_Fact.TIME_USAGE_ENDED" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Time Usage Started",
+      "dataType" : "TIMESTAMP",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Hourly_Costs_Fact",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OAC Cost And Usage.USAGE.Hourly_Costs_Fact.TIME_USAGE_STARTED" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Unit",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Hourly_Costs_Fact",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OAC Cost And Usage.USAGE.Hourly_Costs_Fact.UNIT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Cost",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Hourly_Costs_Fact",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OAC Cost And Usage.USAGE.Hourly_Costs_Fact.COST" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Hourly_Costs_Fact",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OAC Cost And Usage.USAGE.Hourly_Costs_Fact" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:OAC Cost And Usage.Cost_Date_Dim",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

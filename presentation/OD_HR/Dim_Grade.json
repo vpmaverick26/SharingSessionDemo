@@ -1,0 +1,18 @@
+{
+  "presentationTable" : {
+    "name" : "Dim_Grade",
+    "presentationColumns" : [ {
+      "name" : "Code",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Grade.Code"
+    }, {
+      "name" : "Grade",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Grade.Grade"
+    }, {
+      "name" : "Max Salary",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Grade.Max Salary"
+    }, {
+      "name" : "Min Salary",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Grade.Min Salary"
+    } ]
+  }
+}

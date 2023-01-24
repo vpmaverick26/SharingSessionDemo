@@ -1,0 +1,21 @@
+{
+  "initBlock" : {
+    "name" : "INIT_COUNTRIES_OD",
+    "type" : "SESSION",
+    "connectionPool" : "connectionPool:OD_HR.OAS_OD_INIT_BLOCK",
+    "selectStatements" : [ {
+      "databaseType" : "DEFAULT",
+      "query" : "SELECT 'COUNTRIES_OD', COUNTRY FROM OD_HR.OD_SEC_USERS WHERE UPPER(USERNAME) = UPPER(':USER')\r\n"
+    } ],
+    "variables" : [ {
+      "name" : "COUNTRIES_OD",
+      "value" : "'No country from CSV'",
+      "enableUsersToSetValue" : false,
+      "securitySensitive" : false
+    } ],
+    "disable" : true,
+    "queryReturnsVariableNamesAndValues" : true,
+    "allowDeferredExecution" : true,
+    "cacheQueryResult" : true
+  }
+}

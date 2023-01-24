@@ -1,0 +1,31 @@
+{
+  "physicalTable": {
+    "name": "Dim Store",
+    "sourceTable": "physicalTable:OD_CONTOSO.OD_CONTOSO.W_STORE_D",
+    "caching": {
+      "enable": true
+    },
+    "joins": [      {
+        "rightTable": "physicalTable:OD_CONTOSO.OD_CONTOSO.Dim Employee",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Store.STORE_MANAGER_NR",
+            "rightColumn": "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Employee.EMPLOYEE_KEY_ID"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:OD_CONTOSO.OD_CONTOSO.Dim Geography",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Store.GEOGRAPHY_KEY_ID",
+            "rightColumn": "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Geography.GEOGRAPHY_KEY_ID"
+          }
+        ]
+      }
+    ],
+    "additionalKeys": [
+      [
+        "STORE_KEY_ID"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "presentationTable" : {
+    "name" : "Last Modification",
+    "presentationColumns" : [ {
+      "name" : "Last Modification Finance",
+      "sourceLogicalColumn" : "logicalColumn:OR.Last Modification.Last Modification Finance"
+    } ]
+  }
+}

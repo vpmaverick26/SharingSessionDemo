@@ -1,0 +1,21 @@
+{
+  "presentationTable" : {
+    "name" : "Dim Product Subcategory",
+    "presentationColumns" : [ {
+      "name" : "PRODUCT_CATEGORY_KEY_ID",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product Subcategory.PRODUCT_CATEGORY_KEY_ID"
+    }, {
+      "name" : "PRODUCT_SUBCATEGORY_DESCRIPTION_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product Subcategory.PRODUCT_SUBCATEGORY_DESCRIPTION_TX"
+    }, {
+      "name" : "PRODUCT_SUBCATEGORY_KEY_ID",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product Subcategory.PRODUCT_SUBCATEGORY_KEY_ID"
+    }, {
+      "name" : "PRODUCT_SUBCATEGORY_LABEL_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product Subcategory.PRODUCT_SUBCATEGORY_LABEL_TX"
+    }, {
+      "name" : "PRODUCT_SUBCATEGORY_NAME_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Product Subcategory.PRODUCT_SUBCATEGORY_NAME_TX"
+    } ]
+  }
+}

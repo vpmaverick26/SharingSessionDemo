@@ -1,0 +1,45 @@
+{
+  "logicalTable" : {
+    "name" : "LastModification",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "LAST_MODIFICATION",
+      "dataType" : "TIMESTAMP",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LAST_MODIFICATION_FIN",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.LAST_MODIFICATION_FIN.LAST_MODIFICATION" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "TABLE_MODIFIED",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LAST_MODIFICATION_FIN",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.LAST_MODIFICATION_FIN.TABLE_MODIFIED" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "LAST_MODIFICATION_FIN",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OR .OBS_ROOM.LAST_MODIFICATION_FIN" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ]
+  }
+}

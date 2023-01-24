@@ -1,0 +1,30 @@
+{
+  "presentationTable" : {
+    "name" : "Dim_Job_Info",
+    "presentationColumns" : [ {
+      "name" : "JOB_CODE",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Job_Info.JOB_CODE"
+    }, {
+      "name" : "JOB_FAMILY_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Job_Info.JOB_FAMILY_TX"
+    }, {
+      "name" : "JOB_GRADE_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Job_Info.JOB_GRADE_TX"
+    }, {
+      "name" : "JOB_TITLE_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Job_Info.JOB_TITLE_TX"
+    }, {
+      "name" : "MAX_SALARY_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Job_Info.MAX_SALARY_NR"
+    }, {
+      "name" : "MIN_SALARY_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Job_Info.MIN_SALARY_NR"
+    }, {
+      "name" : "ROW_WID",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Job_Info.ROW_WID"
+    }, {
+      "name" : "TARGET_SALARY_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Job_Info.TARGET_SALARY_NR"
+    } ]
+  }
+}

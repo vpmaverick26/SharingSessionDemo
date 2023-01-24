@@ -1,0 +1,14 @@
+{
+  "physicalTable": {
+    "name": "Dim_Positions",
+    "sourceTable": "physicalTable:OR_HR_UAT.HR.DIMPOSITIONS",
+    "caching": {
+      "enable": true
+    },
+    "additionalKeys": [
+      [
+        "POSITION_ID"
+      ]
+    ]
+  }
+}

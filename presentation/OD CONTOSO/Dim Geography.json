@@ -1,0 +1,24 @@
+{
+  "presentationTable" : {
+    "name" : "Dim Geography",
+    "presentationColumns" : [ {
+      "name" : "CITY_NAME_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Geography.CITY_NAME_TX"
+    }, {
+      "name" : "CONTINENT_NAME_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Geography.CONTINENT_NAME_TX"
+    }, {
+      "name" : "GEOGRAPHY_KEY_ID",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Geography.GEOGRAPHY_KEY_ID"
+    }, {
+      "name" : "GEOGRAPHY_TYPE_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Geography.GEOGRAPHY_TYPE_TX"
+    }, {
+      "name" : "REGION_COUNTRY_NAME_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Geography.REGION_COUNTRY_NAME_TX"
+    }, {
+      "name" : "STATE_PROVINCE_NAME_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Geography.STATE_PROVINCE_NAME_TX"
+    } ]
+  }
+}

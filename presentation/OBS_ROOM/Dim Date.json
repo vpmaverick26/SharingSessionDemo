@@ -1,0 +1,31 @@
+{
+  "presentationTable" : {
+    "name" : "Dim Date",
+    "presentationColumns" : [ {
+      "name" : "Quarter",
+      "sourceLogicalColumn" : "logicalColumn:OR.Dim Date.Quarter"
+    }, {
+      "name" : "Year",
+      "sourceLogicalColumn" : "logicalColumn:OR.Dim Date.Year"
+    }, {
+      "name" : "Year Quarter",
+      "sourceLogicalColumn" : "logicalColumn:OR.Dim Date.Year Quarter"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Dim DateDim",
+      "sourceLogicalTable" : "logicalTable:OR.Dim Date",
+      "levels" : [ {
+        "name" : "Dim Date Total",
+        "sourceLogicalLevel" : "logicalLevel:OR.Dim Date.Dim Date Total"
+      }, {
+        "name" : "Year",
+        "sourceLogicalLevel" : "logicalLevel:OR.Dim Date.Year",
+        "displayColumn" : "presentationColumn:OBS_ROOM.Dim Date.Year"
+      }, {
+        "name" : "Quarter",
+        "sourceLogicalLevel" : "logicalLevel:OR.Dim Date.Quarter",
+        "displayColumn" : "presentationColumn:OBS_ROOM.Dim Date.Quarter"
+      } ]
+    } ]
+  }
+}

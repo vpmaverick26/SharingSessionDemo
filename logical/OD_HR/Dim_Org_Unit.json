@@ -1,0 +1,101 @@
+{
+  "logicalTable" : {
+    "name" : "Dim_Org_Unit",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Org Unit Description" ],
+    "logicalColumns" : [ {
+      "name" : "Org Unit Description",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Org_Unit",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_ORG_UNITS_D.ORG_UNIT_DESC_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Org_Unit Detail"
+    }, {
+      "name" : "Org Unit Path",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Org_Unit",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_ORG_UNITS_D.ORG_UNIT_PATH_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Org_Unit Detail"
+    }, {
+      "name" : "Parent Org Unit",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Org_Unit",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_ORG_UNITS_D.PARENT_ORG_UNIT_WID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Org_Unit Detail"
+    }, {
+      "name" : "Row Wid",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Org_Unit",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_ORG_UNITS_D.ROW_WID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim_Org_Unit Detail"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim_Org_Unit",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OD_HR.OD_HR.W_ORG_UNITS_D" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Dim_Org_Unit Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Dim_Org_Unit Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Dim_Org_Unit Detail",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Org Unit Description" ],
+        "displayKey" : "Org Unit Description"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Dim_Org_UnitDim",
+        "levels" : [ "Dim_Org_Unit Total", "Dim_Org_Unit Detail" ]
+      } ]
+    }
+  }
+}

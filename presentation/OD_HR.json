@@ -1,0 +1,25 @@
+{
+  "subjectArea" : {
+    "name" : "OD_HR",
+    "sourceBusinessModel" : "businessModel:OD_HR",
+    "tableOrder" : [ {
+      "name" : "presentationTable:OD_HR.Dim_Date"
+    }, {
+      "name" : "presentationTable:OD_HR.Dim_Generation"
+    }, {
+      "name" : "presentationTable:OD_HR.Dim_Grade"
+    }, {
+      "name" : "presentationTable:OD_HR.Dim_Job_Info"
+    }, {
+      "name" : "presentationTable:OD_HR.Dim_Location"
+    }, {
+      "name" : "presentationTable:OD_HR.Dim_Org_Unit"
+    }, {
+      "name" : "presentationTable:OD_HR.Dim_Performance_Rating"
+    }, {
+      "name" : "presentationTable:OD_HR.Fact HR"
+    }, {
+      "name" : "presentationTable:OD_HR.Fact HR Targets"
+    } ]
+  }
+}

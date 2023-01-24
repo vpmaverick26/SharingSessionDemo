@@ -1,0 +1,18 @@
+{
+  "presentationTable" : {
+    "name" : "Dim_Org_Unit",
+    "presentationColumns" : [ {
+      "name" : "Org Unit Description",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Org_Unit.Org Unit Description"
+    }, {
+      "name" : "Org Unit Path",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Org_Unit.Org Unit Path"
+    }, {
+      "name" : "Parent Org Unit",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Org_Unit.Parent Org Unit"
+    }, {
+      "name" : "Row Wid",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Dim_Org_Unit.Row Wid"
+    } ]
+  }
+}

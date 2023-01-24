@@ -1,0 +1,18 @@
+{
+  "physicalTable": {
+    "name": "Hourly_Costs_Fact",
+    "sourceTable": "physicalTable:OAC Cost And Usage.USAGE.HOURLY_COSTS",
+    "caching": {
+      "enable": true
+    },
+    "joins": [      {
+        "rightTable": "physicalTable:OAC Cost And Usage.USAGE.Cost_Date_Dim",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OAC Cost And Usage.USAGE.Hourly_Costs_Fact.DATEKEY",
+            "rightColumn": "physicalColumn:OAC Cost And Usage.USAGE.Cost_Date_Dim.DATENUM"
+          }
+        ]
+      }
+    ]
+  }
+}

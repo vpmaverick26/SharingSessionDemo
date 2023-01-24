@@ -1,0 +1,148 @@
+{
+  "logicalTable" : {
+    "name" : "Dim Geography",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "GEOGRAPHY_KEY_ID" ],
+    "logicalColumns" : [ {
+      "name" : "CITY_NAME_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Geography",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Geography.CITY_NAME_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Geography"
+    }, {
+      "name" : "CONTINENT_NAME_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Geography",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Geography.CONTINENT_NAME_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Geography"
+    }, {
+      "name" : "GEOGRAPHY_KEY_ID",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Geography",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Geography.GEOGRAPHY_KEY_ID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Geography"
+    }, {
+      "name" : "GEOGRAPHY_TYPE_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Geography",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Geography.GEOGRAPHY_TYPE_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Geography"
+    }, {
+      "name" : "REGION_COUNTRY_NAME_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Geography",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Geography.REGION_COUNTRY_NAME_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Geography"
+    }, {
+      "name" : "STATE_PROVINCE_NAME_TX",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim Geography",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Geography.STATE_PROVINCE_NAME_TX" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Geography"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim Geography",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OD_CONTOSO.OD_CONTOSO.Dim Geography" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Dim Store Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Dim Store Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Dim Geography",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "GEOGRAPHY_KEY_ID" ],
+        "displayKey" : "GEOGRAPHY_KEY_ID"
+      }, {
+        "name" : "Dim Store Detail",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "STORE_KEY_ID" ],
+        "displayKey" : "STORE_KEY_ID"
+      }, {
+        "name" : "Dim Employee",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "EMPLOYEE_KEY_ID" ],
+        "displayKey" : "EMPLOYEE_KEY_ID"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Dim StoreDim",
+        "levels" : [ "Dim Store Total", "Dim Geography", "Dim Store Detail" ]
+      }, {
+        "name" : "Dim StoreDim",
+        "levels" : [ "Dim Store Total", "Dim Employee", "Dim Store Detail" ]
+      } ]
+    }
+  }
+}

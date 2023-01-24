@@ -1,0 +1,56 @@
+{
+  "physicalTable" : {
+    "name" : "AR_KPIS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "AR_TURNOVER",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "AVG_RECIPET_AMOUNT",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "CUSTOMER_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 128,
+      "nullable" : true
+    }, {
+      "name" : "DAYS_SALES_OUTSTANDING",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "FISCAL_QUARTER",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "LEGAL_ENTITY_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "OVERDUE_AMOUNT",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "RECIEPTS_COUNT",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "TOTAL_AMOUNT",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

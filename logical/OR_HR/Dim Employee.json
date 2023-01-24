@@ -1,0 +1,343 @@
+{
+  "logicalTable" : {
+    "name" : "Dim Employee",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Employee Id" ],
+    "logicalColumns" : [ {
+      "name" : "Birth Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Employee.BIRTHDATE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee Detail"
+    }, {
+      "name" : "Department Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Employee.DEPARTMENTNAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee Detail"
+    }, {
+      "name" : "Employee Id",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Employee.EMPLOYEEID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee Detail"
+    }, {
+      "name" : "Employee Id2",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Employee.EMPLOYEEID2" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee Detail"
+    }, {
+      "name" : "End Date",
+      "dataType" : "DATE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Employee.ENDDATE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee Detail"
+    }, {
+      "name" : "Gender",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Employee.GENDER" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee Detail"
+    }, {
+      "name" : "Hire Date",
+      "dataType" : "DATE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Employee.HIREDATE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee Detail"
+    }, {
+      "name" : "Job",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Employee.JOB" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee Detail"
+    }, {
+      "name" : "Nationality",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Employee.NATIONALITY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee Detail"
+    }, {
+      "name" : "Parent Id",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Employee.PARENTID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee Detail"
+    }, {
+      "name" : "Status",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Employee.STATUS" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee Detail"
+    }, {
+      "name" : "Title",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Employee.TITLE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Dim Employee Detail"
+    }, {
+      "name" : "Age",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " EXTRACT( YEAR  FROM  CURRENT_DATE ) -  EXTRACT( YEAR  FROM %1)",
+          "expressionObjects" : [ "logicalColumn:OR_HR.Dim Employee.Birth Date" ]
+        }
+      }
+    }, {
+      "name" : "Days In Company",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " CASE  WHEN %1 IS NULL  THEN  EXTRACT( YEAR  FROM  CURRENT_DATE ) * 100 +  EXTRACT( MONTH  FROM  CURRENT_DATE ) - ( EXTRACT( YEAR  FROM %2) * 100 +  EXTRACT( MONTH  FROM %2)) END ",
+          "expressionObjects" : [ "logicalColumn:OR_HR.Dim Employee.End Date", "logicalColumn:OR_HR.Dim Employee.Hire Date" ]
+        }
+      }
+    }, {
+      "name" : "Time In Company",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " CASE  WHEN %1 IS NULL  THEN 'Left' WHEN %1 BETWEEN 0 AND 100 THEN '0-1y' WHEN %1 BETWEEN 100 AND 200 THEN '1-2y' WHEN %1 BETWEEN 200 AND 300 THEN '2-3y' WHEN %1 BETWEEN 300 AND 400 THEN '3-4y' WHEN %1 BETWEEN 400 AND 500 THEN '4-5y' ELSE '+5y' END ",
+          "expressionObjects" : [ "logicalColumn:OR_HR.Dim Employee.Days In Company" ]
+        }
+      }
+    }, {
+      "name" : "Age Ranges",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " CASE  WHEN %1 BETWEEN 0 AND 20 THEN '<20' WHEN %1 BETWEEN 20 AND 24 THEN '20-24' WHEN %1 BETWEEN 25 AND 29 THEN '25-29' WHEN %1 BETWEEN 30 AND 34 THEN '30-34' WHEN %1 BETWEEN 35 AND 39 THEN '35-39' WHEN %1 BETWEEN 40 AND 44 THEN '40-44' WHEN %1 BETWEEN 45 AND 49 THEN '45-49' WHEN %1 BETWEEN 50 AND 54 THEN '50-54' WHEN %1 BETWEEN 55 AND 59 THEN '55-59' WHEN %1 BETWEEN 60 AND 64 THEN '60-64' WHEN %1 BETWEEN 65 AND 90 THEN '>65' END ",
+          "expressionObjects" : [ "logicalColumn:OR_HR.Dim Employee.Age" ]
+        }
+      }
+    }, {
+      "name" : "City",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Employee.CITY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Region",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Employee.REGION" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "WFH Flag",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Employee.WFH_FLAG" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "WFH Lat",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Employee.WFH_LAT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "WFH Long",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Dim_Employee",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR_HR.HR.Dim_Employee.WFH_LONG" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Dim_Employee",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OR_HR.HR.Dim_Employee" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Dim Employee Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Dim Employee Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Dim Employee Parent",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Employee Id" ],
+        "displayKey" : "Parent Id",
+        "additionalKeys" : [ [ "Parent Id" ] ]
+      }, {
+        "name" : "Dim Employee Detail",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Employee Id" ],
+        "displayKey" : "Employee Id"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Dim EmployeeDim",
+        "levels" : [ "Dim Employee Total", "Dim Employee Parent", "Dim Employee Detail" ]
+      } ]
+    }
+  }
+}

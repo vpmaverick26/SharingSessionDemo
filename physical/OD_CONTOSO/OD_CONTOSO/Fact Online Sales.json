@@ -1,0 +1,50 @@
+{
+  "physicalTable": {
+    "name": "Fact Online Sales",
+    "sourceTable": "physicalTable:OD_CONTOSO.OD_CONTOSO.W_ONLINE_SALES_F",
+    "caching": {
+      "enable": true
+    },
+    "joins": [      {
+        "rightTable": "physicalTable:OD_CONTOSO.OD_CONTOSO.Dim Customer",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.CUSTOMER_KEY_ID",
+            "rightColumn": "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Customer.CUSTOMER_KEY_ID"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:OD_CONTOSO.OD_CONTOSO.Dim Date",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.DATE_KEY_ID",
+            "rightColumn": "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Date.DATE_"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:OD_CONTOSO.OD_CONTOSO.Dim Product",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.PRODUCT_KEY_ID",
+            "rightColumn": "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Product.PRODUCT_KEY_ID"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:OD_CONTOSO.OD_CONTOSO.Dim Promotion",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.PROMOTION_KEY_ID",
+            "rightColumn": "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Promotion.PROMOTION_KEY_ID"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:OD_CONTOSO.OD_CONTOSO.Dim Store",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Online Sales.STORE_KEY_ID",
+            "rightColumn": "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Store.STORE_KEY_ID"
+          }
+        ]
+      }
+    ]
+  }
+}

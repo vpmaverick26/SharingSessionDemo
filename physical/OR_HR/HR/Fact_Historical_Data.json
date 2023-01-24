@@ -1,0 +1,26 @@
+{
+  "physicalTable": {
+    "name": "Fact_Historical_Data",
+    "sourceTable": "physicalTable:OR_HR.HR.FACTHISTORICALDATA",
+    "caching": {
+      "enable": true
+    },
+    "joins": [      {
+        "rightTable": "physicalTable:OR_HR.HR.Dim_Date",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OR_HR.HR.Fact_Historical_Data.DATEKEY",
+            "rightColumn": "physicalColumn:OR_HR.HR.Dim_Date.DATENUM"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:OR_HR.HR.Dim_Employee",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OR_HR.HR.Fact_Historical_Data.EMPLOYEEID",
+            "rightColumn": "physicalColumn:OR_HR.HR.Dim_Employee.EMPLOYEEID"
+          }
+        ]
+      }
+    ]
+  }
+}

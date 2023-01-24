@@ -1,0 +1,34 @@
+{
+  "physicalTable": {
+    "name": "Fact Inventory",
+    "sourceTable": "physicalTable:OD_CONTOSO.OD_CONTOSO.W_INVENTORY_F",
+    "caching": {
+      "enable": true
+    },
+    "joins": [      {
+        "rightTable": "physicalTable:OD_CONTOSO.OD_CONTOSO.Dim Date",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Inventory.DATE_KEY_ID",
+            "rightColumn": "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Date.DATE_"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:OD_CONTOSO.OD_CONTOSO.Dim Product",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Inventory.PRODUCT_KEY_ID",
+            "rightColumn": "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Product.PRODUCT_KEY_ID"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:OD_CONTOSO.OD_CONTOSO.Dim Store",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OD_CONTOSO.OD_CONTOSO.Fact Inventory.STORE_KEY_ID",
+            "rightColumn": "physicalColumn:OD_CONTOSO.OD_CONTOSO.Dim Store.STORE_KEY_ID"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "physicalTable": {
+    "name": "Dim_Employee_Parent",
+    "sourceTable": "physicalTable:OR_HR.HR.DIMEMPLOYEE",
+    "caching": {
+      "enable": true
+    },
+    "additionalKeys": [
+      [
+        "EMPLOYEEID"
+      ]
+    ]
+  }
+}

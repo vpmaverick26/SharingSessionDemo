@@ -1,0 +1,56 @@
+{
+  "physicalTable" : {
+    "name" : "AP_KPIS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "AP_TURNOVER",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "AVG_INVOICES_AMOUNT",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "DAYS_PAYABLES_OUTSTANDING",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "FISCAL_QUARTER",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "INVOICES_COUNT",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "LEGAL_ENTITY_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "OVERDUE_AMOUNT",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "SUPPLIER_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "TOTAL_AMOUNT",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

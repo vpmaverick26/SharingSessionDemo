@@ -1,0 +1,51 @@
+{
+  "physicalTable" : {
+    "name" : "W_STRATEGY_PLAN_F",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ACCOUNT_KEY_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "AMOUNT_NR",
+      "dataType" : "DOUBLE",
+      "length" : 126,
+      "nullable" : true
+    }, {
+      "name" : "CURRENCY_KEY_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DATEKEY_DT",
+      "dataType" : "TIMESTAMP",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ENTITY_KEY_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "PRODUCT_CATEGORY_KEY_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "SCENARIO_KEY_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "STRATEGY_PLAN_KEY_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

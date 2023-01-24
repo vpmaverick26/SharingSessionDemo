@@ -1,0 +1,9 @@
+{
+  "presentationTable" : {
+    "name" : "Fact HR Targets",
+    "presentationColumns" : [ {
+      "name" : "Headcount Target",
+      "sourceLogicalColumn" : "logicalColumn:OD_HR.Fact HR Targets.Headcount Target"
+    } ]
+  }
+}

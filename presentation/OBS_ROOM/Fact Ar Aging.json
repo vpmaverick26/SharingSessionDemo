@@ -1,0 +1,26 @@
+{
+  "presentationTable" : {
+    "name" : "Fact Ar Aging",
+    "presentationColumns" : [ {
+      "name" : "Aging Amount Invoice Date Basis",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Ar Aging.Aging Amount Invoice Date Basis",
+      "alternateNames" : [ "AGING_AMOUNT_INVOICE_DATE_BASIS" ]
+    }, {
+      "name" : "Aging Bucket Name",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Ar Aging.Aging Bucket Name",
+      "alternateNames" : [ "AGING_BUCKET_NAME" ]
+    }, {
+      "name" : "Customer Name",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Ar Aging.Customer Name",
+      "alternateNames" : [ "CUSTOMER_NAME" ]
+    }, {
+      "name" : "Fiscal Quarter",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Ar Aging.Fiscal Quarter",
+      "alternateNames" : [ "FISCAL_QUARTER" ]
+    }, {
+      "name" : "Legal Entity Name",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Ar Aging.Legal Entity Name",
+      "alternateNames" : [ "LEGAL_ENTITY_NAME" ]
+    } ]
+  }
+}

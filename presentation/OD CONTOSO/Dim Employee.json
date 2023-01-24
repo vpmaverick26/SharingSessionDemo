@@ -1,0 +1,78 @@
+{
+  "presentationTable" : {
+    "name" : "Dim Employee",
+    "presentationColumns" : [ {
+      "name" : "BASE_RATE_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Employee.BASE_RATE_NR"
+    }, {
+      "name" : "BIRTH_DATE_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Employee.BIRTH_DATE_TX"
+    }, {
+      "name" : "CURRENT_FLAG_BL",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Employee.CURRENT_FLAG_BL"
+    }, {
+      "name" : "DEPARTMENT_NAME_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Employee.DEPARTMENT_NAME_TX"
+    }, {
+      "name" : "EMAIL_ADDRESS_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Employee.EMAIL_ADDRESS_TX"
+    }, {
+      "name" : "EMERGENCY_CONTACT_NAME_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Employee.EMERGENCY_CONTACT_NAME_TX"
+    }, {
+      "name" : "EMERGENCY_CONTACT_PHONE_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Employee.EMERGENCY_CONTACT_PHONE_TX"
+    }, {
+      "name" : "EMPLOYEE_KEY_ID",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Employee.EMPLOYEE_KEY_ID"
+    }, {
+      "name" : "END_DATE_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Employee.END_DATE_TX"
+    }, {
+      "name" : "FIRST_NAME_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Employee.FIRST_NAME_TX"
+    }, {
+      "name" : "GENDER_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Employee.GENDER_TX"
+    }, {
+      "name" : "HIRE_DATE_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Employee.HIRE_DATE_TX"
+    }, {
+      "name" : "LAST_NAME_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Employee.LAST_NAME_TX"
+    }, {
+      "name" : "MARITAL_STATUS_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Employee.MARITAL_STATUS_TX"
+    }, {
+      "name" : "MIDDLE_NAME_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Employee.MIDDLE_NAME_TX"
+    }, {
+      "name" : "PARENT_EMPLOYEE_KEY_ID",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Employee.PARENT_EMPLOYEE_KEY_ID"
+    }, {
+      "name" : "PAY_FREQUENCY_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Employee.PAY_FREQUENCY_NR"
+    }, {
+      "name" : "PHONE_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Employee.PHONE_TX"
+    }, {
+      "name" : "SALARIED_FLAG_BL",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Employee.SALARIED_FLAG_BL"
+    }, {
+      "name" : "SALES_PERSON_FLAG_BL",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Employee.SALES_PERSON_FLAG_BL"
+    }, {
+      "name" : "START_DATE_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Employee.START_DATE_TX"
+    }, {
+      "name" : "STATUS_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Employee.STATUS_TX"
+    }, {
+      "name" : "TITLE_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Employee.TITLE_TX"
+    }, {
+      "name" : "VACATION_HOURS_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Employee.VACATION_HOURS_NR"
+    } ]
+  }
+}

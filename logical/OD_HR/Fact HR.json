@@ -1,0 +1,1022 @@
+{
+  "logicalTable" : {
+    "name" : "Fact HR",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "Active Req Jobs",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.ACTIVE_JOB_REQ_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Applications Closed",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.APPLICATIONS_CLOSED_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Applications Open",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.APPLICATIONS_OPEN_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Base Salary",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.BASE_SALARY_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Bonus Payment",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.BONUS_PAYMENT_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Engagement",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.ENGAGEMENT_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Generation Description",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.GENERATION_DESC_TX" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Grade",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.GRADE_TX" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Headcount",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.HEADCOUNT_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Job Code",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.JOB_CODE_TX" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Job Family",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.JOB_FAMILY_TX" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Job Req Closed",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.JOB_REQ_CLOSED_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Job Req Open",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.JOB_REQ_OPEN_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Job Title",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.JOB_TITLE_TX" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Joiners",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.JOINERS_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Leavers",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.LEAVERS_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Org Units Desc",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.ORG_UNIT_DESC_TX" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Performance Rating",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.PERFORMANCE_RATING_TX" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Respondents",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.RESPONDENTS_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Site Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.SITE_NAME_TX" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "WPS Score",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.WPS_SCORE_NR" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "YearMonth",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.YEARMONTH" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Total Headcount",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.HEADCOUNT_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "MAX",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Base Salary Eur",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1 * %2",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.BASE_SALARY_NR", "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.HEADCOUNT_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:OD_HR.Dim_Date.Year" ]
+      }
+    }, {
+      "name" : "Bonus Salary Eur",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1 * %2",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.BONUS_PAYMENT_NR", "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.HEADCOUNT_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:OD_HR.Dim_Date.Quarter" ]
+      }
+    }, {
+      "name" : "Total Employee Cost Eur",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 + %2",
+          "expressionObjects" : [ "logicalColumn:OD_HR.Fact HR.Base Salary Eur", "logicalColumn:OD_HR.Fact HR.Bonus Salary Eur" ]
+        }
+      },
+      "aggregation" : {
+        "rule" : "NONE",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:OD_HR.Dim_Date.Year" ]
+      }
+    }, {
+      "name" : "Employee Cost Per Unit Eur",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:OD_HR.Fact HR.Total Employee Cost Eur", "logicalColumn:OD_HR.Fact HR.Total Headcount" ]
+        }
+      }
+    }, {
+      "name" : "Quartile 25",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " NTILE(%1, 4)",
+          "expressionObjects" : [ "logicalColumn:OD_HR.Fact HR.Base Salary Eur" ]
+        }
+      }
+    }, {
+      "name" : "Quartile 75",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " NTILE(%1, 4)",
+          "expressionObjects" : [ "logicalColumn:OD_HR.Fact HR.Base Salary Eur" ]
+        }
+      }
+    }, {
+      "name" : "Salary Cost per Unit EUR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1 *  COUNT(DISTINCT %2)",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.BASE_SALARY_NR", "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.YEARMONTH" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Total Employee Cost Avg",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1 *  COUNT(DISTINCT %2) + %3",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.BASE_SALARY_NR", "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.YEARMONTH", "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.BONUS_PAYMENT_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Total Employee Cost Max EUR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1 *  COUNT(DISTINCT %2) + %3",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.BASE_SALARY_NR", "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.YEARMONTH", "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.BONUS_PAYMENT_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "MAX",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Total Employee Cost Median EUR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1 *  COUNT(DISTINCT %2) + %3",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.BASE_SALARY_NR", "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.YEARMONTH", "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.BONUS_PAYMENT_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "MEDIAN",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Total Employee Cost Min EUR",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1 *  COUNT(DISTINCT %2) + %3",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.BASE_SALARY_NR", "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.YEARMONTH", "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.BONUS_PAYMENT_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "MIN",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "No of Respondents",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " CASE  WHEN %1 = %2 THEN %3 END ",
+          "expressionObjects" : [ "logicalColumn:OD_HR.Fact HR.YearMonth", "logicalColumn:OD_HR.Fact HR.Year Month Max", "logicalColumn:OD_HR.Fact HR.Respondents" ]
+        }
+      },
+      "aggregation" : {
+        "rule" : "NONE",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:OD_HR.Dim_Date.Year" ]
+      }
+    }, {
+      "name" : "% of Respondents",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " CASE  WHEN %1 = %2 THEN %3 / %4 END ",
+          "expressionObjects" : [ "logicalColumn:OD_HR.Fact HR.YearMonth", "logicalColumn:OD_HR.Fact HR.Year Month Max", "logicalColumn:OD_HR.Fact HR.Respondents", "logicalColumn:OD_HR.Fact HR.Total Headcount" ]
+        }
+      },
+      "aggregation" : {
+        "rule" : "NONE",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:OD_HR.Dim_Date.Year" ]
+      }
+    }, {
+      "name" : "Average Score",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : " CASE  WHEN  RANK(%1) =  CASE  WHEN  NOT  SUM(%2) IS NULL  THEN  RANK(%1) END  THEN %3 END ",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.YEARMONTH", "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.RESPONDENTS_NR", "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.WPS_SCORE_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Maximum Score",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : " CASE  WHEN  RANK(%1) =  CASE  WHEN  NOT  SUM(%2) IS NULL  THEN  RANK(%1) END  THEN %3 END ",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.YEARMONTH", "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.RESPONDENTS_NR", "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.WPS_SCORE_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "MAX",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Median Score",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : " CASE  WHEN  RANK(%1) =  CASE  WHEN  NOT  SUM(%2) IS NULL  THEN  RANK(%1) END  THEN %3 END ",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.YEARMONTH", "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.RESPONDENTS_NR", "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.WPS_SCORE_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "BASED_ON_DIMENSION",
+        "dimensionBasedRules" : [ {
+          "dimension" : "logicalTable:OD_HR.Dim_Date",
+          "rule" : "LAST"
+        }, {
+          "dimension" : "OTHER",
+          "rule" : "MEDIAN"
+        } ],
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:OD_HR.Dim_Date.Quarter" ]
+      }
+    }, {
+      "name" : "Minimum Score",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : " CASE  WHEN  RANK(%1) =  CASE  WHEN  NOT  SUM(%2) IS NULL  THEN  RANK(%1) END  THEN %3 END ",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.YEARMONTH", "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.RESPONDENTS_NR", "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.WPS_SCORE_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "MIN",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "EOM Date",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.EOM_DATE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Active Job Postings",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.ACTIVE_JOB_REQ_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "No of Applicants",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.APPLICATIONS_OPEN_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:OD_HR.Dim_Date.Quarter" ]
+      }
+    }, {
+      "name" : "No of Closed Job Postings",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.JOB_REQ_CLOSED_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:OD_HR.Dim_Date.Year" ]
+      }
+    }, {
+      "name" : "No of Hires",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.JOINERS_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:OD_HR.Dim_Date.Quarter" ]
+      }
+    }, {
+      "name" : "No of Job Postings",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.JOB_REQ_OPEN_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:OD_HR.Dim_Date.Quarter" ]
+      }
+    }, {
+      "name" : "No of Leavers",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.LEAVERS_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Applicants by Job Req",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:OD_HR.Fact HR.No of Applicants", "logicalColumn:OD_HR.Fact HR.No of Job Postings" ]
+        }
+      },
+      "aggregation" : {
+        "rule" : "NONE",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:OD_HR.Dim_Date.Year" ]
+      }
+    }, {
+      "name" : "Last Year Total Employee Cost",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 /  AGO(%1, %2, 1) - 1",
+          "expressionObjects" : [ "logicalColumn:OD_HR.Fact HR.Total Employee Cost Eur", "logicalLevel:OD_HR.Dim_Date.Year" ]
+        }
+      },
+      "aggregation" : {
+        "rule" : "NONE",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:OD_HR.Dim_Date.Year" ]
+      }
+    }, {
+      "name" : "Last Year Base Salary",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 /  AGO(%1, %2, 1) - 1",
+          "expressionObjects" : [ "logicalColumn:OD_HR.Fact HR.Base Salary Eur", "logicalLevel:OD_HR.Dim_Date.Year" ]
+        }
+      },
+      "aggregation" : {
+        "rule" : "NONE",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:OD_HR.Dim_Date.Year" ]
+      }
+    }, {
+      "name" : "Last Year Bonus Salary",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 /  AGO(%1, %2, 1) - 1",
+          "expressionObjects" : [ "logicalColumn:OD_HR.Fact HR.Bonus Salary Eur", "logicalLevel:OD_HR.Dim_Date.Year" ]
+        }
+      },
+      "aggregation" : {
+        "rule" : "NONE",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:OD_HR.Dim_Date.Year" ]
+      }
+    }, {
+      "name" : "Last Year Hires",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 /  AGO(%1, %2, 1) - 1",
+          "expressionObjects" : [ "logicalColumn:OD_HR.Fact HR.No of Hires", "logicalLevel:OD_HR.Dim_Date.Year" ]
+        }
+      },
+      "aggregation" : {
+        "rule" : "NONE",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:OD_HR.Dim_Date.Year" ]
+      }
+    }, {
+      "name" : "Last Year Job Postings",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 /  AGO(%1, %2, 1) - 1",
+          "expressionObjects" : [ "logicalColumn:OD_HR.Fact HR.No of Job Postings", "logicalLevel:OD_HR.Dim_Date.Year" ]
+        }
+      },
+      "aggregation" : {
+        "rule" : "NONE",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:OD_HR.Dim_Date.Year" ]
+      }
+    }, {
+      "name" : "Last Year Applicants",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 /  AGO(%1, %2, 1) - 1",
+          "expressionObjects" : [ "logicalColumn:OD_HR.Fact HR.Applicants by Job Req", "logicalLevel:OD_HR.Dim_Date.Year" ]
+        }
+      },
+      "aggregation" : {
+        "rule" : "NONE",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:OD_HR.Dim_Date.Year" ]
+      }
+    }, {
+      "name" : "Last Year Respondents",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 /  AGO(%1, %2, 1) - 1",
+          "expressionObjects" : [ "logicalColumn:OD_HR.Fact HR.No of Respondents", "logicalLevel:OD_HR.Dim_Date.Year" ]
+        }
+      },
+      "aggregation" : {
+        "rule" : "NONE",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:OD_HR.Dim_Date.Year" ]
+      }
+    }, {
+      "name" : "Last Year % Respondents",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 /  AGO(%1, %2, 1) - 1",
+          "expressionObjects" : [ "logicalColumn:OD_HR.Fact HR.% of Respondents", "logicalLevel:OD_HR.Dim_Date.Year" ]
+        }
+      },
+      "aggregation" : {
+        "rule" : "NONE",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:OD_HR.Dim_Date.Year" ]
+      }
+    }, {
+      "name" : "Last Year Median",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 /  AGO(%1, %2, 1) - 1",
+          "expressionObjects" : [ "logicalColumn:OD_HR.Fact HR.Median Score", "logicalLevel:OD_HR.Dim_Date.Year" ]
+        }
+      },
+      "aggregation" : {
+        "rule" : "NONE",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:OD_HR.Dim_Date.Year" ]
+      }
+    }, {
+      "name" : "Year Month Max",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : " CASE  WHEN  NOT %1 IS NULL  THEN %2 END ",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.RESPONDENTS_NR", "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.YEARMONTH" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "MAX",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Last Year Month",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.YEARMONTH" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "MAX",
+        "dataIsDense" : false
+      }
+    }, {
+      "name" : "Active Headcount",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact HR",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OD_HR.OD_HR.W_HR_AGG_F.HEADCOUNT_NR" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "BASED_ON_DIMENSION",
+        "dimensionBasedRules" : [ {
+          "dimension" : "logicalTable:OD_HR.Dim_Date",
+          "rule" : "LAST"
+        }, {
+          "dimension" : "OTHER",
+          "rule" : "SUM"
+        } ],
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:OD_HR.Dim_Date.Month" ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Fact HR",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OD_HR.OD_HR.W_HR_AGG_F" ]
+      },
+      "dataGranularity" : [ "logicalLevel:OD_HR.Dim_Date.Month", "logicalLevel:OD_HR.Dim_Generation.Dim_Generation Detail", "logicalLevel:OD_HR.Dim_Grade.Dim_Grade Detail", "logicalLevel:OD_HR.Dim_Job_Info.Dim_Job_Info Detail", "logicalLevel:OD_HR.Dim_Location.Dim_Location Detail", "logicalLevel:OD_HR.Dim_Org_Unit.Dim_Org_Unit Detail", "logicalLevel:OD_HR.Dim_Performance_Rating.Dim_Performance_Rating Detail" ],
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:OD_HR.Dim_Date",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:OD_HR.Dim_Generation",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:OD_HR.Dim_Grade",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:OD_HR.Dim_Job_Info",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:OD_HR.Dim_Location",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:OD_HR.Dim_Org_Unit",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    }, {
+      "rightTable" : "logicalTable:OD_HR.Dim_Performance_Rating",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "presentationTable" : {
+    "name" : "Dim Promotion",
+    "presentationColumns" : [ {
+      "name" : "DISCOUNT_PERCENT_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Promotion.DISCOUNT_PERCENT_NR"
+    }, {
+      "name" : "END_DATE_DT",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Promotion.END_DATE_DT"
+    }, {
+      "name" : "MAX_QUANTITY_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Promotion.MAX_QUANTITY_NR"
+    }, {
+      "name" : "MIN_QUANTITY_NR",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Promotion.MIN_QUANTITY_NR"
+    }, {
+      "name" : "PROMOTION_CATEGORY_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Promotion.PROMOTION_CATEGORY_TX"
+    }, {
+      "name" : "PROMOTION_DESCRIPTION_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Promotion.PROMOTION_DESCRIPTION_TX"
+    }, {
+      "name" : "PROMOTION_KEY_ID",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Promotion.PROMOTION_KEY_ID"
+    }, {
+      "name" : "PROMOTION_LABEL_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Promotion.PROMOTION_LABEL_TX"
+    }, {
+      "name" : "PROMOTION_NAME_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Promotion.PROMOTION_NAME_TX"
+    }, {
+      "name" : "PROMOTION_TYPE_TX",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Promotion.PROMOTION_TYPE_TX"
+    }, {
+      "name" : "START_DATE_DT",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Promotion.START_DATE_DT"
+    }, {
+      "name" : "Promotion Lenght",
+      "sourceLogicalColumn" : "logicalColumn:OD_CONTOSO.Dim Promotion.Promotion Lenght"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Dim PromotionDim",
+      "sourceLogicalTable" : "logicalTable:OD_CONTOSO.Dim Promotion",
+      "levels" : [ {
+        "name" : "Dim Promotion Total",
+        "sourceLogicalLevel" : "logicalLevel:OD_CONTOSO.Dim Promotion.Dim Promotion Total"
+      }, {
+        "name" : "Dim Promotion Detail",
+        "sourceLogicalLevel" : "logicalLevel:OD_CONTOSO.Dim Promotion.Dim Promotion Detail",
+        "displayColumn" : "presentationColumn:OD CONTOSO.Dim Promotion.PROMOTION_KEY_ID"
+      } ]
+    } ]
+  }
+}

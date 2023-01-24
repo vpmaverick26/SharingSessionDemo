@@ -1,0 +1,96 @@
+{
+  "physicalTable" : {
+    "name" : "W_DATE_D",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "CALENDAR_QUARTER",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "DATENUM",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DATE_",
+      "dataType" : "DATETIME",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DAYNAME",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "DAYNUMOFMONTH",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DAYNUMOFQUARTER",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DAYNUMOFWEEK",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DAYNUMOFYEAR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "DAYSHORTNAME",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "MONTHNAME",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "MONTHNUM",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "MONTHSHORTNAME",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "QUARTER",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "WEEKNUM",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "YEAR",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "YEARMONTHNUM",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "YEARQUARTERNUM",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}
