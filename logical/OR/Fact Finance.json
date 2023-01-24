@@ -1553,6 +1553,24 @@
           "expressionObjects" : [ "logicalColumn:OR.Fact Finance.Net Income Target Budget", "logicalColumn:OR.Fact Finance.Total Assets Target Budget" ]
         }
       }
+    }, {
+      "name" : "Avg. Revenue",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Fact_Finance",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OR .OBS_ROOM.Fact_Finance.REVENUE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "AVG",
+        "dataIsDense" : false
+      }
     } ],
     "logicalTableSources" : [ {
       "name" : "Fact_Finance",
