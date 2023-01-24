@@ -1,0 +1,321 @@
+{
+  "presentationTable" : {
+    "name" : "Fact Finance",
+    "presentationColumns" : [ {
+      "name" : "Accounts Payable",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Accounts Payable"
+    }, {
+      "name" : "Accounts Payable Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Accounts Payable Target Budget"
+    }, {
+      "name" : "Accounts Receivable",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Accounts Receivable"
+    }, {
+      "name" : "Accounts Receivable Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Accounts Receivable Target Budget"
+    }, {
+      "name" : "Balancing Segment Description",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Balancing Segment Description"
+    }, {
+      "name" : "CAPEX",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.CAPEX"
+    }, {
+      "name" : "CAPEX Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.CAPEX Target Budget"
+    }, {
+      "name" : "Cash",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Cash"
+    }, {
+      "name" : "Cash Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Cash Target Budget"
+    }, {
+      "name" : "Cost Center Description",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Cost Center Description"
+    }, {
+      "name" : "COGS",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.COGS"
+    }, {
+      "name" : "COGS Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.COGS Target Budget"
+    }, {
+      "name" : "Current Assets",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Current Assets"
+    }, {
+      "name" : "Current Assets Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Current Assets Target Budget"
+    }, {
+      "name" : "Current Liabilities",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Current Liabilities"
+    }, {
+      "name" : "Current Liabilities Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Current Liabilities Target Budget"
+    }, {
+      "name" : "Debt To Equity Ratio",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Debt To Equity Ratio"
+    }, {
+      "name" : "Debt To Equity Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Debt To Equity Target Budget"
+    }, {
+      "name" : "Deferred Revenue",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Deferred Revenue"
+    }, {
+      "name" : "Deferred Revenue Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Deferred Revenue Target Budget"
+    }, {
+      "name" : "Depreciation Expenses",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Depreciation Expenses"
+    }, {
+      "name" : "Depreciation Expenses Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Depreciation Expenses Target Budget"
+    }, {
+      "name" : "Ebit",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Ebit"
+    }, {
+      "name" : "Ebit Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Ebit Target Budget"
+    }, {
+      "name" : "EBITDA",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.EBITDA"
+    }, {
+      "name" : "Ebitda Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Ebitda Target Budget"
+    }, {
+      "name" : "Ebt",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Ebt"
+    }, {
+      "name" : "Ebt Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Ebt Target Budget"
+    }, {
+      "name" : "Finished Goods Inventory",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Finished Goods Inventory"
+    }, {
+      "name" : "Finished Goods Inventory Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Finished Goods Inventory Target Budget"
+    }, {
+      "name" : "Fiscal Quarter",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Fiscal Quarter"
+    }, {
+      "name" : "Fiscal Year",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Fiscal Year"
+    }, {
+      "name" : "Gross Margin",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Gross Margin"
+    }, {
+      "name" : "Gross Profit",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Gross Profit"
+    }, {
+      "name" : "Gross Profit Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Gross Profit Target Budget"
+    }, {
+      "name" : "Income Tax Expense",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Income Tax Expense"
+    }, {
+      "name" : "Income Tax Expense Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Income Tax Expense Target Budget"
+    }, {
+      "name" : "Interest Expense",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Interest Expense"
+    }, {
+      "name" : "Interest Expense Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Interest Expense Target Budget"
+    }, {
+      "name" : "Inventories",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Inventories"
+    }, {
+      "name" : "Inventories Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Inventories Target Budget"
+    }, {
+      "name" : "Legal Entity Name",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Legal Entity Name"
+    }, {
+      "name" : "Long Term Assets",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Long Term Assets"
+    }, {
+      "name" : "Long Term Assets Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Long Term Assets Target Budget"
+    }, {
+      "name" : "Long Term Debt",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Long Term Debt"
+    }, {
+      "name" : "Long Term Debt Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Long Term Debt Target Budget"
+    }, {
+      "name" : "Long Term Liabilities",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Long Term Liabilities"
+    }, {
+      "name" : "Long Term Liabilities Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Long Term Liabilities Target Budget"
+    }, {
+      "name" : "Net Income",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Net Income"
+    }, {
+      "name" : "Net Income Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Net Income Target Budget"
+    }, {
+      "name" : "Net Ppe",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Net Ppe"
+    }, {
+      "name" : "Net Ppe Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Net Ppe Target Budget"
+    }, {
+      "name" : "Net Working Capital",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Net Working Capital"
+    }, {
+      "name" : "Net Working Capital Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Net Working Capital Target Budget"
+    }, {
+      "name" : "Operating Margin",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Operating Margin"
+    }, {
+      "name" : "Operating Margin Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Operating Margin Target Budget"
+    }, {
+      "name" : "Operating Profit",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Operating Profit"
+    }, {
+      "name" : "Operating Profit Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Operating Profit Target Budget"
+    }, {
+      "name" : "Other Assets",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Other Assets"
+    }, {
+      "name" : "Other Assets Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Other Assets Target Budget"
+    }, {
+      "name" : "Other Current Assets",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Other Current Assets"
+    }, {
+      "name" : "Other Current Assets Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Other Current Assets Target Budget"
+    }, {
+      "name" : "Other Income",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Other Income"
+    }, {
+      "name" : "Other Income Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Other Income Target Budget"
+    }, {
+      "name" : "Other Liabilities",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Other Liabilities"
+    }, {
+      "name" : "Other Liabilities Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Other Liabilities Target Budget"
+    }, {
+      "name" : "Other Operating Expenses",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Other Operating Expenses"
+    }, {
+      "name" : "Other Operating Expenses Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Other Operating Expenses Target Budget"
+    }, {
+      "name" : "Payroll Cost",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Payroll Cost"
+    }, {
+      "name" : "Payroll Cost Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Payroll Cost Target Budget"
+    }, {
+      "name" : "Ppe",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Ppe"
+    }, {
+      "name" : "Ppe Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Ppe Target Budget"
+    }, {
+      "name" : "Prepaid Expenses",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Prepaid Expenses"
+    }, {
+      "name" : "Prepaid Expenses Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Prepaid Expenses Target Budget"
+    }, {
+      "name" : "Raw Material Inventory",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Raw Material Inventory"
+    }, {
+      "name" : "Raw Material Inventory Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Raw Material Inventory Target Budget"
+    }, {
+      "name" : "Rd Expenses",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Rd Expenses"
+    }, {
+      "name" : "Rd Expenses Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Rd Expenses Target Budget"
+    }, {
+      "name" : "Revenue",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Revenue"
+    }, {
+      "name" : "Revenue Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Revenue Target Budget"
+    }, {
+      "name" : "Roa Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Roa Target Budget"
+    }, {
+      "name" : "ROE",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.ROE"
+    }, {
+      "name" : "Roe Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Roe Target Budget"
+    }, {
+      "name" : "Sales Marketing Expenses",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Sales Marketing Expenses"
+    }, {
+      "name" : "Sales Marketing Expenses Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Sales Marketing Expenses Target Budget"
+    }, {
+      "name" : "Short Term Borrowing",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Short Term Borrowing"
+    }, {
+      "name" : "Short Term Borrowing Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Short Term Borrowing Target Budget"
+    }, {
+      "name" : "Tax Liabilities",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Tax Liabilities"
+    }, {
+      "name" : "Tax Liabilities Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Tax Liabilities Target Budget"
+    }, {
+      "name" : "Total Assets",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Total Assets"
+    }, {
+      "name" : "Total Assets Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Total Assets Target Budget"
+    }, {
+      "name" : "Total Liabilities",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Total Liabilities"
+    }, {
+      "name" : "Total Liabilities Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Total Liabilities Target Budget"
+    }, {
+      "name" : "OPEX",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.OPEX"
+    }, {
+      "name" : "OPEX Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.OPEX Target Budget"
+    }, {
+      "name" : "Work In Process Inventory",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Work In Process Inventory"
+    }, {
+      "name" : "Work In Process Inventory Target Budget",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Work In Process Inventory Target Budget"
+    }, {
+      "name" : "ROA",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.ROA"
+    }, {
+      "name" : "Net Income Margin",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Net Income Margin"
+    }, {
+      "name" : "Current Ratio",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Current Ratio"
+    }, {
+      "name" : "Gross Profit Margin",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Gross Profit Margin"
+    }, {
+      "name" : "Quick Ratio",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Quick Ratio"
+    }, {
+      "name" : "Net Income Margin YAGO",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Net Income Margin YAGO"
+    }, {
+      "name" : "ROA Target",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.ROA Target"
+    }, {
+      "name" : "Avg. Revenue 1",
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Avg\\. Revenue"
+    } ]
+  }
+}

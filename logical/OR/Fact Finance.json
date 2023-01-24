@@ -1555,6 +1555,7 @@
       }
     }, {
       "name" : "Avg. Revenue",
+      "description" : "This is a change created for FeatureA.",
       "dataType" : "DOUBLE",
       "writeable" : false,
       "logicalColumnSource" : {
