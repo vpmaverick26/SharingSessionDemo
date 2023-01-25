@@ -1,6 +1,7 @@
 {
   "logicalTable" : {
     "name" : "Fact Finance",
+    "description" : "This is a fact table for Finance department",
     "type" : "FACT",
     "logicalColumns" : [ {
       "name" : "Accounts Payable",
