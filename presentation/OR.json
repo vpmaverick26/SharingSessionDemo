@@ -4,6 +4,8 @@
     "sourceBusinessModel" : "businessModel:OR",
     "tableOrder" : [ {
       "name" : "presentationTable:OR.Fact Finance"
+    }, {
+      "name" : "presentationTable:OR.Dim Date"
     } ]
   }
 }

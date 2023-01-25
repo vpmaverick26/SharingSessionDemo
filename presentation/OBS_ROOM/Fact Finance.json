@@ -24,7 +24,7 @@
       "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Payroll Cost"
     }, {
       "name" : "Revenue",
-      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Revenue Total"
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Revenue"
     }, {
       "name" : "Total Assets",
       "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Total Assets"
