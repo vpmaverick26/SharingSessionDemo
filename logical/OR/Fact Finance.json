@@ -1172,7 +1172,7 @@
         } ]
       }
     }, {
-      "name" : "Revenue",
+      "name" : "Revenue Total",
       "dataType" : "DOUBLE",
       "writeable" : false,
       "logicalColumnSource" : {
@@ -1496,7 +1496,7 @@
         "derivedFrom" : "LOGICAL_COLUMNS",
         "logicalExpression" : {
           "expressionTemplate" : "%1 / %2",
-          "expressionObjects" : [ "logicalColumn:OR.Fact Finance.Net Income", "logicalColumn:OR.Fact Finance.Revenue" ]
+          "expressionObjects" : [ "logicalColumn:OR.Fact Finance.Net Income", "logicalColumn:OR.Fact Finance.Revenue Total" ]
         }
       }
     }, {
@@ -1518,7 +1518,7 @@
         "derivedFrom" : "LOGICAL_COLUMNS",
         "logicalExpression" : {
           "expressionTemplate" : "(%1 - %2) / %1",
-          "expressionObjects" : [ "logicalColumn:OR.Fact Finance.Revenue", "logicalColumn:OR.Fact Finance.COGS" ]
+          "expressionObjects" : [ "logicalColumn:OR.Fact Finance.Revenue Total", "logicalColumn:OR.Fact Finance.COGS" ]
         }
       }
     }, {

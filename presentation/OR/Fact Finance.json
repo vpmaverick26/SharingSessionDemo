@@ -237,7 +237,7 @@
       "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Rd Expenses Target Budget"
     }, {
       "name" : "Revenue",
-      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Revenue"
+      "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Revenue Total"
     }, {
       "name" : "Revenue Target Budget",
       "sourceLogicalColumn" : "logicalColumn:OR.Fact Finance.Revenue Target Budget"
